@@ -1,68 +1,37 @@
-import './ShipInfo.css'
+import CameraModes from "./CameraModes";
 
 const ShipInfo = ({
   selectedFeature,
-  cameraDistance,
   handleFocus,
-  setCameraDistance,
+  selectedCameraMode,
+  setSelectedCameraMode,
 }) => {
   return (
-    <div
-      style={{
-        position: "absolute",
-        bottom: 20,
-        right: 20,
-        backgroundColor: "#ffffffcc",
-        padding: "16px",
-        borderRadius: "8px",
-        width: "280px",
-        boxShadow: "0 2px 8px rgba(0,0,0,0.2)",
-        zIndex: 1000,
-      }}
-    >
-      <h3 style={{ margin: 0 }}>{selectedFeature.properties.name}</h3>
+    <div className="absolute bottom-5 right-5 bg-white/80 p-4 rounded-lg w-[280px] shadow-md z-[1000]">
+      <h1 className="font-semibold text-xl">
+        {selectedFeature.properties.name}
+      </h1>
       <p style={{ margin: "8px 0" }}>
         {selectedFeature.properties.popupContent}
       </p>
 
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "12px",
-          marginTop: "12px",
-        }}
-      >
+      <div className="flex flex-col gap-3 mt-3">
         <button
           onClick={handleFocus}
-          style={{
-            padding: "8px 12px",
-            backgroundColor: "#2c3e50",
-            color: "white",
-            border: "none",
-            borderRadius: "4px",
-            cursor: "pointer",
-          }}
+          className="px-3 py-2 bg-[#2c3e50] text-white rounded cursor-pointer"
         >
           Focus Camera
         </button>
 
         <div>
-          <label
-            htmlFor="cameraDistance"
-            style={{ display: "block", marginBottom: "4px" }}
-          >
-            Camera Distance: {cameraDistance / 1000} km 
+          <label htmlFor="cameraMode" className="block mt-2">
+            Camera Mode:
           </label>
-          <input
-            id="cameraDistance"
-            type="range"
-            min="500"
-            max="3000"
-            step="100"
-            value={cameraDistance}
-            onChange={(e) => setCameraDistance(Number(e.target.value))}
-            style={{ width: "100%" }}
+
+          <CameraModes
+            handleFocus={handleFocus}
+            selectedCameraMode={selectedCameraMode}
+            setSelectedCameraMode={setSelectedCameraMode}
           />
         </div>
       </div>

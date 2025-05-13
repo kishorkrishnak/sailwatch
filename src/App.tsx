@@ -3,51 +3,12 @@ import { useState } from "react";
 import { CameraFlyToBoundingSphere, Entity, Viewer } from "resium";
 import shipNavy from "./assets/models/ship_navy.glb";
 import ShipInfo from "./components/ShipInfo";
-import { cameraModeOffsets } from "./utils/data";
-
-const positions = {
-  type: "FeatureCollection",
-  features: [
-    {
-      type: "Feature",
-      properties: {
-        name: "Ever Given",
-        popupContent: "Ever Given is a famous container ship.",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [30.5852, 31.5242],
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
-        name: "MSC Meraviglia",
-        popupContent: "MSC Meraviglia is a large cruise ship.",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [41.7025, 14.9732],
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
-        name: "Maersk Alabama",
-        popupContent: "Maersk Alabama operates in international waters.",
-      },
-      geometry: {
-        type: "Point",
-        coordinates: [80.7718, 5.5],
-      },
-    },
-  ],
-};
+import { cameraModeOffsets, shipPositions } from "./utils/data";
 
 function App() {
   const [selectedFeature, setSelectedFeature] = useState(null);
+  const [selectedCameraMode, setSelectedCameraMode] = useState("default");
   const [shouldFly, setShouldFly] = useState(false);
-  const [cameraDistance, setCameraDistance] = useState(800);
 
   const handleFocus = () => {
     setShouldFly(true);
@@ -56,7 +17,7 @@ function App() {
   return (
     <>
       <Viewer full timeline={false} infoBox={false}>
-        {positions.features.map((feature, index) => {
+        {shipPositions.features.map((feature, index) => {
           if (feature.geometry.type === "Point") {
             const [lon, lat] = feature.geometry.coordinates;
             const position = Cartesian3.fromDegrees(lon, lat);
@@ -87,10 +48,7 @@ function App() {
               ),
             ])}
             duration={1.5}
-            offset={{
-              ...cameraModeOffsets.Default,
-              range: cameraDistance,
-            }}
+            offset={cameraModeOffsets[selectedCameraMode]}
             onComplete={() => setShouldFly(false)}
           />
         )}
@@ -98,10 +56,10 @@ function App() {
 
       {selectedFeature && (
         <ShipInfo
-          cameraDistance={cameraDistance}
           handleFocus={handleFocus}
           selectedFeature={selectedFeature}
-          setCameraDistance={setCameraDistance}
+          selectedCameraMode={selectedCameraMode}
+          setSelectedCameraMode={setSelectedCameraMode}
         />
       )}
     </>
