@@ -1,7 +1,7 @@
 import { HeightReference, TimeInterval, TimeIntervalCollection } from "cesium";
 import { Entity } from "resium";
-import shipNavy from "../../../assets/models/ship_navy.glb";
-import useAppContext from "../../../contexts/AppContext/useAppContext";
+import useAppContext from "../../../../contexts/AppContext/useAppContext";
+import shipNavy from "../../../../assets/models/ship_navy.glb";
 import ShipInfo from "./ShipInfo";
 
 const Ships = () => {

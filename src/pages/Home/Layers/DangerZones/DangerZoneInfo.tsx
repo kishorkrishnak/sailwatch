@@ -1,5 +1,5 @@
 import { IoClose } from "react-icons/io5";
-import { useAppContext } from "../../../contexts/AppContext";
+import { useAppContext } from "../../../../contexts/AppContext";
 
 const DangerZoneInfo = () => {
   const { selectedDangerZone, setSelectedDangerZone } = useAppContext();

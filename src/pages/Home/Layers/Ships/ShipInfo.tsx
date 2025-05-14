@@ -1,9 +1,10 @@
 import * as turf from "@turf/turf";
 import { useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
-import useAppContext from "../../../contexts/AppContext/useAppContext";
-import getEntityPositionInDegrees from "../../../utils/getEntityPosition";
-import CameraModes from "../CameraModes";
+import { useCesium } from "resium";
+import useAppContext from "../../../../contexts/AppContext/useAppContext";
+import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
+import CameraModes from "./CameraModes";
 
 const ShipInfo = () => {
   const {
@@ -11,19 +12,19 @@ const ShipInfo = () => {
     selectedShip,
     shipEntities,
     selectedShipEntity,
-    handleFocus,
     selectedCameraMode,
     setSelectedCameraMode,
-    viewerRef,
   } = useAppContext();
 
   const [nearestShip, setNearestShip] = useState(null);
   const rafRef = useRef();
+  const { viewer } = useCesium();
 
   const properties = selectedShip.properties || {};
 
   const findNearestShip = () => {
-    const currentTime = viewerRef.current?.clock.currentTime;
+    if (!viewer) return;
+    const currentTime = viewer.clock.currentTime;
     const selectedCoords = getEntityPositionInDegrees(
       selectedShipEntity.cesiumEntity,
       currentTime
@@ -81,7 +82,7 @@ const ShipInfo = () => {
     rafRef.current = requestAnimationFrame(update);
 
     return () => cancelAnimationFrame(rafRef.current);
-  }, [selectedShipEntity, shipEntities, viewerRef]);
+  }, [selectedShipEntity, shipEntities, viewer]);
 
   return (
     <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[1000] backdrop-blur-md border border-gray-200">
@@ -128,27 +129,10 @@ const ShipInfo = () => {
         </p>
       )}
 
-      <div className="mt-4">
-        <label
-          htmlFor="cameraMode"
-          className="text-sm font-medium text-gray-700 mb-1 block"
-        >
-          Camera Mode:
-        </label>
-
-        <CameraModes
-          handleFocus={handleFocus}
-          selectedCameraMode={selectedCameraMode}
-          setSelectedCameraMode={setSelectedCameraMode}
-        />
-      </div>
-
-      <button
-        onClick={handleFocus}
-        className="w-full mt-4 bg-[#2c3e50] hover:bg-[#1a252f] text-white py-2 px-4 rounded-lg transition duration-200"
-      >
-        Refocus
-      </button>
+      <CameraModes
+        selectedCameraMode={selectedCameraMode}
+        setSelectedCameraMode={setSelectedCameraMode}
+      />
 
       <div className="mt-4 space-y-2">
         {nearestShip && (

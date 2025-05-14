@@ -1,13 +1,13 @@
-import { Color } from "cesium";
+import { Color, Entity } from "cesium";
 import { GeoJsonDataSource } from "resium";
-import { useAppContext } from "../../../contexts/AppContext";
-import { useEntityClickDetection } from "../../../hooks";
+import { useAppContext } from "../../../../contexts/AppContext";
+import { useEntityClickDetection } from "../../../../hooks";
 import DangerZoneInfo from "./DangerZoneInfo";
 
 const DangerZones = () => {
   const { selectedDangerZone, setSelectedDangerZone } = useAppContext();
 
-  const handleZoneClick = (entity) => {
+  const handleZoneClick = (entity: Entity) => {
     if (entity.properties) {
       const properties = entity.properties.getValue(new Date());
       setSelectedDangerZone(properties);

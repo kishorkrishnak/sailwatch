@@ -1,17 +1,16 @@
 import {
   Cartesian3,
   Viewer as CesiumViewer,
-  HeadingPitchRange,
   JulianDate,
   LagrangePolynomialApproximation,
   SampledPositionProperty,
   VelocityOrientationProperty,
 } from "cesium";
+import type { Feature } from "geojson";
 import { useRef, useState, type ReactNode } from "react";
-import { cameraModeOffsets, shipPositions } from "../../utils/data";
+import { shipPositions } from "../../utils/data";
 import type { AppContextType } from "./AppContext";
 import AppContext from "./AppContext";
-import type { Feature } from "geojson";
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [selectedShip, setSelectedShip] = useState<Feature | null>(null);
@@ -69,47 +68,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       .filter(Boolean);
   });
 
-  const handleFocus = () => {
-    const entity = shipEntities.find(
-      (e) => e.feature === selectedShip
-    )?.cesiumEntity;
-
-    if (!entity) return;
-
-    if (selectedCameraMode === "Ship") {
-      viewerRef.current.trackedEntity = entity;
-      return;
-    }
-
-    viewerRef.current.trackedEntity = undefined;
-
-    const currentTime = viewerRef.current.clock.currentTime;
-    const entityPosition = entity.position.getValue(currentTime);
-    if (!entityPosition) return;
-
-    const scene = viewerRef.current.scene;
-    const camera = scene.camera;
-
-    const { heading, pitch, range } =
-      cameraModeOffsets[selectedCameraMode] || {};
-
-    const destination = Cartesian3.clone(entityPosition);
-    camera.setView({
-      destination: destination,
-      orientation: {
-        heading: heading,
-        pitch: pitch,
-        roll: 0,
-      },
-    });
-
-    setTimeout(() => {
-      const cameraOffset = new HeadingPitchRange(heading, pitch, range);
-
-      viewerRef.current?.zoomTo(entity, cameraOffset);
-    }, 100);
-  };
-
   const flyHome = () => {
     viewerRef.current?.camera.flyHome(1);
   };
@@ -122,7 +80,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     setSelectedShip,
     selectedCameraMode,
     setSelectedCameraMode,
-    handleFocus,
     viewerRef,
     shipEntities,
     startTime,

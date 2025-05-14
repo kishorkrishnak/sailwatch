@@ -11,7 +11,9 @@ export type AppContextType = {
   selectedCameraMode: string;
   setSelectedCameraMode: (value: string) => void;
   handleFocus: () => void;
+  flyHome: () => void;
   startTime: JulianDate;
+  shipEntities: any[];
   endTime: JulianDate;
   viewerRef: RefObject<CesiumViewer | null>;
 };

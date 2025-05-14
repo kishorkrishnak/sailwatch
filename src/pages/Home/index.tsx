@@ -7,9 +7,9 @@ import {
 import { useEffect, useState } from "react";
 import { Viewer } from "resium";
 import useAppContext from "../../contexts/AppContext/useAppContext";
-import DangerZones from "./Layers/DangerZones";
-import Ports from "./Layers/Ports";
-import Ships from "./Layers/Ships";
+import DangerZones from "./Layers/DangerZones/DangerZones";
+import Ports from "./Layers/Ports/Ports";
+import Ships from "./Layers/Ships/Ships";
 
 const Home = () => {
   const { viewerRef, startTime, endTime } = useAppContext();
@@ -47,28 +47,26 @@ const Home = () => {
   }, [viewerRef, viewerReady, startTime, endTime]);
 
   return (
-    <>
-      <Viewer
-        full
-        baseLayerPicker={false}
-        ref={(resiumViewer) => {
-          if (resiumViewer?.cesiumElement) {
-            viewerRef.current = resiumViewer.cesiumElement;
-            setViewerReady(true);
-          }
-        }}
-        infoBox={false}
-        selectionIndicator={false}
-        clock={cesiumClock}
-        terrainProvider={terrainProvider}
-        shouldAnimate={true}
-        timeline={false}
-      >
-        <Ships />
-        <DangerZones />
-        <Ports />
-      </Viewer>
-    </>
+    <Viewer
+      full
+      baseLayerPicker={false}
+      ref={(resiumViewer) => {
+        if (resiumViewer?.cesiumElement) {
+          viewerRef.current = resiumViewer.cesiumElement;
+          setViewerReady(true);
+        }
+      }}
+      infoBox={false}
+      selectionIndicator={false}
+      clock={cesiumClock}
+      terrainProvider={terrainProvider}
+      shouldAnimate={true}
+      timeline={false}
+    >
+      <Ships />
+      <DangerZones />
+      <Ports />
+    </Viewer>
   );
 };
 
