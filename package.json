@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "@types/geojson": "^7946.0.16",
     "cesium": "^1.129.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

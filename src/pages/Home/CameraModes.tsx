@@ -18,9 +18,8 @@ function CameraModes({
           onClick={() => {
             setSelectedCameraMode(mode);
           }}
-          className={`cursor-pointer p-3 border border-black rounded-lg ${
-            selectedCameraMode === mode ? "bg-blue-500 text-white" : ""
-          }`}
+          className={`cursor-pointer p-3 border border-black rounded-lg ${selectedCameraMode === mode ? "bg-blue-500 text-white" : ""
+            }`}
         >
           {mode.charAt(0).toUpperCase() + mode.slice(1)}
         </div>

@@ -1,22 +1,87 @@
+import * as turf from "@turf/turf";
+import { useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import useAppContext from "../../../contexts/AppContext/useAppContext";
+import getEntityPositionInDegrees from "../../../utils/getEntityPosition";
 import CameraModes from "../CameraModes";
 
-interface ShipInfoProps {
-  selectedShip: any;
-  handleFocus: () => void;
-  selectedCameraMode: string;
-  setSelectedCameraMode: (mode: string) => void;
-}
+const ShipInfo = () => {
+  const {
+    setSelectedShip,
+    selectedShip,
+    shipEntities,
+    selectedShipEntity,
+    handleFocus,
+    selectedCameraMode,
+    setSelectedCameraMode,
+    viewerRef,
+  } = useAppContext();
 
-const ShipInfo: React.FC<ShipInfoProps> = ({
-  selectedShip,
-  handleFocus,
-  selectedCameraMode,
-  setSelectedCameraMode,
-}) => {
+  const [nearestShip, setNearestShip] = useState(null);
+  const rafRef = useRef();
+
   const properties = selectedShip.properties || {};
-  const { setSelectedShip } = useAppContext();
+
+  const findNearestShip = () => {
+    const currentTime = viewerRef.current?.clock.currentTime;
+    const selectedCoords = getEntityPositionInDegrees(
+      selectedShipEntity.cesiumEntity,
+      currentTime
+    );
+    if (!selectedCoords) return null;
+
+    const from = turf.point([
+      selectedCoords.longitude,
+      selectedCoords.latitude,
+    ]);
+
+    let nearest = null;
+    let minDistance = Infinity;
+
+    for (const ship of shipEntities) {
+      if (
+        ship.feature.properties.MMSI ===
+        selectedShipEntity.feature.properties.MMSI
+      )
+        continue;
+
+      const coords = getEntityPositionInDegrees(ship.cesiumEntity, currentTime);
+      if (!coords) continue;
+
+      const to = turf.point([coords.longitude, coords.latitude]);
+      const distance = turf.distance(from, to, { units: "kilometers" });
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearest = ship;
+      }
+    }
+
+    return nearest
+      ? {
+          ...nearest,
+          distanceInKm: minDistance,
+        }
+      : null;
+  };
+
+  useEffect(() => {
+    let lastUpdate = 0;
+    const intervalMs = 3000;
+
+    const update = (timestamp: number) => {
+      if (timestamp - lastUpdate >= intervalMs) {
+        const nearest = findNearestShip();
+        setNearestShip(nearest);
+        lastUpdate = timestamp;
+      }
+      rafRef.current = requestAnimationFrame(update);
+    };
+
+    rafRef.current = requestAnimationFrame(update);
+
+    return () => cancelAnimationFrame(rafRef.current);
+  }, [selectedShipEntity, shipEntities, viewerRef]);
 
   return (
     <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[1000] backdrop-blur-md border border-gray-200">
@@ -84,6 +149,29 @@ const ShipInfo: React.FC<ShipInfoProps> = ({
       >
         Refocus
       </button>
+
+      <div className="mt-4 space-y-2">
+        {nearestShip && (
+          <div className="p-3 border rounded-lg bg-gray-50">
+            <p className="text-sm text-gray-600 mb-1 font-medium">
+              Nearest Ship:
+            </p>
+            <p className="text-sm">
+              <span className="font-semibold">
+                {nearestShip.feature.properties?.name || "Unnamed Vessel"}
+              </span>{" "}
+              — {nearestShip.distanceInKm.toFixed(2)} km away
+            </p>
+          </div>
+        )}
+
+        <div className="p-3 border rounded-lg bg-gray-50">
+          <p className="text-sm text-gray-600 mb-1 font-medium">
+            Nearest Port:
+          </p>
+          <p className="text-sm">[Coming Soon]</p>
+        </div>
+      </div>
     </div>
   );
 };

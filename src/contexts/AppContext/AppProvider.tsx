@@ -11,13 +11,16 @@ import { useRef, useState, type ReactNode } from "react";
 import { cameraModeOffsets, shipPositions } from "../../utils/data";
 import type { AppContextType } from "./AppContext";
 import AppContext from "./AppContext";
+import type { Feature } from "geojson";
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
-  const [selectedShip, setSelectedShip] = useState<any>(null);
+  const [selectedShip, setSelectedShip] = useState<Feature | null>(null);
   const [selectedCameraMode, setSelectedCameraMode] =
     useState<string>("TopDown");
-  const [selectedPort, setSelectedPort] = useState<any>(null);
-  const [selectedDangerZone, setSelectedDangerZone] = useState<any>(null);
+  const [selectedPort, setSelectedPort] = useState<Feature | null>(null);
+  const [selectedDangerZone, setSelectedDangerZone] = useState<Feature | null>(
+    null
+  );
 
   const viewerRef = useRef<CesiumViewer | null>(null);
   const [startTime] = useState(JulianDate.now());
@@ -108,10 +111,12 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const flyHome = () => {
-
     viewerRef.current?.camera.flyHome(1);
   };
 
+  const selectedShipEntity = shipEntities.find(
+    (e) => e.feature === selectedShip
+  );
   const contextValue: AppContextType = {
     selectedShip,
     setSelectedShip,
@@ -127,6 +132,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     setSelectedPort,
     selectedDangerZone,
     setSelectedDangerZone,
+    selectedShipEntity,
   };
 
   return (

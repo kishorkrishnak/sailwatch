@@ -9,19 +9,10 @@ import { Viewer } from "resium";
 import useAppContext from "../../contexts/AppContext/useAppContext";
 import DangerZones from "./Layers/DangerZones";
 import Ports from "./Layers/Ports";
-import ShipInfo from "./Layers/ShipInfo";
 import Ships from "./Layers/Ships";
 
 const Home = () => {
-  const {
-    viewerRef,
-    selectedShip,
-    startTime,
-    endTime,
-    selectedCameraMode,
-    setSelectedCameraMode,
-    handleFocus,
-  } = useAppContext();
+  const { viewerRef, startTime, endTime } = useAppContext();
 
   const [cesiumClock] = useState<Clock>(
     new Clock({
@@ -74,18 +65,9 @@ const Home = () => {
         timeline={false}
       >
         <Ships />
-        <Ports/>
-        <DangerZones/>
+        <DangerZones />
+        <Ports />
       </Viewer>
-
-      {selectedShip && (
-        <ShipInfo
-          handleFocus={handleFocus}
-          selectedShip={selectedShip}
-          selectedCameraMode={selectedCameraMode}
-          setSelectedCameraMode={setSelectedCameraMode}
-        />
-      )}
     </>
   );
 };
