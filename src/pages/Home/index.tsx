@@ -7,15 +7,15 @@ import {
 import { useEffect, useState } from "react";
 import { Viewer } from "resium";
 import useAppContext from "../../contexts/AppContext/useAppContext";
-import Ships from "./Layers/Ships";
-import ShipInfo from "./ShipInfo";
 import DangerZones from "./Layers/DangerZones";
 import Ports from "./Layers/Ports";
+import ShipInfo from "./Layers/ShipInfo";
+import Ships from "./Layers/Ships";
 
 const Home = () => {
   const {
     viewerRef,
-    selectedFeature,
+    selectedShip,
     startTime,
     endTime,
     selectedCameraMode,
@@ -78,10 +78,10 @@ const Home = () => {
         <DangerZones/>
       </Viewer>
 
-      {selectedFeature && (
+      {selectedShip && (
         <ShipInfo
           handleFocus={handleFocus}
-          selectedFeature={selectedFeature}
+          selectedShip={selectedShip}
           selectedCameraMode={selectedCameraMode}
           setSelectedCameraMode={setSelectedCameraMode}
         />

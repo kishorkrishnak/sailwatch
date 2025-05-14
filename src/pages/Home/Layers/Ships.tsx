@@ -1,10 +1,10 @@
-import { Color, HeightReference, PolylineGlowMaterialProperty, TimeInterval, TimeIntervalCollection } from "cesium";
+import { HeightReference, TimeInterval, TimeIntervalCollection } from "cesium";
 import { Entity } from "resium";
-import useAppContext from "../../../contexts/AppContext/useAppContext";
 import shipNavy from "../../../assets/models/ship_navy.glb";
+import useAppContext from "../../../contexts/AppContext/useAppContext";
 
 const Ships = () => {
-    const { viewerRef, shipEntities, startTime, endTime, setSelectedFeature } =
+    const { viewerRef, shipEntities, startTime, endTime, setSelectedShip } =
         useAppContext();
     return (
         <>
@@ -26,7 +26,7 @@ const Ships = () => {
                     }
                     onClick={() => {
                         viewerRef.current.trackedEntity = undefined;
-                        setSelectedFeature(shipEntity.feature);
+                        setSelectedShip(shipEntity.feature);
                     }}
                     name={shipEntity.name}
                     position={shipEntity.position}

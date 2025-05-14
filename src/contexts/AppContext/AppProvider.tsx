@@ -5,7 +5,7 @@ import {
   JulianDate,
   LagrangePolynomialApproximation,
   SampledPositionProperty,
-  VelocityOrientationProperty
+  VelocityOrientationProperty,
 } from "cesium";
 import { useRef, useState, type ReactNode } from "react";
 import { cameraModeOffsets, shipPositions } from "../../utils/data";
@@ -13,9 +13,12 @@ import type { AppContextType } from "./AppContext";
 import AppContext from "./AppContext";
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
-  const [selectedFeature, setSelectedFeature] = useState<any>(null);
+  const [selectedShip, setSelectedShip] = useState<any>(null);
   const [selectedCameraMode, setSelectedCameraMode] =
     useState<string>("TopDown");
+  const [selectedPort, setSelectedPort] = useState<any>(null);
+  const [selectedDangerZone, setSelectedDangerZone] = useState<any>(null);
+
   const viewerRef = useRef<CesiumViewer | null>(null);
   const [startTime] = useState(JulianDate.now());
   const [endTime] = useState(
@@ -65,7 +68,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
 
   const handleFocus = () => {
     const entity = shipEntities.find(
-      (e) => e.feature === selectedFeature
+      (e) => e.feature === selectedShip
     )?.cesiumEntity;
 
     if (!entity) return;
@@ -105,13 +108,13 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const flyHome = () => {
-    setSelectedFeature(null);
+
     viewerRef.current?.camera.flyHome(1);
   };
 
   const contextValue: AppContextType = {
-    selectedFeature,
-    setSelectedFeature,
+    selectedShip,
+    setSelectedShip,
     selectedCameraMode,
     setSelectedCameraMode,
     handleFocus,
@@ -120,6 +123,10 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     startTime,
     endTime,
     flyHome,
+    selectedPort,
+    setSelectedPort,
+    selectedDangerZone,
+    setSelectedDangerZone,
   };
 
   return (

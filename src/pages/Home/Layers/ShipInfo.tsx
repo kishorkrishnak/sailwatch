@@ -1,33 +1,33 @@
-import useAppContext from "../../contexts/AppContext/useAppContext";
-import CameraModes from "./CameraModes";
+import { IoClose } from "react-icons/io5";
+import useAppContext from "../../../contexts/AppContext/useAppContext";
+import CameraModes from "../CameraModes";
 
 interface ShipInfoProps {
-  selectedFeature: any;
+  selectedShip: any;
   handleFocus: () => void;
   selectedCameraMode: string;
   setSelectedCameraMode: (mode: string) => void;
 }
 
 const ShipInfo: React.FC<ShipInfoProps> = ({
-  selectedFeature,
+  selectedShip,
   handleFocus,
   selectedCameraMode,
   setSelectedCameraMode,
 }) => {
-  const properties = selectedFeature.properties || {};
-  const { flyHome } = useAppContext();
-  
+  const properties = selectedShip.properties || {};
+  const { setSelectedShip } = useAppContext();
+
   return (
     <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[1000] backdrop-blur-md border border-gray-200">
       <h1 className="text-xl font-bold text-[#2c3e50] mb-2">
         {properties.name || "Unnamed Vessel"}
       </h1>
-
       <button
-        onClick={flyHome}
-        className="cursor-pointer absolute top-2 right-4"
+        onClick={() => setSelectedShip(null)}
+        className="cursor-pointer absolute top-2 right-3"
       >
-        X
+        <IoClose size={20} />
       </button>
 
       <div className="mb-4">

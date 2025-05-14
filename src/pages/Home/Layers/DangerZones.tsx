@@ -1,42 +1,40 @@
+import {
+    Color
+} from "cesium";
 import { GeoJsonDataSource } from "resium";
-import { Color } from "cesium";
-import React from "react";
+import { useAppContext } from "../../../contexts/AppContext";
+import { useEntityClickDetection } from "../../../hooks";
+import DangerZoneInfo from "./DangerZoneInfo";
 
 const DangerZones = () => {
-    const geoJson = {
-        type: "FeatureCollection",
-        features: [
-            {
-                type: "Feature",
-                properties: {
-                    name: "Restricted Area",
-                },
-                geometry: {
-                    type: "Polygon",
-                    coordinates: [
-                        [
-                            [120.0, 30.0],
-                            [121.0, 30.0],
-                            [121.0, 31.0],
-                            [120.0, 31.0],
-                            [120.0, 30.0],
-                        ],
-                    ],
-                },
-            },
-        ],
+    const { selectedDangerZone, setSelectedDangerZone } = useAppContext();
+
+    const handleZoneClick = (entity) => {
+        if (entity.properties) {
+            const properties = entity.properties.getValue(new Date());
+            setSelectedDangerZone(properties);
+        }
     };
 
-    return (
-        <GeoJsonDataSource
-            clampToGround={true}
-            data={`/data/Danger_Zones_and_Restricted_Areas.geojson`}
-            //   stroke={Color.RED}
-            fill={Color.RED.withAlpha(0.4)}
-            //   strokeWidth={3}
+    const { dataSourceRef } = useEntityClickDetection({
+        onClick: handleZoneClick,
+    });
 
-            show
-        />
+    return (
+        <>
+
+            <GeoJsonDataSource
+                clampToGround={true}
+                ref={dataSourceRef}
+                onLoad={(dataSource) => {
+                    dataSourceRef.current = dataSource;
+                }}
+                data={`/data/Danger_Zones_and_Restricted_Areas.geojson`}
+                fill={Color.RED.withAlpha(0.4)}
+                show
+            />
+            {selectedDangerZone && <DangerZoneInfo />}
+        </>
     );
 };
 

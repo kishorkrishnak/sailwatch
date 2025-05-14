@@ -15,7 +15,7 @@ function CameraModes({
       {Object.keys(cameraModeOffsets).map((mode) => (
         <div
           key={mode}
-          onClick={() => { 
+          onClick={() => {
             setSelectedCameraMode(mode);
           }}
           className={`cursor-pointer p-3 border border-black rounded-lg ${

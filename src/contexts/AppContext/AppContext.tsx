@@ -2,8 +2,12 @@ import { Viewer as CesiumViewer, JulianDate } from "cesium";
 import { createContext, type RefObject } from "react";
 
 export type AppContextType = {
-  selectedFeature: any;
-  setSelectedFeature: (value: any) => void;
+  selectedShip: any;
+  setSelectedShip: (value: any) => void;
+  selectedDangerZone: any;
+  setSelectedDangerZone: (value: any) => void;
+  selectedPort: any;
+  setSelectedPort: (value: any) => void;
   selectedCameraMode: string;
   setSelectedCameraMode: (value: string) => void;
   handleFocus: () => void;
