@@ -1,6 +1,13 @@
 import CameraModes from "./CameraModes";
 
-const ShipInfo = ({
+interface ShipInfoProps {
+  selectedFeature: any;
+  handleFocus: () => void;
+  selectedCameraMode: string;
+  setSelectedCameraMode: (mode: string) => void;
+}
+
+const ShipInfo: React.FC<ShipInfoProps> = ({
   selectedFeature,
   handleFocus,
   selectedCameraMode,
@@ -9,10 +16,10 @@ const ShipInfo = ({
   return (
     <div className="absolute bottom-5 right-5 bg-white/80 p-4 rounded-lg w-[280px] shadow-md z-[1000]">
       <h1 className="font-semibold text-xl">
-        {selectedFeature.properties.name}
+        {selectedFeature.properties?.name}
       </h1>
       <p style={{ margin: "8px 0" }}>
-        {selectedFeature.properties.popupContent}
+        {selectedFeature.properties?.popupContent}
       </p>
 
       <div className="flex flex-col gap-3 mt-3">
