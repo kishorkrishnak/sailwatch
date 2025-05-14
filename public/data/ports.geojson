@@ -1,0 +1,8270 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.0937,57.125 ]
+    },
+    "properties": {
+    "UNLocode":"GBABD",
+    "name":"Aberdeen",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":9.5,
+    "CostPerFULL":"289.00",
+    "CostPerFULLTrnsf":"137.00",
+    "PortCallCostFixed":34632,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.03,5.32 ]
+    },
+    "properties": {
+    "UNLocode":"CIABJ",
+    "name":"Abidjan",
+    "Country":"Ivory Coast",
+    "Cabotage_Region":"Ivory Coast",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"170.00",
+    "CostPerFULLTrnsf":"309.00",
+    "PortCallCostFixed":2238,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 54.3593,24.4531 ]
+    },
+    "properties": {
+    "UNLocode":"AEAUH",
+    "name":"Abu Dhabi",
+    "Country":"U. A. E.",
+    "Cabotage_Region":"U. A. E.",
+    "D_Region":"Dubai",
+    "Draft":11,
+    "CostPerFULL":"75.00",
+    "CostPerFULLTrnsf":"57.00",
+    "PortCallCostFixed":1572,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.8281,13.5781 ]
+    },
+    "properties": {
+    "UNLocode":"SVAQJ",
+    "name":"Acajutla",
+    "Country":"El Salvador",
+    "Cabotage_Region":"El Salvador",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"183.00",
+    "CostPerFULLTrnsf":"109.00",
+    "PortCallCostFixed":1225,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.5937,-34.9218 ]
+    },
+    "properties": {
+    "UNLocode":"AUADL",
+    "name":"Adelaide",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"386.00",
+    "CostPerFULLTrnsf":"87.00",
+    "PortCallCostFixed":25641,
+    "PortCallCostPerFFE":193
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45.01667,12.76667 ]
+    },
+    "properties": {
+    "UNLocode":"YEADE",
+    "name":"Aden",
+    "Country":"Yemen",
+    "Cabotage_Region":"Yemen",
+    "D_Region":"Saudi Arabia",
+    "Draft":9.5,
+    "CostPerFULL":"143.00",
+    "CostPerFULLTrnsf":"59.00",
+    "PortCallCostFixed":4784,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.667,30.5 ]
+    },
+    "properties": {
+    "UNLocode":"MAAGA",
+    "name":"Agadir",
+    "Country":"Morocco",
+    "Cabotage_Region":"Morocco",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"70.00",
+    "CostPerFULLTrnsf":"111.00",
+    "PortCallCostFixed":6274,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.5667,27.05 ]
+    },
+    "properties": {
+    "UNLocode":"SAJBI",
+    "name":"Al Jubayl",
+    "Country":"Saudi Arabia",
+    "Cabotage_Region":"Saudi Arabia",
+    "D_Region":"Saudi Arabia",
+    "Draft":12.5,
+    "CostPerFULL":"99.00",
+    "CostPerFULLTrnsf":"60.00",
+    "PortCallCostFixed":3393,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.8906,31.1875 ]
+    },
+    "properties": {
+    "UNLocode":"EGALY",
+    "name":"Alexandria",
+    "Country":"Egypt",
+    "Cabotage_Region":"Egypt",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"31.00",
+    "CostPerFULLTrnsf":"109.00",
+    "PortCallCostFixed":2021,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.45,36.125 ]
+    },
+    "properties": {
+    "UNLocode":"ESALG",
+    "name":"Algeciras",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"229.00",
+    "CostPerFULLTrnsf":"136.00",
+    "PortCallCostFixed":773,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.0468,36.7812 ]
+    },
+    "properties": {
+    "UNLocode":"DZALG",
+    "name":"Algiers",
+    "Country":"Algeria",
+    "Cabotage_Region":"Algeria",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"147.00",
+    "CostPerFULLTrnsf":"105.00",
+    "PortCallCostFixed":9937,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.745,40.983 ]
+    },
+    "properties": {
+    "UNLocode":"TRAMB",
+    "name":"Ambarli",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"146.00",
+    "CostPerFULLTrnsf":"19.00",
+    "PortCallCostFixed":9517,
+    "PortCallCostPerFFE":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.7656,36.8906 ]
+    },
+    "properties": {
+    "UNLocode":"DZAAE",
+    "name":"Annaba",
+    "Country":"Algeria",
+    "Cabotage_Region":"Algeria",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"152.00",
+    "CostPerFULLTrnsf":"105.00",
+    "PortCallCostFixed":2495,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.416666,51.216666 ]
+    },
+    "properties": {
+    "UNLocode":"BEANR",
+    "name":"Antwerp",
+    "Country":"Belgium",
+    "Cabotage_Region":"Belgium",
+    "D_Region":"North Continent Europe",
+    "Draft":11,
+    "CostPerFULL":"355.00",
+    "CostPerFULLTrnsf":"122.00",
+    "PortCallCostFixed":13087,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.3437,6.4218 ]
+    },
+    "properties": {
+    "UNLocode":"NGAPP",
+    "name":"Apapa",
+    "Country":"Nigeria",
+    "Cabotage_Region":"Nigeria",
+    "D_Region":"West Africa",
+    "Draft":11,
+    "CostPerFULL":"196.00",
+    "CostPerFULLTrnsf":"0.00",
+    "PortCallCostFixed":34988,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35,29.55 ]
+    },
+    "properties": {
+    "UNLocode":"JOAQB",
+    "name":"Al Aqabah",
+    "Country":"Jordan",
+    "Cabotage_Region":"Jordan",
+    "D_Region":"Saudi Arabia",
+    "Draft":12.5,
+    "CostPerFULL":"62.00",
+    "CostPerFULLTrnsf":"75.00",
+    "PortCallCostFixed":5208,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.3,-18.49 ]
+    },
+    "properties": {
+    "UNLocode":"CLARI",
+    "name":"Arica",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":8,
+    "CostPerFULL":"224.00",
+    "CostPerFULLTrnsf":"187.00",
+    "PortCallCostFixed":11949,
+    "PortCallCostPerFFE":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.6406,31.8125 ]
+    },
+    "properties": {
+    "UNLocode":"ILASH",
+    "name":"Ashdod",
+    "Country":"Israel",
+    "Cabotage_Region":"Israel",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"89.00",
+    "CostPerFULLTrnsf":"144.00",
+    "PortCallCostFixed":1040,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.766667,-36.86667 ]
+    },
+    "properties": {
+    "UNLocode":"NZAKL",
+    "name":"Auckland",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"111.00",
+    "CostPerFULLTrnsf":"124.00",
+    "PortCallCostFixed":2353,
+    "PortCallCostPerFFE":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -62.28333,-38.71667 ]
+    },
+    "properties": {
+    "UNLocode":"ARBHI",
+    "name":"Bahia Blanca",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":9.5,
+    "CostPerFULL":"286.00",
+    "CostPerFULLTrnsf":"237.00",
+    "PortCallCostFixed":22185,
+    "PortCallCostPerFFE":33
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.5,26 ]
+    },
+    "properties": {
+    "UNLocode":"BHBAH",
+    "name":"Bahrain",
+    "Country":"Bahrain",
+    "Cabotage_Region":"Bahrain",
+    "D_Region":"Dubai",
+    "Draft":11,
+    "CostPerFULL":"160.00",
+    "CostPerFULLTrnsf":"76.00",
+    "PortCallCostFixed":3100,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.5625,8.9375 ]
+    },
+    "properties": {
+    "UNLocode":"PABLB",
+    "name":"Balboa",
+    "Country":"Panama",
+    "Cabotage_Region":"Panama",
+    "D_Region":"US West Coast",
+    "Draft":11,
+    "CostPerFULL":"238.00",
+    "CostPerFULLTrnsf":"101.00",
+    "PortCallCostFixed":533,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.6212,39.28973 ]
+    },
+    "properties": {
+    "UNLocode":"USBAL",
+    "name":"Baltimore",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":11,
+    "CostPerFULL":"552.00",
+    "CostPerFULLTrnsf":"112.00",
+    "PortCallCostFixed":3292,
+    "PortCallCostPerFFE":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 56.25,27.2 ]
+    },
+    "properties": {
+    "UNLocode":"IRBND",
+    "name":"Bandar Abbas",
+    "Country":"Iran",
+    "Cabotage_Region":"Iran",
+    "D_Region":"Dubai",
+    "Draft":12.5,
+    "CostPerFULL":"99.00",
+    "CostPerFULLTrnsf":"80.00",
+    "PortCallCostFixed":2495,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -16.584243,13.451189 ]
+    },
+    "properties": {
+    "UNLocode":"GMBJL",
+    "name":"Banjul",
+    "Country":"Gambia",
+    "Cabotage_Region":"Gambia",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"479.00",
+    "CostPerFULLTrnsf":"172.00",
+    "PortCallCostFixed":32300,
+    "PortCallCostPerFFE":57
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.18334,41.38334 ]
+    },
+    "properties": {
+    "UNLocode":"ESBCN",
+    "name":"Barcelona",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"597.00",
+    "CostPerFULLTrnsf":"111.00",
+    "PortCallCostFixed":5530,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.8,10.98 ]
+    },
+    "properties": {
+    "UNLocode":"COBAQ",
+    "name":"Barranquilla",
+    "Country":"Colombia",
+    "Cabotage_Region":"Colombia",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"81.00",
+    "CostPerFULLTrnsf":"242.00",
+    "PortCallCostFixed":9726,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.77,1.85 ]
+    },
+    "properties": {
+    "UNLocode":"GQBSG",
+    "name":"Bata",
+    "Country":"Equatorial Guinea",
+    "Cabotage_Region":"Equatorial Guinea",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"3.00",
+    "CostPerFULLTrnsf":"0.00",
+    "PortCallCostFixed":24981,
+    "PortCallCostPerFFE":60
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.5,33.8593 ]
+    },
+    "properties": {
+    "UNLocode":"LBBEY",
+    "name":"Beirut",
+    "Country":"Lebanon",
+    "Cabotage_Region":"Lebanon",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"137.00",
+    "CostPerFULLTrnsf":"148.00",
+    "PortCallCostFixed":7084,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.08333,36.75 ]
+    },
+    "properties": {
+    "UNLocode":"DZBJA",
+    "name":"Bejaia",
+    "Country":"Algeria",
+    "Cabotage_Region":"Algeria",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"98.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":32,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.3,17.51 ]
+    },
+    "properties": {
+    "UNLocode":"BZBZE",
+    "name":"Belize",
+    "Country":"Belize",
+    "Cabotage_Region":"Belize",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"560.00",
+    "CostPerFULLTrnsf":"151.00",
+    "PortCallCostFixed":8645,
+    "PortCallCostPerFFE":34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 20.0625,32.1093 ]
+    },
+    "properties": {
+    "UNLocode":"LYBEN",
+    "name":"Benghazi",
+    "Country":"Libya",
+    "Cabotage_Region":"Libya",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"195.00",
+    "CostPerFULLTrnsf":"103.00",
+    "PortCallCostFixed":11481,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.31667,60.3834 ]
+    },
+    "properties": {
+    "UNLocode":"NOBGO",
+    "name":"Bergen",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":9.5,
+    "CostPerFULL":"365.00",
+    "CostPerFULLTrnsf":"101.00",
+    "PortCallCostFixed":17435,
+    "PortCallCostPerFFE":119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -15.587181,11.851832 ]
+    },
+    "properties": {
+    "UNLocode":"GWOXB",
+    "name":"Bissau",
+    "Country":"Guinea-Bissau",
+    "Cabotage_Region":"Guinea-Bissau",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"403.00",
+    "CostPerFULLTrnsf":"162.00",
+    "PortCallCostFixed":2351,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.053,-5.84 ]
+    },
+    "properties": {
+    "UNLocode":"CDBOA",
+    "name":"Boma",
+    "Country":"Congo. Dem. Rep. of",
+    "Cabotage_Region":"Congo. Dem. Rep. of",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"364.00",
+    "CostPerFULLTrnsf":"163.00",
+    "PortCallCostFixed":33794,
+    "PortCallCostPerFFE":59
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.02,41.012 ]
+    },
+    "properties": {
+    "UNLocode":"TRUSK",
+    "name":"Bosperus",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"218.00",
+    "CostPerFULLTrnsf":"149.00",
+    "PortCallCostFixed":2916,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.58,53.55 ]
+    },
+    "properties": {
+    "UNLocode":"DEBRV",
+    "name":"Bremerhaven",
+    "Country":"Germany",
+    "Cabotage_Region":"Germany",
+    "D_Region":"North Continent Europe",
+    "Draft":13.5,
+    "CostPerFULL":"199.00",
+    "CostPerFULLTrnsf":"121.00",
+    "PortCallCostFixed":11795,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.4687,48.3906 ]
+    },
+    "properties": {
+    "UNLocode":"FRBES",
+    "name":"Brest",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"380.00",
+    "CostPerFULLTrnsf":"104.00",
+    "PortCallCostFixed":24700,
+    "PortCallCostPerFFE":131
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 153.0156,-27.5 ]
+    },
+    "properties": {
+    "UNLocode":"AUBNE",
+    "name":"Brisbane",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"541.00",
+    "CostPerFULLTrnsf":"276.00",
+    "PortCallCostFixed":4670,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.033333,3.9 ]
+    },
+    "properties": {
+    "UNLocode":"COBUN",
+    "name":"Buenaventura",
+    "Country":"Colombia",
+    "Cabotage_Region":"Colombia",
+    "D_Region":"South America West Coast",
+    "Draft":8,
+    "CostPerFULL":"121.00",
+    "CostPerFULLTrnsf":"170.00",
+    "PortCallCostFixed":2772,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -58.466667,-34.612 ]
+    },
+    "properties": {
+    "UNLocode":"ARBUE",
+    "name":"Buenos Aires",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"103.00",
+    "CostPerFULLTrnsf":"115.00",
+    "PortCallCostFixed":24077,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 129.04,35.1 ]
+    },
+    "properties": {
+    "UNLocode":"KRPUS",
+    "name":"Busan",
+    "Country":"Korea. South",
+    "Cabotage_Region":"Korea. South",
+    "D_Region":"Korea",
+    "Draft":13.5,
+    "CostPerFULL":"77.00",
+    "CostPerFULLTrnsf":"48.00",
+    "PortCallCostFixed":2842,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77,-12.06667 ]
+    },
+    "properties": {
+    "UNLocode":"PECLL",
+    "name":"Callao",
+    "Country":"Peru",
+    "Cabotage_Region":"Peru",
+    "D_Region":"South America West Coast",
+    "Draft":12.5,
+    "CostPerFULL":"79.00",
+    "CostPerFULLTrnsf":"239.00",
+    "PortCallCostFixed":2970,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.416666,-33.9166 ]
+    },
+    "properties": {
+    "UNLocode":"ZACPT",
+    "name":"Cape Town",
+    "Country":"South Africa",
+    "Cabotage_Region":"South Africa",
+    "D_Region":"South Africa",
+    "Draft":12.5,
+    "CostPerFULL":"299.00",
+    "CostPerFULLTrnsf":"131.00",
+    "PortCallCostFixed":3176,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.5,10.38 ]
+    },
+    "properties": {
+    "UNLocode":"COCTG",
+    "name":"Cartagena",
+    "Country":"Colombia",
+    "Cabotage_Region":"Colombia",
+    "D_Region":"South America West Coast",
+    "Draft":12.5,
+    "CostPerFULL":"71.00",
+    "CostPerFULLTrnsf":"71.00",
+    "PortCallCostFixed":3670,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.9687,37.5937 ]
+    },
+    "properties": {
+    "UNLocode":"ESCAR",
+    "name":"Cartagena",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"326.00",
+    "CostPerFULLTrnsf":"103.00",
+    "PortCallCostFixed":-4972,
+    "PortCallCostPerFFE":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -7.616666,33.583333 ]
+    },
+    "properties": {
+    "UNLocode":"MACAS",
+    "name":"Casablanca",
+    "Country":"Morocco",
+    "Cabotage_Region":"Morocco",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"36.00",
+    "CostPerFULLTrnsf":"141.00",
+    "PortCallCostFixed":820,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.6333,18.41667 ]
+    },
+    "properties": {
+    "UNLocode":"DOCAU",
+    "name":"Caucedo",
+    "Country":"Dominican Republic",
+    "Cabotage_Region":"Dominican Republic",
+    "D_Region":"US Gulf Coast",
+    "Draft":12.5,
+    "CostPerFULL":"210.00",
+    "CostPerFULLTrnsf":"83.00",
+    "PortCallCostFixed":-9005,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.94032,32.79423 ]
+    },
+    "properties": {
+    "UNLocode":"USCHS",
+    "name":"Charleston",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":12.5,
+    "CostPerFULL":"292.00",
+    "CostPerFULLTrnsf":"487.00",
+    "PortCallCostFixed":9743,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 80.18,13.06 ]
+    },
+    "properties": {
+    "UNLocode":"INMAA",
+    "name":"Chennai",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":12.5,
+    "CostPerFULL":"149.00",
+    "CostPerFULLTrnsf":"160.00",
+    "PortCallCostFixed":820,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 91.8281,22.3281 ]
+    },
+    "properties": {
+    "UNLocode":"BDCGP",
+    "name":"Chittagong",
+    "Country":"Bangladesh",
+    "Cabotage_Region":"Bangladesh",
+    "D_Region":"Mumbai",
+    "Draft":9.5,
+    "CostPerFULL":"104.00",
+    "CostPerFULLTrnsf":"2.00",
+    "PortCallCostFixed":7130,
+    "PortCallCostPerFFE":39
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.888909,22.493138 ]
+    },
+    "properties": {
+    "UNLocode":"CNCWN",
+    "name":"Chiwan",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"South China",
+    "Draft":13.5,
+    "CostPerFULL":"179.00",
+    "CostPerFULLTrnsf":"62.00",
+    "PortCallCostFixed":12047,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 76.236338,9.987639 ]
+    },
+    "properties": {
+    "UNLocode":"INCOK",
+    "name":"Cochin",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":11,
+    "CostPerFULL":"166.00",
+    "CostPerFULLTrnsf":"56.00",
+    "PortCallCostFixed":7383,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 79.85,6.933334 ]
+    },
+    "properties": {
+    "UNLocode":"LKCMB",
+    "name":"Colombo",
+    "Country":"Sri Lanka",
+    "Cabotage_Region":"Sri Lanka",
+    "D_Region":"Mumbai",
+    "Draft":13.5,
+    "CostPerFULL":"272.00",
+    "CostPerFULLTrnsf":"73.00",
+    "PortCallCostFixed":2568,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.709253,9.519446 ]
+    },
+    "properties": {
+    "UNLocode":"GNCKY",
+    "name":"Conakry",
+    "Country":"Guinea",
+    "Cabotage_Region":"Guinea",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"117.00",
+    "CostPerFULLTrnsf":"226.00",
+    "PortCallCostFixed":24804,
+    "PortCallCostPerFFE":44
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.63817,44.17541 ]
+    },
+    "properties": {
+    "UNLocode":"ROCND",
+    "name":"Constanta",
+    "Country":"Romania",
+    "Cabotage_Region":"Romania",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"322.00",
+    "CostPerFULLTrnsf":"152.00",
+    "PortCallCostFixed":3888,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.3437,12.0312 ]
+    },
+    "properties": {
+    "UNLocode":"NICIO",
+    "name":"Corinto",
+    "Country":"Nicaragua",
+    "Cabotage_Region":"Nicaragua",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"341.00",
+    "CostPerFULLTrnsf":"147.00",
+    "PortCallCostFixed":848,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.466666,51.9 ]
+    },
+    "properties": {
+    "UNLocode":"IEORK",
+    "name":"Cork. Co Cork",
+    "Country":"Ireland",
+    "Cabotage_Region":"Ireland",
+    "D_Region":"UK",
+    "Draft":9.5,
+    "CostPerFULL":"291.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":28306,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.43,6.35 ]
+    },
+    "properties": {
+    "UNLocode":"BJCOO",
+    "name":"Cotonou",
+    "Country":"Benin",
+    "Cabotage_Region":"Benin",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"175.00",
+    "CostPerFULLTrnsf":"87.00",
+    "PortCallCostFixed":3913,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 108.25,16 ]
+    },
+    "properties": {
+    "UNLocode":"VNDAD",
+    "name":"Da Nang",
+    "Country":"Vietnam",
+    "Cabotage_Region":"Vietnam",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"91.00",
+    "CostPerFULLTrnsf":"60.00",
+    "PortCallCostFixed":3002,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -17.446,14.684 ]
+    },
+    "properties": {
+    "UNLocode":"SNDKR",
+    "name":"Dakar",
+    "Country":"Senegal",
+    "Cabotage_Region":"Senegal",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"208.00",
+    "CostPerFULLTrnsf":"574.00",
+    "PortCallCostFixed":1670,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.646487,38.922061 ]
+    },
+    "properties": {
+    "UNLocode":"CNDLC",
+    "name":"Dalian",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"North China",
+    "Draft":12.5,
+    "CostPerFULL":"125.00",
+    "CostPerFULLTrnsf":"74.00",
+    "PortCallCostFixed":860,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.7968,31.4062 ]
+    },
+    "properties": {
+    "UNLocode":"EGDAM",
+    "name":"Damietta",
+    "Country":"Egypt",
+    "Cabotage_Region":"Egypt",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"285.00",
+    "CostPerFULLTrnsf":"110.00",
+    "PortCallCostFixed":1240,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.1093,26.4218 ]
+    },
+    "properties": {
+    "UNLocode":"SADMM",
+    "name":"Dammam",
+    "Country":"Saudi Arabia",
+    "Cabotage_Region":"Saudi Arabia",
+    "D_Region":"Saudi Arabia",
+    "Draft":12.5,
+    "CostPerFULL":"50.00",
+    "CostPerFULLTrnsf":"55.00",
+    "PortCallCostFixed":3288,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.277,-6.817 ]
+    },
+    "properties": {
+    "UNLocode":"TZDAR",
+    "name":"Dar es Salaam",
+    "Country":"Tanzania",
+    "Cabotage_Region":"Tanzania",
+    "D_Region":"South Africa",
+    "Draft":8,
+    "CostPerFULL":"224.00",
+    "CostPerFULLTrnsf":"247.00",
+    "PortCallCostFixed":11486,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.148656,11.598434 ]
+    },
+    "properties": {
+    "UNLocode":"DJJIB",
+    "name":"Djibouti",
+    "Country":"Djibouti",
+    "Cabotage_Region":"Djibouti",
+    "D_Region":"West Africa",
+    "Draft":13.5,
+    "CostPerFULL":"243.00",
+    "CostPerFULLTrnsf":"233.00",
+    "PortCallCostFixed":6179,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.9375,3.75 ]
+    },
+    "properties": {
+    "UNLocode":"CMDLA",
+    "name":"Douala",
+    "Country":"Cameroon",
+    "Cabotage_Region":"Cameroon",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"114.00",
+    "CostPerFULLTrnsf":"17.00",
+    "PortCallCostFixed":24272,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.25,53.333333 ]
+    },
+    "properties": {
+    "UNLocode":"IEDUB",
+    "name":"Dublin",
+    "Country":"Ireland",
+    "Cabotage_Region":"Ireland",
+    "D_Region":"UK",
+    "Draft":8,
+    "CostPerFULL":"218.00",
+    "CostPerFULLTrnsf":"138.00",
+    "PortCallCostFixed":34916,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 2.3593,51.0468 ]
+    },
+    "properties": {
+    "UNLocode":"FRDKK",
+    "name":"Dunkerque",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":13.5,
+    "CostPerFULL":"245.00",
+    "CostPerFULLTrnsf":"215.00",
+    "PortCallCostFixed":9821,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 31.0156,-29.8437 ]
+    },
+    "properties": {
+    "UNLocode":"ZADUR",
+    "name":"Durban",
+    "Country":"South Africa",
+    "Cabotage_Region":"South Africa",
+    "D_Region":"South Africa",
+    "Draft":11,
+    "CostPerFULL":"322.00",
+    "CostPerFULLTrnsf":"211.00",
+    "PortCallCostFixed":9819,
+    "PortCallCostPerFFE":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -166.53743,53.81 ]
+    },
+    "properties": {
+    "UNLocode":"USDUT",
+    "name":"Dutch Harbor",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"833.00",
+    "CostPerFULLTrnsf":"152.00",
+    "PortCallCostFixed":1762,
+    "PortCallCostPerFFE":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.898,-32.989 ]
+    },
+    "properties": {
+    "UNLocode":"ZAELS",
+    "name":"East London",
+    "Country":"South Africa",
+    "Cabotage_Region":"South Africa",
+    "D_Region":"South Africa",
+    "Draft":8,
+    "CostPerFULL":"199.00",
+    "CostPerFULLTrnsf":"97.00",
+    "PortCallCostFixed":15156,
+    "PortCallCostPerFFE":21
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.61667,31.86667 ]
+    },
+    "properties": {
+    "UNLocode":"MXESE",
+    "name":"Ensenada",
+    "Country":"Mexico",
+    "Cabotage_Region":"Mexico",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"297.00",
+    "CostPerFULLTrnsf":"148.00",
+    "PortCallCostFixed":11173,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.6875,0.9687 ]
+    },
+    "properties": {
+    "UNLocode":"ECESM",
+    "name":"Esmeraldas",
+    "Country":"Ecuador",
+    "Cabotage_Region":"Ecuador",
+    "D_Region":"South America West Coast",
+    "Draft":8,
+    "CostPerFULL":"86.00",
+    "CostPerFULLTrnsf":"118.00",
+    "PortCallCostFixed":1171,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -47.7187,-0.9218 ]
+    },
+    "properties": {
+    "UNLocode":"WP081",
+    "name":"Fazendinha",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":9.5,
+    "CostPerFULL":"NULL",
+    "CostPerFULLTrnsf":"NULL",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.35,51.9531 ]
+    },
+    "properties": {
+    "UNLocode":"GBFXT",
+    "name":"Felixstowe",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":13.5,
+    "CostPerFULL":"250.00",
+    "CostPerFULLTrnsf":"108.00",
+    "PortCallCostFixed":12936,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -61.081786,14.602804 ]
+    },
+    "properties": {
+    "UNLocode":"MQFDF",
+    "name":"Fort de France",
+    "Country":"Martinique",
+    "Cabotage_Region":"Martinique",
+    "D_Region":"US Gulf Coast",
+    "Draft":9.5,
+    "CostPerFULL":"468.00",
+    "CostPerFULLTrnsf":"360.00",
+    "PortCallCostFixed":6154,
+    "PortCallCostPerFFE":34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.95,43.433333 ]
+    },
+    "properties": {
+    "UNLocode":"FRFOS",
+    "name":"Fos sur Mer",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":12.5,
+    "CostPerFULL":"390.00",
+    "CostPerFULLTrnsf":"497.00",
+    "PortCallCostFixed":2271,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.6875,26.5312 ]
+    },
+    "properties": {
+    "UNLocode":"BSFPO",
+    "name":"Freeport Bahamas",
+    "Country":"Bahamas",
+    "Cabotage_Region":"Bahamas",
+    "D_Region":"US Gulf Coast",
+    "Draft":13.5,
+    "CostPerFULL":"516.00",
+    "CostPerFULLTrnsf":"85.00",
+    "PortCallCostFixed":689,
+    "PortCallCostPerFFE":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -13.2187,8.4687 ]
+    },
+    "properties": {
+    "UNLocode":"SLFNA",
+    "name":"Freetown",
+    "Country":"Sierra Leone",
+    "Cabotage_Region":"Sierra Leone",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"265.00",
+    "CostPerFULLTrnsf":"161.00",
+    "PortCallCostFixed":34052,
+    "PortCallCostPerFFE":41
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 115.7656,-32.0468 ]
+    },
+    "properties": {
+    "UNLocode":"AUFRE",
+    "name":"Fremantle",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":11,
+    "CostPerFULL":"522.00",
+    "CostPerFULLTrnsf":"81.00",
+    "PortCallCostFixed":25718,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.5937,60.1875 ]
+    },
+    "properties": {
+    "UNLocode":"NOFUS",
+    "name":"Fusa",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"281.00",
+    "CostPerFULLTrnsf":"143.00",
+    "PortCallCostFixed":18180,
+    "PortCallCostPerFFE":176
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.2968,26.0781 ]
+    },
+    "properties": {
+    "UNLocode":"CNFOC",
+    "name":"Fuzhou",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"Central China",
+    "Draft":12.5,
+    "CostPerFULL":"159.00",
+    "CostPerFULLTrnsf":"62.00",
+    "PortCallCostFixed":928,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 18.55,54.5 ]
+    },
+    "properties": {
+    "UNLocode":"PLGDY",
+    "name":"Gdynia",
+    "Country":"Poland",
+    "Cabotage_Region":"Poland",
+    "D_Region":"North Continent Europe",
+    "Draft":11,
+    "CostPerFULL":"84.00",
+    "CostPerFULLTrnsf":"49.00",
+    "PortCallCostFixed":23817,
+    "PortCallCostPerFFE":138
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 125.16667,6.11667 ]
+    },
+    "properties": {
+    "UNLocode":"PHGES",
+    "name":"General Santos City",
+    "Country":"Philippines",
+    "Cabotage_Region":"Philippines",
+    "D_Region":"Singapore",
+    "Draft":8,
+    "CostPerFULL":"27.00",
+    "CostPerFULLTrnsf":"85.00",
+    "PortCallCostFixed":3182,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.95,44.42 ]
+    },
+    "properties": {
+    "UNLocode":"ITGOA",
+    "name":"Genoa",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"252.00",
+    "CostPerFULLTrnsf":"111.00",
+    "PortCallCostFixed":4169,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.9,38.416666 ]
+    },
+    "properties": {
+    "UNLocode":"ITGIT",
+    "name":"Gioia Tauro",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"202.00",
+    "CostPerFULLTrnsf":"102.00",
+    "PortCallCostFixed":9242,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 11.9531,57.7031 ]
+    },
+    "properties": {
+    "UNLocode":"SEGOT",
+    "name":"Gothenburg",
+    "Country":"Sweden",
+    "Cabotage_Region":"Sweden",
+    "D_Region":"North Continent Europe",
+    "Draft":12.5,
+    "CostPerFULL":"247.00",
+    "CostPerFULLTrnsf":"143.00",
+    "PortCallCostFixed":26838,
+    "PortCallCostPerFFE":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -3.7187,56.0156 ]
+    },
+    "properties": {
+    "UNLocode":"GBGRG",
+    "name":"Grangemouth",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":9.5,
+    "CostPerFULL":"211.00",
+    "CostPerFULLTrnsf":"105.00",
+    "PortCallCostFixed":23712,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 144.721,13.381 ]
+    },
+    "properties": {
+    "UNLocode":"GUGUM",
+    "name":"Guam",
+    "Country":"Guam",
+    "Cabotage_Region":"Guam",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"482.00",
+    "CostPerFULLTrnsf":"144.00",
+    "PortCallCostFixed":8968,
+    "PortCallCostPerFFE":165
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.902519,-2.169538 ]
+    },
+    "properties": {
+    "UNLocode":"ECGYE",
+    "name":"Guayaquil",
+    "Country":"Ecuador",
+    "Cabotage_Region":"Ecuador",
+    "D_Region":"South America West Coast",
+    "Draft":8,
+    "CostPerFULL":"165.00",
+    "CostPerFULLTrnsf":"241.00",
+    "PortCallCostFixed":2564,
+    "PortCallCostPerFFE":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.9687,32.7968 ]
+    },
+    "properties": {
+    "UNLocode":"ILHFA",
+    "name":"Haifa",
+    "Country":"Israel",
+    "Cabotage_Region":"Israel",
+    "D_Region":"West Med",
+    "Draft":11,
+    "CostPerFULL":"91.00",
+    "CostPerFULLTrnsf":"107.00",
+    "PortCallCostFixed":1100,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.68334,20.866667 ]
+    },
+    "properties": {
+    "UNLocode":"VNHPH",
+    "name":"Haiphong",
+    "Country":"Vietnam",
+    "Cabotage_Region":"Vietnam",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"76.00",
+    "CostPerFULLTrnsf":"2.00",
+    "PortCallCostFixed":3112,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 130.4062,33.5937 ]
+    },
+    "properties": {
+    "UNLocode":"JPHKT",
+    "name":"Hakata",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":12.5,
+    "CostPerFULL":"183.00",
+    "CostPerFULLTrnsf":"85.00",
+    "PortCallCostFixed":7150,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 88.02,22.02 ]
+    },
+    "properties": {
+    "UNLocode":"INHAL",
+    "name":"Haldia Port. India",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":8,
+    "CostPerFULL":"21.00",
+    "CostPerFULLTrnsf":"58.00",
+    "PortCallCostFixed":6796,
+    "PortCallCostPerFFE":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10,53.55 ]
+    },
+    "properties": {
+    "UNLocode":"DEHAM",
+    "name":"Hamburg",
+    "Country":"Germany",
+    "Cabotage_Region":"Germany",
+    "D_Region":"North Continent Europe",
+    "Draft":12.5,
+    "CostPerFULL":"466.00",
+    "CostPerFULLTrnsf":"224.00",
+    "PortCallCostFixed":18560,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.3593,23.125 ]
+    },
+    "properties": {
+    "UNLocode":"CUHAV",
+    "name":"Havana Cuba",
+    "Country":"Cuba",
+    "Cabotage_Region":"Cuba",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"156.00",
+    "CostPerFULLTrnsf":"103.00",
+    "PortCallCostFixed":9088,
+    "PortCallCostPerFFE":34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 28.92393,41.03693 ]
+    },
+    "properties": {
+    "UNLocode":"TRHAY",
+    "name":"Haydarpasa Port. Istanbul",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"272.00",
+    "CostPerFULLTrnsf":"147.00",
+    "PortCallCostFixed":187,
+    "PortCallCostPerFFE":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.66667,10.75 ]
+    },
+    "properties": {
+    "UNLocode":"VNSGN",
+    "name":"Saigon",
+    "Country":"Vietnam",
+    "Cabotage_Region":"Vietnam",
+    "D_Region":"Singapore",
+    "Draft":8,
+    "CostPerFULL":"91.00",
+    "CostPerFULLTrnsf":"66.00",
+    "PortCallCostFixed":4067,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.2,14.8 ]
+    },
+    "properties": {
+    "UNLocode":"YEHOD",
+    "name":"Hodeidah",
+    "Country":"Yemen",
+    "Cabotage_Region":"Yemen",
+    "D_Region":"Saudi Arabia",
+    "Draft":8,
+    "CostPerFULL":"216.00",
+    "CostPerFULLTrnsf":"78.00",
+    "PortCallCostFixed":4559,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.200376,22.320135 ]
+    },
+    "properties": {
+    "UNLocode":"HKHKG",
+    "name":"Hong Kong",
+    "Country":"Hong Kong",
+    "Cabotage_Region":"Hong Kong",
+    "D_Region":"Hong Kong",
+    "Draft":13.5,
+    "CostPerFULL":"257.00",
+    "CostPerFULLTrnsf":"93.00",
+    "PortCallCostFixed":6809,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.93542,21.38451 ]
+    },
+    "properties": {
+    "UNLocode":"USHNL",
+    "name":"Honolulu",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"448.00",
+    "CostPerFULLTrnsf":"105.00",
+    "PortCallCostFixed":129,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.3631,29.7631 ]
+    },
+    "properties": {
+    "UNLocode":"USHOU",
+    "name":"Houston",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US Gulf Coast",
+    "Draft":9.5,
+    "CostPerFULL":"520.00",
+    "CostPerFULLTrnsf":"648.00",
+    "PortCallCostFixed":5872,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.3125,22.6875 ]
+    },
+    "properties": {
+    "UNLocode":"CNHUA",
+    "name":"Huangpu",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"South China",
+    "Draft":9.5,
+    "CostPerFULL":"127.00",
+    "CostPerFULLTrnsf":"87.00",
+    "PortCallCostFixed":16218,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.65714,46.29897 ]
+    },
+    "properties": {
+    "UNLocode":"UAILK",
+    "name":"Ilyichevsk",
+    "Country":"Ukraine",
+    "Cabotage_Region":"Ukraine",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"503.00",
+    "CostPerFULLTrnsf":"442.00",
+    "PortCallCostFixed":13457,
+    "PortCallCostPerFFE":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 126.636,37.475 ]
+    },
+    "properties": {
+    "UNLocode":"KRICH",
+    "name":"Inchon",
+    "Country":"Korea. South",
+    "Cabotage_Region":"Korea. South",
+    "D_Region":"Korea",
+    "Draft":8,
+    "CostPerFULL":"80.00",
+    "CostPerFULLTrnsf":"64.00",
+    "PortCallCostFixed":3337,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.1562,-20.2031 ]
+    },
+    "properties": {
+    "UNLocode":"CLIQQ",
+    "name":"Iquique",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":8,
+    "CostPerFULL":"179.00",
+    "CostPerFULLTrnsf":"183.00",
+    "PortCallCostFixed":13213,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -43.702,-22.966 ]
+    },
+    "properties": {
+    "UNLocode":"BRIGI",
+    "name":"Itaguai (Sepetiba)",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":12.5,
+    "CostPerFULL":"456.00",
+    "CostPerFULLTrnsf":"178.00",
+    "PortCallCostFixed":5438,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -48.69,-26.52 ]
+    },
+    "properties": {
+    "UNLocode":"BRITJ",
+    "name":"Itajai",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"358.00",
+    "CostPerFULLTrnsf":"408.00",
+    "PortCallCostFixed":7970,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.15,38.4062 ]
+    },
+    "properties": {
+    "UNLocode":"TRIZM",
+    "name":"Izmir",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"196.00",
+    "CostPerFULLTrnsf":"143.00",
+    "PortCallCostFixed":506,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 29.665,40.798 ]
+    },
+    "properties": {
+    "UNLocode":"TRIZE",
+    "name":"Izmit Korfezi",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"162.00",
+    "CostPerFULLTrnsf":"110.00",
+    "PortCallCostFixed":150,
+    "PortCallCostPerFFE":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 106.8,-6.1667 ]
+    },
+    "properties": {
+    "UNLocode":"IDJKT",
+    "name":"Jakarta",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":8,
+    "CostPerFULL":"135.00",
+    "CostPerFULLTrnsf":"62.00",
+    "PortCallCostFixed":2999,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 73.02,18.56 ]
+    },
+    "properties": {
+    "UNLocode":"INNSA",
+    "name":"Jawaharlal Nehru",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":9.5,
+    "CostPerFULL":"200.00",
+    "CostPerFULLTrnsf":"186.00",
+    "PortCallCostFixed":6837,
+    "PortCallCostPerFFE":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 55.19,25.14 ]
+    },
+    "properties": {
+    "UNLocode":"AEJEA",
+    "name":"Jebel Ali",
+    "Country":"U. A. E.",
+    "Cabotage_Region":"U. A. E.",
+    "D_Region":"Dubai",
+    "Draft":13.5,
+    "CostPerFULL":"133.00",
+    "CostPerFULLTrnsf":"64.00",
+    "PortCallCostFixed":4164,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.2,21.48334 ]
+    },
+    "properties": {
+    "UNLocode":"SAJED",
+    "name":"Jeddah",
+    "Country":"Saudi Arabia",
+    "Cabotage_Region":"Saudi Arabia",
+    "D_Region":"Saudi Arabia",
+    "Draft":13.5,
+    "CostPerFULL":"102.00",
+    "CostPerFULLTrnsf":"66.00",
+    "PortCallCostFixed":3304,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 20.5,54.7031 ]
+    },
+    "properties": {
+    "UNLocode":"RUKGD",
+    "name":"Kaliningrad",
+    "Country":"Russia",
+    "Cabotage_Region":"Russia",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"233.00",
+    "CostPerFULLTrnsf":"107.00",
+    "PortCallCostFixed":1062,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 70.21666,23.0312 ]
+    },
+    "properties": {
+    "UNLocode":"INIXY",
+    "name":"Kandla",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":8,
+    "CostPerFULL":"187.00",
+    "CostPerFULLTrnsf":"76.00",
+    "PortCallCostFixed":7513,
+    "PortCallCostPerFFE":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.28333,22.633334 ]
+    },
+    "properties": {
+    "UNLocode":"TWKHH",
+    "name":"Kaohsiung",
+    "Country":"Taiwan",
+    "Cabotage_Region":"Taiwan",
+    "D_Region":"Singapore",
+    "Draft":12.5,
+    "CostPerFULL":"18.00",
+    "CostPerFULLTrnsf":"25.00",
+    "PortCallCostFixed":2231,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 67.05,24.866667 ]
+    },
+    "properties": {
+    "UNLocode":"PKKHI",
+    "name":"Karachi",
+    "Country":"Pakistan",
+    "Cabotage_Region":"Pakistan",
+    "D_Region":"Mumbai",
+    "Draft":9.5,
+    "CostPerFULL":"257.00",
+    "CostPerFULLTrnsf":"0.00",
+    "PortCallCostFixed":9262,
+    "PortCallCostPerFFE":49
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.7187,25.125 ]
+    },
+    "properties": {
+    "UNLocode":"TWKEL",
+    "name":"Keelung",
+    "Country":"Taiwan",
+    "Cabotage_Region":"Taiwan",
+    "D_Region":"Singapore",
+    "Draft":11,
+    "CostPerFULL":"127.00",
+    "CostPerFULLTrnsf":"83.00",
+    "PortCallCostFixed":3213,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.0875,54.2071 ]
+    },
+    "properties": {
+    "UNLocode":"WP082",
+    "name":"Kiel Kanal",
+    "Country":"Germany",
+    "Cabotage_Region":"Germany",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"290.00",
+    "CostPerFULLTrnsf":"138.00",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.17,34.68 ]
+    },
+    "properties": {
+    "UNLocode":"JPUKB",
+    "name":"Kobe",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":12.5,
+    "CostPerFULL":"107.00",
+    "CostPerFULLTrnsf":"63.00",
+    "PortCallCostFixed":13695,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 88.3593,22.5312 ]
+    },
+    "properties": {
+    "UNLocode":"INCCU",
+    "name":"Kolkata",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":8,
+    "CostPerFULL":"91.00",
+    "CostPerFULLTrnsf":"94.00",
+    "PortCallCostFixed":7114,
+    "PortCallCostPerFFE":54
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.739,45.54548 ]
+    },
+    "properties": {
+    "UNLocode":"SIKOP",
+    "name":"Koper",
+    "Country":"Slovenia",
+    "Cabotage_Region":"Slovenia",
+    "D_Region":"North Continent Europe",
+    "Draft":9.5,
+    "CostPerFULL":"184.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":3884,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.92,60.47 ]
+    },
+    "properties": {
+    "UNLocode":"FIKTK",
+    "name":"Kotka",
+    "Country":"Finland",
+    "Cabotage_Region":"Finland",
+    "D_Region":"North Continent Europe",
+    "Draft":9.5,
+    "CostPerFULL":"137.00",
+    "CostPerFULLTrnsf":"13.00",
+    "PortCallCostFixed":1182,
+    "PortCallCostPerFFE":52
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8,58.1562 ]
+    },
+    "properties": {
+    "UNLocode":"NOKRS",
+    "name":"Kristiansand",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"141.00",
+    "CostPerFULLTrnsf":"109.00",
+    "PortCallCostFixed":24076,
+    "PortCallCostPerFFE":180
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 127.58,34.97 ]
+    },
+    "properties": {
+    "UNLocode":"KRKAN",
+    "name":"Kwangyang",
+    "Country":"Korea. South",
+    "Cabotage_Region":"Korea. South",
+    "D_Region":"Korea",
+    "Draft":12.5,
+    "CostPerFULL":"49.00",
+    "CostPerFULLTrnsf":"48.00",
+    "PortCallCostFixed":2453,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -66.93333,10.6 ]
+    },
+    "properties": {
+    "UNLocode":"VELAG",
+    "name":"La Guaira",
+    "Country":"Venezuela",
+    "Cabotage_Region":"Venezuela",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"233.00",
+    "CostPerFULLTrnsf":"222.00",
+    "PortCallCostFixed":23772,
+    "PortCallCostPerFFE":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.19276,46.16774 ]
+    },
+    "properties": {
+    "UNLocode":"FRLPE",
+    "name":"La Pallice",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"NULL",
+    "CostPerFULLTrnsf":"NULL",
+    "PortCallCostFixed":23756,
+    "PortCallCostPerFFE":174
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.991433,13.382173 ]
+    },
+    "properties": {
+    "UNLocode":"THLCH",
+    "name":"Laem Chabang",
+    "Country":"Thailand",
+    "Cabotage_Region":"Thailand",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"95.00",
+    "CostPerFULLTrnsf":"1.00",
+    "PortCallCostFixed":899,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10,59.0625 ]
+    },
+    "properties": {
+    "UNLocode":"NOLAR",
+    "name":"Larvik",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":9.5,
+    "CostPerFULL":"268.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":24891,
+    "PortCallCostPerFFE":162
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -15.42,28.1 ]
+    },
+    "properties": {
+    "UNLocode":"ESLPA",
+    "name":"Las Palmas",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"403.00",
+    "CostPerFULLTrnsf":"342.00",
+    "PortCallCostFixed":120,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.79,35.52 ]
+    },
+    "properties": {
+    "UNLocode":"SYLTK",
+    "name":"Latakia",
+    "Country":"Syria",
+    "Cabotage_Region":"Syria",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"4.00",
+    "CostPerFULLTrnsf":"106.00",
+    "PortCallCostFixed":83129,
+    "PortCallCostPerFFE":119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 177.455,-17.61 ]
+    },
+    "properties": {
+    "UNLocode":"FJLTK",
+    "name":"Lautoka",
+    "Country":"Fiji Islands",
+    "Cabotage_Region":"Fiji Islands",
+    "D_Region":"Australia",
+    "Draft":9.5,
+    "CostPerFULL":"355.00",
+    "CostPerFULLTrnsf":"87.00",
+    "PortCallCostFixed":3029,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.2343,22.1875 ]
+    },
+    "properties": {
+    "UNLocode":"MXLZC",
+    "name":"Lazaro Cardenas",
+    "Country":"Mexico",
+    "Cabotage_Region":"Mexico",
+    "D_Region":"US West Coast",
+    "Draft":13.5,
+    "CostPerFULL":"156.00",
+    "CostPerFULLTrnsf":"141.00",
+    "PortCallCostFixed":6450,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.125,49.5 ]
+    },
+    "properties": {
+    "UNLocode":"FRLEH",
+    "name":"Le Havre",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":12.5,
+    "CostPerFULL":"382.00",
+    "CostPerFULLTrnsf":"148.00",
+    "PortCallCostFixed":9947,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.316,43.55 ]
+    },
+    "properties": {
+    "UNLocode":"ITLIV",
+    "name":"Leghorn",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":11,
+    "CostPerFULL":"262.00",
+    "CostPerFULLTrnsf":"203.00",
+    "PortCallCostFixed":-10300,
+    "PortCallCostPerFFE":25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.709055,41.192526 ]
+    },
+    "properties": {
+    "UNLocode":"PTLEI",
+    "name":"Leixoes",
+    "Country":"Portugal",
+    "Cabotage_Region":"Portugal",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"282.00",
+    "CostPerFULLTrnsf":"139.00",
+    "PortCallCostFixed":476,
+    "PortCallCostPerFFE":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 119.4375,34.7187 ]
+    },
+    "properties": {
+    "UNLocode":"CNLYG",
+    "name":"Lianyungang",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"North China",
+    "Draft":13.5,
+    "CostPerFULL":"116.00",
+    "CostPerFULLTrnsf":"60.00",
+    "PortCallCostFixed":7962,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.5465,0.394 ]
+    },
+    "properties": {
+    "UNLocode":"GALBV",
+    "name":"Libreville",
+    "Country":"Gabon",
+    "Cabotage_Region":"Gabon",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"382.00",
+    "CostPerFULLTrnsf":"461.00",
+    "PortCallCostFixed":32981,
+    "PortCallCostPerFFE":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 33.03333,34.66667 ]
+    },
+    "properties": {
+    "UNLocode":"CYLMS",
+    "name":"Limassol",
+    "Country":"Cyprus",
+    "Cabotage_Region":"Cyprus",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"221.00",
+    "CostPerFULLTrnsf":"144.00",
+    "PortCallCostFixed":1115,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.9531,-36.7031 ]
+    },
+    "properties": {
+    "UNLocode":"CLLQN",
+    "name":"Lirquen",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":13.5,
+    "CostPerFULL":"218.00",
+    "CostPerFULLTrnsf":"342.00",
+    "PortCallCostFixed":-19938,
+    "PortCallCostPerFFE":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -9.13,38.7167 ]
+    },
+    "properties": {
+    "UNLocode":"PTLIS",
+    "name":"Lisbon",
+    "Country":"Portugal",
+    "Cabotage_Region":"Portugal",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"277.00",
+    "CostPerFULLTrnsf":"277.00",
+    "PortCallCostFixed":2004,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.5468,-12.3437 ]
+    },
+    "properties": {
+    "UNLocode":"AOLOB",
+    "name":"Lobito",
+    "Country":"Angola",
+    "Cabotage_Region":"Angola",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"107.00",
+    "CostPerFULLTrnsf":"89.00",
+    "PortCallCostFixed":25906,
+    "PortCallCostPerFFE":59
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.2031,6.125 ]
+    },
+    "properties": {
+    "UNLocode":"TGLFW",
+    "name":"Lome",
+    "Country":"Togo",
+    "Cabotage_Region":"Togo",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"289.00",
+    "CostPerFULLTrnsf":"213.00",
+    "PortCallCostFixed":6812,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.194944,33.766448 ]
+    },
+    "properties": {
+    "UNLocode":"USLGB",
+    "name":"Long Beach",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US West Coast",
+    "Draft":12.5,
+    "CostPerFULL":"375.00",
+    "CostPerFULLTrnsf":"112.00",
+    "PortCallCostFixed":14449,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2428,34.0522 ]
+    },
+    "properties": {
+    "UNLocode":"USLAX",
+    "name":"Los Angeles",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US West Coast",
+    "Draft":13.5,
+    "CostPerFULL":"530.00",
+    "CostPerFULLTrnsf":"571.00",
+    "PortCallCostFixed":6876,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.242,-9.11 ]
+    },
+    "properties": {
+    "UNLocode":"AOLAD",
+    "name":"Luanda",
+    "Country":"Angola",
+    "Cabotage_Region":"Angola",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"209.00",
+    "CostPerFULLTrnsf":"221.00",
+    "PortCallCostFixed":23272,
+    "PortCallCostPerFFE":61
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 172.71667,-43.6 ]
+    },
+    "properties": {
+    "UNLocode":"NZLYT",
+    "name":"Lyttelton",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"344.00",
+    "CostPerFULLTrnsf":"127.00",
+    "PortCallCostFixed":466,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -4.42747,36.71815 ]
+    },
+    "properties": {
+    "UNLocode":"ESAGP",
+    "name":"Malaga",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"377.00",
+    "CostPerFULLTrnsf":"182.00",
+    "PortCallCostFixed":48,
+    "PortCallCostPerFFE":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -60,-3.06 ]
+    },
+    "properties": {
+    "UNLocode":"BRMAO",
+    "name":"Manaus",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"682.00",
+    "CostPerFULLTrnsf":"169.00",
+    "PortCallCostFixed":21803,
+    "PortCallCostPerFFE":31
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121,14.58334 ]
+    },
+    "properties": {
+    "UNLocode":"PHMNL",
+    "name":"Manila",
+    "Country":"Philippines",
+    "Cabotage_Region":"Philippines",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"151.00",
+    "CostPerFULLTrnsf":"1.00",
+    "PortCallCostFixed":3125,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.9,9.35 ]
+    },
+    "properties": {
+    "UNLocode":"PAMIT",
+    "name":"Manzanillo",
+    "Country":"Panama",
+    "Cabotage_Region":"Panama",
+    "D_Region":"US West Coast",
+    "Draft":11,
+    "CostPerFULL":"341.00",
+    "CostPerFULLTrnsf":"107.00",
+    "PortCallCostFixed":4998,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.55,35.85 ]
+    },
+    "properties": {
+    "UNLocode":"MTMAR",
+    "name":"Marsaxlokk",
+    "Country":"Malta",
+    "Cabotage_Region":"Malta",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"37.00",
+    "CostPerFULLTrnsf":"143.00",
+    "PortCallCostFixed":4988,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.469,-5.814 ]
+    },
+    "properties": {
+    "UNLocode":"CDMAT",
+    "name":"Matadi",
+    "Country":"Congo. Dem. Rep. of",
+    "Cabotage_Region":"Congo. Dem. Rep. of",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"361.00",
+    "CostPerFULLTrnsf":"235.00",
+    "PortCallCostFixed":23533,
+    "PortCallCostPerFFE":55
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 145,-37.833333 ]
+    },
+    "properties": {
+    "UNLocode":"AUMEL",
+    "name":"Melbourne",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"354.00",
+    "CostPerFULLTrnsf":"243.00",
+    "PortCallCostFixed":9188,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.944813,35.294129 ]
+    },
+    "properties": {
+    "UNLocode":"ESMLN",
+    "name":"Melilla",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"382.00",
+    "CostPerFULLTrnsf":"138.00",
+    "PortCallCostFixed":5618,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.63,36.8 ]
+    },
+    "properties": {
+    "UNLocode":"TRMER",
+    "name":"Mersin",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":11,
+    "CostPerFULL":"238.00",
+    "CostPerFULLTrnsf":"144.00",
+    "PortCallCostFixed":10519,
+    "PortCallCostPerFFE":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.20735,25.79371 ]
+    },
+    "properties": {
+    "UNLocode":"USMIA",
+    "name":"Miami",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US Gulf Coast",
+    "Draft":11,
+    "CostPerFULL":"400.00",
+    "CostPerFULLTrnsf":"411.00",
+    "PortCallCostFixed":6973,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -24.99,16.89 ]
+    },
+    "properties": {
+    "UNLocode":"CVMIN",
+    "name":"Mindelo",
+    "Country":"Cape Verde Island",
+    "Cabotage_Region":"Cape Verde Island",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"267.00",
+    "CostPerFULLTrnsf":"51.00",
+    "PortCallCostFixed":24361,
+    "PortCallCostPerFFE":56
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.0937,32.375 ]
+    },
+    "properties": {
+    "UNLocode":"LYMRA",
+    "name":"Misuratah",
+    "Country":"Libya",
+    "Cabotage_Region":"Libya",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"204.00",
+    "CostPerFULLTrnsf":"141.00",
+    "PortCallCostFixed":10966,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.0431,30.6942 ]
+    },
+    "properties": {
+    "UNLocode":"USMOB",
+    "name":"Mobile",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":11,
+    "CostPerFULL":"NULL",
+    "CostPerFULLTrnsf":"NULL",
+    "PortCallCostFixed":4617,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.6562,-4.0468 ]
+    },
+    "properties": {
+    "UNLocode":"KEMBA",
+    "name":"Mombasa",
+    "Country":"Kenya",
+    "Cabotage_Region":"Kenya",
+    "D_Region":"South Africa",
+    "Draft":8,
+    "CostPerFULL":"223.00",
+    "CostPerFULLTrnsf":"125.00",
+    "PortCallCostFixed":7956,
+    "PortCallCostPerFFE":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -10.7968,6.3125 ]
+    },
+    "properties": {
+    "UNLocode":"LRMLW",
+    "name":"Monrovia",
+    "Country":"Liberia",
+    "Cabotage_Region":"Liberia",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"184.00",
+    "CostPerFULLTrnsf":"97.00",
+    "PortCallCostFixed":32401,
+    "PortCallCostPerFFE":59
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -56.183333,-34.883333 ]
+    },
+    "properties": {
+    "UNLocode":"UYMVD",
+    "name":"Montevideo",
+    "Country":"Uruguay",
+    "Cabotage_Region":"Uruguay",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"239.00",
+    "CostPerFULLTrnsf":"154.00",
+    "PortCallCostFixed":2834,
+    "PortCallCostPerFFE":18
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -2.16266,47.32495 ]
+    },
+    "properties": {
+    "UNLocode":"FRMTX",
+    "name":"Montoir de Bretagne",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":11,
+    "CostPerFULL":"408.00",
+    "CostPerFULLTrnsf":"108.00",
+    "PortCallCostFixed":-3367,
+    "PortCallCostPerFFE":34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.5781,45.5 ]
+    },
+    "properties": {
+    "UNLocode":"CAMTR",
+    "name":"Montreal",
+    "Country":"Canada",
+    "Cabotage_Region":"Canada",
+    "D_Region":"Canada East Coast",
+    "Draft":12.5,
+    "CostPerFULL":"414.00",
+    "CostPerFULLTrnsf":"150.00",
+    "PortCallCostFixed":15605,
+    "PortCallCostPerFFE":38
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 58.5781,23.6093 ]
+    },
+    "properties": {
+    "UNLocode":"OMMCT",
+    "name":"Muscat. Oman",
+    "Country":"Oman",
+    "Cabotage_Region":"Oman",
+    "D_Region":"Saudi Arabia",
+    "Draft":9.5,
+    "CostPerFULL":"221.00",
+    "CostPerFULLTrnsf":"80.00",
+    "PortCallCostFixed":6368,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.078354,61.938442 ]
+    },
+    "properties": {
+    "UNLocode":"NOMAY",
+    "name":"Maaloey",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"541.00",
+    "CostPerFULLTrnsf":"96.00",
+    "PortCallCostFixed":23165,
+    "PortCallCostPerFFE":179
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 136.92,35.17 ]
+    },
+    "properties": {
+    "UNLocode":"JPNGO",
+    "name":"Nagoya",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":13.5,
+    "CostPerFULL":"134.00",
+    "CostPerFULLTrnsf":"63.00",
+    "PortCallCostFixed":17860,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.152578,-15.153104 ]
+    },
+    "properties": {
+    "UNLocode":"AOMSZ",
+    "name":"Namibe",
+    "Country":"Angola",
+    "Cabotage_Region":"Angola",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"506.00",
+    "CostPerFULLTrnsf":"83.00",
+    "PortCallCostFixed":34075,
+    "PortCallCostPerFFE":56
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.572,22.76 ]
+    },
+    "properties": {
+    "UNLocode":"CNNSA",
+    "name":"Nansha New Port",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"South China",
+    "Draft":12.5,
+    "CostPerFULL":"135.00",
+    "CostPerFULLTrnsf":"91.00",
+    "PortCallCostFixed":3573,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 176.91666,-39.483333 ]
+    },
+    "properties": {
+    "UNLocode":"NZNPE",
+    "name":"Napier",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"217.00",
+    "CostPerFULLTrnsf":"175.00",
+    "PortCallCostFixed":-10436,
+    "PortCallCostPerFFE":17
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 173.2812,-41.2812 ]
+    },
+    "properties": {
+    "UNLocode":"NZNSN",
+    "name":"Nelson",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"314.00",
+    "CostPerFULLTrnsf":"85.00",
+    "PortCallCostFixed":1182,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.075,29.9544 ]
+    },
+    "properties": {
+    "UNLocode":"USMSY",
+    "name":"New Orleans",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US Gulf Coast",
+    "Draft":12.5,
+    "CostPerFULL":"461.00",
+    "CostPerFULLTrnsf":"266.00",
+    "PortCallCostFixed":6380,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.0781,-39.0625 ]
+    },
+    "properties": {
+    "UNLocode":"NZNPL",
+    "name":"New Plymouth",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"193.00",
+    "CostPerFULLTrnsf":"82.00",
+    "PortCallCostFixed":5566,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.18329,40.73812 ]
+    },
+    "properties": {
+    "UNLocode":"USEWR",
+    "name":"Newark",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":12.5,
+    "CostPerFULL":"698.00",
+    "CostPerFULLTrnsf":"860.00",
+    "PortCallCostFixed":18260,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.5468,29.875 ]
+    },
+    "properties": {
+    "UNLocode":"CNNGB",
+    "name":"Ningbo",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"Central China",
+    "Draft":13.5,
+    "CostPerFULL":"118.00",
+    "CostPerFULLTrnsf":"36.00",
+    "PortCallCostFixed":7275,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.28163,36.85373 ]
+    },
+    "properties": {
+    "UNLocode":"USORF",
+    "name":"Norfolk",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":13.5,
+    "CostPerFULL":"415.00",
+    "CostPerFULLTrnsf":"388.00",
+    "PortCallCostFixed":4765,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.99029,32.87161 ]
+    },
+    "properties": {
+    "UNLocode":"USNTS",
+    "name":"North Charleston",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":9.5,
+    "CostPerFULL":"0.00",
+    "CostPerFULLTrnsf":"112.00",
+    "PortCallCostFixed":18268,
+    "PortCallCostPerFFE":93
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -17.0625,20.8906 ]
+    },
+    "properties": {
+    "UNLocode":"MRNDB",
+    "name":"Nouadhibou",
+    "Country":"Mauritania",
+    "Cabotage_Region":"Mauritania",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"424.00",
+    "CostPerFULLTrnsf":"229.00",
+    "PortCallCostFixed":22978,
+    "PortCallCostPerFFE":56
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -15.9375,18.0937 ]
+    },
+    "properties": {
+    "UNLocode":"MRNKC",
+    "name":"Nouakchott",
+    "Country":"Mauritania",
+    "Cabotage_Region":"Mauritania",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"382.00",
+    "CostPerFULLTrnsf":"0.00",
+    "PortCallCostFixed":32709,
+    "PortCallCostPerFFE":53
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 166.440087,-22.286509 ]
+    },
+    "properties": {
+    "UNLocode":"NCNOU",
+    "name":"Noumea",
+    "Country":"New Caledonia",
+    "Cabotage_Region":"New Caledonia",
+    "D_Region":"Australia",
+    "Draft":8,
+    "CostPerFULL":"169.00",
+    "CostPerFULLTrnsf":"65.00",
+    "PortCallCostFixed":-83718,
+    "PortCallCostPerFFE":198
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.26795,37.81105 ]
+    },
+    "properties": {
+    "UNLocode":"USOAK",
+    "name":"Oakland",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US West Coast",
+    "Draft":12.5,
+    "CostPerFULL":"475.00",
+    "CostPerFULLTrnsf":"483.00",
+    "PortCallCostFixed":6940,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.7187,46.4531 ]
+    },
+    "properties": {
+    "UNLocode":"UAODS",
+    "name":"Odessa",
+    "Country":"Ukraine",
+    "Cabotage_Region":"Ukraine",
+    "D_Region":"West Med",
+    "Draft":11,
+    "CostPerFULL":"510.00",
+    "CostPerFULLTrnsf":"109.00",
+    "PortCallCostFixed":76704,
+    "PortCallCostPerFFE":91
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.1406,4.7031 ]
+    },
+    "properties": {
+    "UNLocode":"NGONN",
+    "name":"Onne Seaport",
+    "Country":"Nigeria",
+    "Cabotage_Region":"Nigeria",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"356.00",
+    "CostPerFULLTrnsf":"226.00",
+    "PortCallCostFixed":23776,
+    "PortCallCostPerFFE":58
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.625,35.6875 ]
+    },
+    "properties": {
+    "UNLocode":"DZORN",
+    "name":"Oran",
+    "Country":"Algeria",
+    "Cabotage_Region":"Algeria",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"106.00",
+    "CostPerFULLTrnsf":"137.00",
+    "PortCallCostFixed":1231,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 135.5,34.67 ]
+    },
+    "properties": {
+    "UNLocode":"JPOSA",
+    "name":"Osaka",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":11,
+    "CostPerFULL":"160.00",
+    "CostPerFULLTrnsf":"86.00",
+    "PortCallCostFixed":12566,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.1093,-5.0937 ]
+    },
+    "properties": {
+    "UNLocode":"PEPAI",
+    "name":"Paita",
+    "Country":"Peru",
+    "Cabotage_Region":"Peru",
+    "D_Region":"South America West Coast",
+    "Draft":8,
+    "CostPerFULL":"197.00",
+    "CostPerFULLTrnsf":"181.00",
+    "PortCallCostFixed":3561,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -149.57,-17.535 ]
+    },
+    "properties": {
+    "UNLocode":"PFPPT",
+    "name":"Papeete",
+    "Country":"French Polynesia",
+    "Cabotage_Region":"French Polynesia",
+    "D_Region":"Australia",
+    "Draft":9.5,
+    "CostPerFULL":"9.00",
+    "CostPerFULLTrnsf":"66.00",
+    "PortCallCostFixed":17488,
+    "PortCallCostPerFFE":132
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -48.51,-25.54 ]
+    },
+    "properties": {
+    "UNLocode":"BRPNG",
+    "name":"Paranagua",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":9.5,
+    "CostPerFULL":"481.00",
+    "CostPerFULLTrnsf":"284.00",
+    "PortCallCostFixed":8549,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -38.869,-3.53 ]
+    },
+    "properties": {
+    "UNLocode":"BRPEC",
+    "name":"Pecem",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":13.5,
+    "CostPerFULL":"592.00",
+    "CostPerFULLTrnsf":"410.00",
+    "PortCallCostFixed":9678,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.28,5.4062 ]
+    },
+    "properties": {
+    "UNLocode":"MYPEN",
+    "name":"Penang",
+    "Country":"Malaysia",
+    "Cabotage_Region":"Malaysia",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"134.00",
+    "CostPerFULLTrnsf":"60.00",
+    "PortCallCostFixed":3213,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.1642,39.9522 ]
+    },
+    "properties": {
+    "UNLocode":"USPHL",
+    "name":"Philadelphia",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":9.5,
+    "CostPerFULL":"501.00",
+    "CostPerFULLTrnsf":"82.00",
+    "PortCallCostFixed":12015,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 71.583081,20.974917 ]
+    },
+    "properties": {
+    "UNLocode":"INPAV",
+    "name":"Pipavav",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":12.5,
+    "CostPerFULL":"208.00",
+    "CostPerFULLTrnsf":"9.00",
+    "PortCallCostFixed":4372,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.64113,37.95134 ]
+    },
+    "properties": {
+    "UNLocode":"GRPIR",
+    "name":"Piraeus",
+    "Country":"Greece",
+    "Cabotage_Region":"Greece",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"292.00",
+    "CostPerFULLTrnsf":"214.00",
+    "PortCallCostFixed":4368,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -61.482,10.405 ]
+    },
+    "properties": {
+    "UNLocode":"TTPTS",
+    "name":"Point Lisas",
+    "Country":"Trinidad & Tobago",
+    "Cabotage_Region":"Trinidad & Tobago",
+    "D_Region":"US Gulf Coast",
+    "Draft":11,
+    "CostPerFULL":"220.00",
+    "CostPerFULLTrnsf":"103.00",
+    "PortCallCostFixed":-683,
+    "PortCallCostPerFFE":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -61.51667,16.23333 ]
+    },
+    "properties": {
+    "UNLocode":"GPPTP",
+    "name":"Pointe a Pitre",
+    "Country":"Guadeloupe",
+    "Cabotage_Region":"Guadeloupe",
+    "D_Region":"US Gulf Coast",
+    "Draft":9.5,
+    "CostPerFULL":"537.00",
+    "CostPerFULLTrnsf":"551.00",
+    "PortCallCostFixed":6432,
+    "PortCallCostPerFFE":35
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15.7968,1.5468 ]
+    },
+    "properties": {
+    "UNLocode":"CGPNR",
+    "name":"Pointe Noire",
+    "Country":"Congo",
+    "Cabotage_Region":"Congo",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"112.00",
+    "CostPerFULLTrnsf":"126.00",
+    "PortCallCostFixed":916,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 170.61667,-45.81667 ]
+    },
+    "properties": {
+    "UNLocode":"NZPOE",
+    "name":"Port Chalmers",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"295.00",
+    "CostPerFULLTrnsf":"141.00",
+    "PortCallCostFixed":786,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.5781,-33.9531 ]
+    },
+    "properties": {
+    "UNLocode":"ZAPLZ",
+    "name":"Port Elizabeth",
+    "Country":"South Africa",
+    "Cabotage_Region":"South Africa",
+    "D_Region":"South Africa",
+    "Draft":9.5,
+    "CostPerFULL":"245.00",
+    "CostPerFULLTrnsf":"159.00",
+    "PortCallCostFixed":6863,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.774,-0.719 ]
+    },
+    "properties": {
+    "UNLocode":"GAPOG",
+    "name":"Port Gentil",
+    "Country":"Gabon",
+    "Cabotage_Region":"Gabon",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"255.00",
+    "CostPerFULLTrnsf":"221.00",
+    "PortCallCostFixed":24613,
+    "PortCallCostPerFFE":59
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 101.446,3.042 ]
+    },
+    "properties": {
+    "UNLocode":"MYPKG",
+    "name":"Port Klang",
+    "Country":"Malaysia",
+    "Cabotage_Region":"Malaysia",
+    "D_Region":"Singapore",
+    "Draft":13.5,
+    "CostPerFULL":"50.00",
+    "CostPerFULLTrnsf":"34.00",
+    "PortCallCostFixed":2549,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 57.5,-20.1562 ]
+    },
+    "properties": {
+    "UNLocode":"MUPLU",
+    "name":"Port Louis",
+    "Country":"Mauritius",
+    "Cabotage_Region":"Mauritius",
+    "D_Region":"South Africa",
+    "Draft":12.5,
+    "CostPerFULL":"324.00",
+    "CostPerFULLTrnsf":"169.00",
+    "PortCallCostFixed":5999,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 67.33334,24.767667 ]
+    },
+    "properties": {
+    "UNLocode":"PKBQM",
+    "name":"Port Qasim",
+    "Country":"Pakistan",
+    "Cabotage_Region":"Pakistan",
+    "D_Region":"Mumbai",
+    "Draft":9.5,
+    "CostPerFULL":"102.00",
+    "CostPerFULLTrnsf":"60.00",
+    "PortCallCostFixed":7581,
+    "PortCallCostPerFFE":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.35722,31.21583 ]
+    },
+    "properties": {
+    "UNLocode":"EGPSD",
+    "name":"Port Said",
+    "Country":"Egypt",
+    "Cabotage_Region":"Egypt",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"37.00",
+    "CostPerFULLTrnsf":"73.00",
+    "PortCallCostFixed":4891,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -5.4847,35.885 ]
+    },
+    "properties": {
+    "UNLocode":"MAPTM",
+    "name":"Tangier",
+    "Country":"Morocco",
+    "Cabotage_Region":"Morocco",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"138.00",
+    "CostPerFULLTrnsf":"187.00",
+    "PortCallCostFixed":1675,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 41.67701,42.14743 ]
+    },
+    "properties": {
+    "UNLocode":"GEPTI",
+    "name":"Poti",
+    "Country":"Georgia",
+    "Cabotage_Region":"Georgia",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"221.00",
+    "CostPerFULLTrnsf":"138.00",
+    "PortCallCostFixed":10091,
+    "PortCallCostPerFFE":22
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -23.524,14.916666 ]
+    },
+    "properties": {
+    "UNLocode":"CVRAI",
+    "name":"Praia",
+    "Country":"Cape Verde Island",
+    "Cabotage_Region":"Cape Verde Island",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"259.00",
+    "CostPerFULLTrnsf":"225.00",
+    "PortCallCostFixed":26084,
+    "PortCallCostPerFFE":43
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -89.667,21.29 ]
+    },
+    "properties": {
+    "UNLocode":"MXPGO",
+    "name":"Progreso",
+    "Country":"Mexico",
+    "Cabotage_Region":"Mexico",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"244.00",
+    "CostPerFULLTrnsf":"151.00",
+    "PortCallCostFixed":703,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.01667,10.46667 ]
+    },
+    "properties": {
+    "UNLocode":"VEPBL",
+    "name":"Puerto Cabello",
+    "Country":"Venezuela",
+    "Cabotage_Region":"Venezuela",
+    "D_Region":"Brazil",
+    "Draft":9.5,
+    "CostPerFULL":"183.00",
+    "CostPerFULLTrnsf":"186.00",
+    "PortCallCostFixed":4728,
+    "PortCallCostPerFFE":28
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.7031,9.9375 ]
+    },
+    "properties": {
+    "UNLocode":"CRCAL",
+    "name":"Puerto Caldera",
+    "Country":"Costa Rica",
+    "Cabotage_Region":"Costa Rica",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"205.00",
+    "CostPerFULLTrnsf":"143.00",
+    "PortCallCostFixed":586,
+    "PortCallCostPerFFE":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.91667,15.83333 ]
+    },
+    "properties": {
+    "UNLocode":"HNPCR",
+    "name":"Puerto Cortes",
+    "Country":"Honduras",
+    "Cabotage_Region":"Honduras",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"193.00",
+    "CostPerFULLTrnsf":"174.00",
+    "PortCallCostFixed":949,
+    "PortCallCostPerFFE":23
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -65.8906,-47.75 ]
+    },
+    "properties": {
+    "UNLocode":"ARPUD",
+    "name":"Puerto Deseado",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"209.00",
+    "CostPerFULLTrnsf":"251.00",
+    "PortCallCostFixed":17449,
+    "PortCallCostPerFFE":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.04,9.98 ]
+    },
+    "properties": {
+    "UNLocode":"CRLIO",
+    "name":"Puerto Limon",
+    "Country":"Costa Rica",
+    "Cabotage_Region":"Costa Rica",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"191.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":7364,
+    "PortCallCostPerFFE":27
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -65.0468,-42.7656 ]
+    },
+    "properties": {
+    "UNLocode":"ARPMY",
+    "name":"Puerto Madryn",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":11,
+    "CostPerFULL":"192.00",
+    "CostPerFULLTrnsf":"247.00",
+    "PortCallCostFixed":23707,
+    "PortCallCostPerFFE":32
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.089,9.99 ]
+    },
+    "properties": {
+    "UNLocode":"CRMOB",
+    "name":"Puerto Limon-Moin",
+    "Country":"Costa Rica",
+    "Cabotage_Region":"Costa Rica",
+    "D_Region":"US Gulf Coast",
+    "Draft":9.5,
+    "CostPerFULL":"72.00",
+    "CostPerFULLTrnsf":"107.00",
+    "PortCallCostFixed":8745,
+    "PortCallCostPerFFE":35
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.8125,15 ]
+    },
+    "properties": {
+    "UNLocode":"GTPRQ",
+    "name":"Puerto Quetzal",
+    "Country":"Guatemala",
+    "Cabotage_Region":"Guatemala",
+    "D_Region":"US West Coast",
+    "Draft":9.5,
+    "CostPerFULL":"280.00",
+    "CostPerFULLTrnsf":"726.00",
+    "PortCallCostFixed":6563,
+    "PortCallCostPerFFE":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 120.35,36.08333 ]
+    },
+    "properties": {
+    "UNLocode":"CNTAO",
+    "name":"Qingdao",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"North China",
+    "Draft":12.5,
+    "CostPerFULL":"124.00",
+    "CostPerFULLTrnsf":"25.00",
+    "PortCallCostFixed":6813,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 21.5,61.133333 ]
+    },
+    "properties": {
+    "UNLocode":"FIRAU",
+    "name":"Rauma",
+    "Country":"Finland",
+    "Cabotage_Region":"Finland",
+    "D_Region":"North Continent Europe",
+    "Draft":9.5,
+    "CostPerFULL":"196.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":18552,
+    "PortCallCostPerFFE":127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -52.083333,-32.03333 ]
+    },
+    "properties": {
+    "UNLocode":"BRRIG",
+    "name":"Rio Grande",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":9.5,
+    "CostPerFULL":"492.00",
+    "CostPerFULLTrnsf":"311.00",
+    "PortCallCostFixed":10002,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 4.5,51.91667 ]
+    },
+    "properties": {
+    "UNLocode":"NLRTM",
+    "name":"Rotterdam",
+    "Country":"Netherlands",
+    "Cabotage_Region":"Netherlands",
+    "D_Region":"North Continent Europe",
+    "Draft":13.5,
+    "CostPerFULL":"195.00",
+    "CostPerFULLTrnsf":"148.00",
+    "PortCallCostFixed":19187,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.0781,49.4218 ]
+    },
+    "properties": {
+    "UNLocode":"FRURO",
+    "name":"Rouen",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"205.00",
+    "CostPerFULLTrnsf":"133.00",
+    "PortCallCostFixed":22589,
+    "PortCallCostPerFFE":186
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 54.091,17.014 ]
+    },
+    "properties": {
+    "UNLocode":"OMSLL",
+    "name":"Salalah",
+    "Country":"Oman",
+    "Cabotage_Region":"Oman",
+    "D_Region":"Saudi Arabia",
+    "Draft":13.5,
+    "CostPerFULL":"161.00",
+    "CostPerFULLTrnsf":"71.00",
+    "PortCallCostFixed":3850,
+    "PortCallCostPerFFE":2
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 15,40.41 ]
+    },
+    "properties": {
+    "UNLocode":"ITSAL",
+    "name":"Salerno",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"213.00",
+    "CostPerFULLTrnsf":"16.00",
+    "PortCallCostFixed":16294,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.63,-33.58 ]
+    },
+    "properties": {
+    "UNLocode":"CLSAI",
+    "name":"San Antonio",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":13.5,
+    "CostPerFULL":"202.00",
+    "CostPerFULLTrnsf":"167.00",
+    "PortCallCostFixed":15564,
+    "PortCallCostPerFFE":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -66.07,18.454 ]
+    },
+    "properties": {
+    "UNLocode":"PRSJU",
+    "name":"San Juan",
+    "Country":"Puerto Rico",
+    "Cabotage_Region":"Puerto Rico",
+    "D_Region":"US Gulf Coast",
+    "Draft":9.5,
+    "CostPerFULL":"252.00",
+    "CostPerFULLTrnsf":"295.00",
+    "PortCallCostFixed":9299,
+    "PortCallCostPerFFE":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -6.616666,4.733333 ]
+    },
+    "properties": {
+    "UNLocode":"CISPY",
+    "name":"San Pedro",
+    "Country":"Ivory Coast",
+    "Cabotage_Region":"Ivory Coast",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"61.00",
+    "CostPerFULLTrnsf":"160.00",
+    "PortCallCostFixed":2567,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.617721,15.693433 ]
+    },
+    "properties": {
+    "UNLocode":"GTSTC",
+    "name":"Santo Tomas de Castilla",
+    "Country":"Guatemala",
+    "Cabotage_Region":"Guatemala",
+    "D_Region":"US West Coast",
+    "Draft":8,
+    "CostPerFULL":"303.00",
+    "CostPerFULLTrnsf":"189.00",
+    "PortCallCostFixed":7685,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -46.33,-23.95 ]
+    },
+    "properties": {
+    "UNLocode":"BRSSZ",
+    "name":"Santos",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":11,
+    "CostPerFULL":"349.00",
+    "CostPerFULLTrnsf":"257.00",
+    "PortCallCostFixed":7547,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -48.62,-26.25 ]
+    },
+    "properties": {
+    "UNLocode":"BRSFS",
+    "name":"Sao Francisco do Sul",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"316.00",
+    "CostPerFULLTrnsf":"170.00",
+    "PortCallCostFixed":22079,
+    "PortCallCostPerFFE":25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.1,32.0833 ]
+    },
+    "properties": {
+    "UNLocode":"USSAV",
+    "name":"Savannah",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":11,
+    "CostPerFULL":"331.00",
+    "CostPerFULLTrnsf":"338.00",
+    "PortCallCostFixed":9365,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.351973,47.597244 ]
+    },
+    "properties": {
+    "UNLocode":"USSEA",
+    "name":"Seattle",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US West Coast",
+    "Draft":13.5,
+    "CostPerFULL":"547.00",
+    "CostPerFULLTrnsf":"148.00",
+    "PortCallCostFixed":12276,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 110.423953,-6.974997 ]
+    },
+    "properties": {
+    "UNLocode":"IDSRG",
+    "name":"Semarang",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"134.00",
+    "CostPerFULLTrnsf":"81.00",
+    "PortCallCostFixed":2926,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.745077,34.72024 ]
+    },
+    "properties": {
+    "UNLocode":"TNSFA",
+    "name":"Sfax",
+    "Country":"Tunisia",
+    "Cabotage_Region":"Tunisia",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"23.00",
+    "CostPerFULLTrnsf":"103.00",
+    "PortCallCostFixed":10267,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 121.4531,31.2187 ]
+    },
+    "properties": {
+    "UNLocode":"CNSHA",
+    "name":"Shanghai",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"Central China",
+    "Draft":13.5,
+    "CostPerFULL":"150.00",
+    "CostPerFULLTrnsf":"62.00",
+    "PortCallCostFixed":6497,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 55.408,25.375 ]
+    },
+    "properties": {
+    "UNLocode":"AESHJ",
+    "name":"Sharjah",
+    "Country":"U. A. E.",
+    "Cabotage_Region":"U. A. E.",
+    "D_Region":"Dubai",
+    "Draft":8,
+    "CostPerFULL":"121.00",
+    "CostPerFULLTrnsf":"58.00",
+    "PortCallCostFixed":1466,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 113.875,22.5 ]
+    },
+    "properties": {
+    "UNLocode":"CNSHK",
+    "name":"Shekou",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"South China",
+    "Draft":11,
+    "CostPerFULL":"213.00",
+    "CostPerFULLTrnsf":"79.00",
+    "PortCallCostFixed":11193,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 138.48,35.02 ]
+    },
+    "properties": {
+    "UNLocode":"JPSMZ",
+    "name":"Shimizu",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":13.5,
+    "CostPerFULL":"197.00",
+    "CostPerFULLTrnsf":"82.00",
+    "PortCallCostFixed":18160,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 48.125,29.0468 ]
+    },
+    "properties": {
+    "UNLocode":"KWSAA",
+    "name":"Shuaiba",
+    "Country":"Kuwait",
+    "Cabotage_Region":"Kuwait",
+    "D_Region":"Dubai",
+    "Draft":11,
+    "CostPerFULL":"385.00",
+    "CostPerFULLTrnsf":"55.00",
+    "PortCallCostFixed":4046,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 47.9062,29.3437 ]
+    },
+    "properties": {
+    "UNLocode":"KWSWK",
+    "name":"Ash Shuwaykh",
+    "Country":"Kuwait",
+    "Cabotage_Region":"Kuwait",
+    "D_Region":"Dubai",
+    "Draft":8,
+    "CostPerFULL":"262.00",
+    "CostPerFULLTrnsf":"0.00",
+    "PortCallCostFixed":4464,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.53,10.63333 ]
+    },
+    "properties": {
+    "UNLocode":"KHKOS",
+    "name":"Sihanoukville",
+    "Country":"Cambodia",
+    "Cabotage_Region":"Cambodia",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"85.00",
+    "CostPerFULLTrnsf":"63.00",
+    "PortCallCostFixed":3156,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.8437,1.2812 ]
+    },
+    "properties": {
+    "UNLocode":"SGSIN",
+    "name":"Singapore",
+    "Country":"Singapore",
+    "Cabotage_Region":"Singapore",
+    "D_Region":"Singapore",
+    "Draft":13.5,
+    "CostPerFULL":"130.00",
+    "CostPerFULLTrnsf":"85.00",
+    "PortCallCostFixed":3268,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 23.60026,38.01361 ]
+    },
+    "properties": {
+    "UNLocode":"GRSKA",
+    "name":"Skaramanga",
+    "Country":"Greece",
+    "Cabotage_Region":"Greece",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"0.00",
+    "CostPerFULLTrnsf":"101.00",
+    "PortCallCostFixed":92319,
+    "PortCallCostPerFFE":88
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.8906,36.8593 ]
+    },
+    "properties": {
+    "UNLocode":"DZSKI",
+    "name":"Skikda",
+    "Country":"Algeria",
+    "Cabotage_Region":"Algeria",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"161.00",
+    "CostPerFULLTrnsf":"144.00",
+    "PortCallCostFixed":1183,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 56.74,24.3593 ]
+    },
+    "properties": {
+    "UNLocode":"OMSOH",
+    "name":"Sohar",
+    "Country":"Oman",
+    "Cabotage_Region":"Oman",
+    "D_Region":"Saudi Arabia",
+    "Draft":13.5,
+    "CostPerFULL":"193.00",
+    "CostPerFULLTrnsf":"77.00",
+    "PortCallCostFixed":2100,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 100.558519,7.215083 ]
+    },
+    "properties": {
+    "UNLocode":"THSGZ",
+    "name":"Songkhla",
+    "Country":"Thailand",
+    "Cabotage_Region":"Thailand",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"83.00",
+    "CostPerFULLTrnsf":"65.00",
+    "PortCallCostFixed":3293,
+    "PortCallCostPerFFE":10
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.40029,50.89926 ]
+    },
+    "properties": {
+    "UNLocode":"GBSOU",
+    "name":"Southampton",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":11,
+    "CostPerFULL":"243.00",
+    "CostPerFULLTrnsf":"67.00",
+    "PortCallCostFixed":38789,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 12.3593,-6.125 ]
+    },
+    "properties": {
+    "UNLocode":"AOSZA",
+    "name":"Soyo",
+    "Country":"Angola",
+    "Cabotage_Region":"Angola",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"357.00",
+    "CostPerFULLTrnsf":"232.00",
+    "PortCallCostFixed":35384,
+    "PortCallCostPerFFE":58
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 30.27,59.9 ]
+    },
+    "properties": {
+    "UNLocode":"RULED",
+    "name":"St Petersburg",
+    "Country":"Russia",
+    "Cabotage_Region":"Russia",
+    "D_Region":"North Continent Europe",
+    "Draft":11,
+    "CostPerFULL":"270.00",
+    "CostPerFULLTrnsf":"2.00",
+    "PortCallCostFixed":722,
+    "PortCallCostPerFFE":37
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 5.66,58.96667 ]
+    },
+    "properties": {
+    "UNLocode":"NOSVG",
+    "name":"Stavanger",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":12.5,
+    "CostPerFULL":"315.00",
+    "CostPerFULLTrnsf":"46.00",
+    "PortCallCostFixed":1227,
+    "PortCallCostPerFFE":13
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 32.37,31.15 ]
+    },
+    "properties": {
+    "UNLocode":"EGSUZ",
+    "name":"Suez Canal",
+    "Country":"Egypt",
+    "Cabotage_Region":"Egypt",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"281.00",
+    "CostPerFULLTrnsf":"101.00",
+    "PortCallCostFixed":120902,
+    "PortCallCostPerFFE":122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 112.75,-7.25 ]
+    },
+    "properties": {
+    "UNLocode":"IDSUB",
+    "name":"Surabaya",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":9.5,
+    "CostPerFULL":"185.00",
+    "CostPerFULLTrnsf":"3.00",
+    "PortCallCostFixed":884,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 178.464,-18.124 ]
+    },
+    "properties": {
+    "UNLocode":"FJSUV",
+    "name":"Suva",
+    "Country":"Fiji Islands",
+    "Cabotage_Region":"Fiji Islands",
+    "D_Region":"Australia",
+    "Draft":9.5,
+    "CostPerFULL":"222.00",
+    "CostPerFULLTrnsf":"210.00",
+    "PortCallCostFixed":423,
+    "PortCallCostPerFFE":20
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 151.2,-33.888888 ]
+    },
+    "properties": {
+    "UNLocode":"AUSYD",
+    "name":"Sydney",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"453.00",
+    "CostPerFULLTrnsf":"212.00",
+    "PortCallCostFixed":7141,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.75,4.88333 ]
+    },
+    "properties": {
+    "UNLocode":"GHTKD",
+    "name":"Takoradi",
+    "Country":"Ghana",
+    "Cabotage_Region":"Ghana",
+    "D_Region":"West Africa",
+    "Draft":8,
+    "CostPerFULL":"266.00",
+    "CostPerFULLTrnsf":"115.00",
+    "PortCallCostFixed":1400,
+    "PortCallCostPerFFE":5
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 103.593,1.405 ]
+    },
+    "properties": {
+    "UNLocode":"MYTPP",
+    "name":"Tanjung Pelepas",
+    "Country":"Malaysia",
+    "Cabotage_Region":"Malaysia",
+    "D_Region":"Singapore",
+    "Draft":13.5,
+    "CostPerFULL":"115.00",
+    "CostPerFULLTrnsf":"59.00",
+    "PortCallCostFixed":1992,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 1.24976,41.11713 ]
+    },
+    "properties": {
+    "UNLocode":"ESTAR",
+    "name":"Tarragona",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"207.00",
+    "CostPerFULLTrnsf":"146.00",
+    "PortCallCostFixed":740,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 176.16667,-37.68333 ]
+    },
+    "properties": {
+    "UNLocode":"NZTRG",
+    "name":"Tauranga",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"276.00",
+    "CostPerFULLTrnsf":"125.00",
+    "PortCallCostFixed":1964,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.008,5.633 ]
+    },
+    "properties": {
+    "UNLocode":"GHTEM",
+    "name":"Tema",
+    "Country":"Ghana",
+    "Cabotage_Region":"Ghana",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"277.00",
+    "CostPerFULLTrnsf":"217.00",
+    "PortCallCostFixed":4428,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -16.25,28.46 ]
+    },
+    "properties": {
+    "UNLocode":"ESSCT",
+    "name":"Santa Cruz De Tenerife",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"362.00",
+    "CostPerFULLTrnsf":"110.00",
+    "PortCallCostFixed":118592,
+    "PortCallCostPerFFE":85
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.70808,51.45573 ]
+    },
+    "properties": {
+    "UNLocode":"GBTHP",
+    "name":"Thames Haven",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":11,
+    "CostPerFULL":"137.00",
+    "CostPerFULLTrnsf":"134.00",
+    "PortCallCostFixed":29041,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.93274,40.64098 ]
+    },
+    "properties": {
+    "UNLocode":"GRSKG",
+    "name":"Thessaloniki",
+    "Country":"Greece",
+    "Cabotage_Region":"Greece",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"232.00",
+    "CostPerFULLTrnsf":"147.00",
+    "PortCallCostFixed":111536,
+    "PortCallCostPerFFE":112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 0.36583,51.46339 ]
+    },
+    "properties": {
+    "UNLocode":"GBTIL",
+    "name":"Tilbury",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":8,
+    "CostPerFULL":"225.00",
+    "CostPerFULLTrnsf":"321.00",
+    "PortCallCostFixed":21497,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 171.25,-44.3906 ]
+    },
+    "properties": {
+    "UNLocode":"NZTIU",
+    "name":"Timaru",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"286.00",
+    "CostPerFULLTrnsf":"85.00",
+    "PortCallCostFixed":18283,
+    "PortCallCostPerFFE":141
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.3564,6.4339 ]
+    },
+    "properties": {
+    "UNLocode":"NGTIN",
+    "name":"Tin Can Island Port",
+    "Country":"Nigeria",
+    "Cabotage_Region":"Nigeria",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"252.00",
+    "CostPerFULLTrnsf":"222.00",
+    "PortCallCostFixed":32006,
+    "PortCallCostPerFFE":8
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 49.375,-18.1562 ]
+    },
+    "properties": {
+    "UNLocode":"MGTMM",
+    "name":"Toamasina",
+    "Country":"Madagascar",
+    "Cabotage_Region":"Madagascar",
+    "D_Region":"South Africa",
+    "Draft":9.5,
+    "CostPerFULL":"15.00",
+    "CostPerFULLTrnsf":"174.00",
+    "PortCallCostFixed":3874,
+    "PortCallCostPerFFE":21
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.7656,35.6875 ]
+    },
+    "properties": {
+    "UNLocode":"JPTYO",
+    "name":"Tokyo",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":13.5,
+    "CostPerFULL":"275.00",
+    "CostPerFULLTrnsf":"87.00",
+    "PortCallCostFixed":2867,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 142.345,-9.562 ]
+    },
+    "properties": {
+    "UNLocode":"WP083",
+    "name":"Torres Strait",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"157.00",
+    "CostPerFULLTrnsf":"65.00",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13.7834,45.65 ]
+    },
+    "properties": {
+    "UNLocode":"ITTRS",
+    "name":"Trieste",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"232.00",
+    "CostPerFULLTrnsf":"111.00",
+    "PortCallCostFixed":3124,
+    "PortCallCostPerFFE":14
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.1718,36.7968 ]
+    },
+    "properties": {
+    "UNLocode":"TNTUN",
+    "name":"Tunis",
+    "Country":"Tunisia",
+    "Cabotage_Region":"Tunisia",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"23.00",
+    "CostPerFULLTrnsf":"0.00",
+    "PortCallCostFixed":1184,
+    "PortCallCostPerFFE":24
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.19,-54.48 ]
+    },
+    "properties": {
+    "UNLocode":"ARUSH",
+    "name":"Ushuaia",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"197.00",
+    "CostPerFULLTrnsf":"251.00",
+    "PortCallCostFixed":23076,
+    "PortCallCostPerFFE":25
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -0.37,39.47 ]
+    },
+    "properties": {
+    "UNLocode":"ESVLC",
+    "name":"Valencia",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":13.5,
+    "CostPerFULL":"593.00",
+    "CostPerFULLTrnsf":"103.00",
+    "PortCallCostFixed":7971,
+    "PortCallCostPerFFE":11
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.125,49.25 ]
+    },
+    "properties": {
+    "UNLocode":"CAVAN",
+    "name":"Vancouver",
+    "Country":"Canada",
+    "Cabotage_Region":"Canada",
+    "D_Region":"Canada West",
+    "Draft":13.5,
+    "CostPerFULL":"421.00",
+    "CostPerFULLTrnsf":"115.00",
+    "PortCallCostFixed":774,
+    "PortCallCostPerFFE":12
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 27.916666,43.216666 ]
+    },
+    "properties": {
+    "UNLocode":"BGVAR",
+    "name":"Varna",
+    "Country":"Bulgaria",
+    "Cabotage_Region":"Bulgaria",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"195.00",
+    "CostPerFULLTrnsf":"139.00",
+    "PortCallCostFixed":7169,
+    "PortCallCostPerFFE":6
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 55.4375,-4.6093 ]
+    },
+    "properties": {
+    "UNLocode":"SCPOV",
+    "name":"Victoria",
+    "Country":"Seychelles",
+    "Cabotage_Region":"Seychelles",
+    "D_Region":"South Africa",
+    "Draft":9.5,
+    "CostPerFULL":"346.00",
+    "CostPerFULLTrnsf":"228.00",
+    "PortCallCostFixed":11391,
+    "PortCallCostPerFFE":16
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -8.71136,42.23413 ]
+    },
+    "properties": {
+    "UNLocode":"ESVGO",
+    "name":"Vigo",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"315.00",
+    "CostPerFULLTrnsf":"139.00",
+    "PortCallCostFixed":2155,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -48.72982,-1.53838 ]
+    },
+    "properties": {
+    "UNLocode":"BRVLC",
+    "name":"Vila do Conde",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"778.00",
+    "CostPerFULLTrnsf":"250.00",
+    "PortCallCostFixed":16127,
+    "PortCallCostPerFFE":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -40.22,-20.19 ]
+    },
+    "properties": {
+    "UNLocode":"BRVIX",
+    "name":"Vitoria",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"878.00",
+    "CostPerFULLTrnsf":"519.00",
+    "PortCallCostFixed":1181,
+    "PortCallCostPerFFE":19
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 14.506,-22.944 ]
+    },
+    "properties": {
+    "UNLocode":"NAWVB",
+    "name":"Walvis Bay",
+    "Country":"Namibia",
+    "Cabotage_Region":"Namibia",
+    "D_Region":"West Africa",
+    "Draft":9.5,
+    "CostPerFULL":"28.00",
+    "CostPerFULLTrnsf":"218.00",
+    "PortCallCostFixed":2138,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 174.7812,-41.2968 ]
+    },
+    "properties": {
+    "UNLocode":"NZWLG",
+    "name":"Wellington",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":12.5,
+    "CostPerFULL":"224.00",
+    "CostPerFULLTrnsf":"140.00",
+    "PortCallCostFixed":852,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.91667,12.1 ]
+    },
+    "properties": {
+    "UNLocode":"ANWIL",
+    "name":"Willemstad",
+    "Country":"Netherl. Antilles",
+    "Cabotage_Region":"Netherl. Antilles",
+    "D_Region":"US Gulf Coast",
+    "Draft":9.5,
+    "CostPerFULL":"673.00",
+    "CostPerFULLTrnsf":"157.00",
+    "PortCallCostFixed":6535,
+    "PortCallCostPerFFE":34
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.945,34.2256 ]
+    },
+    "properties": {
+    "UNLocode":"USILM",
+    "name":"WilmingtonNC",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":11,
+    "CostPerFULL":"461",
+    "CostPerFULLTrnsf":"330",
+    "PortCallCostFixed":18625,
+    "PortCallCostPerFFE":3
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 118.08,24.45 ]
+    },
+    "properties": {
+    "UNLocode":"CNXMN",
+    "name":"Xiamen",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"South China",
+    "Draft":12.5,
+    "CostPerFULL":"108.00",
+    "CostPerFULLTrnsf":"57.00",
+    "PortCallCostFixed":5267,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 117.56,38.562 ]
+    },
+    "properties": {
+    "UNLocode":"CNTXG",
+    "name":"Xingang",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"North China",
+    "Draft":13.5,
+    "CostPerFULL":"172.00",
+    "CostPerFULLTrnsf":"49.00",
+    "PortCallCostFixed":5922,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 114.26667,22.58333 ]
+    },
+    "properties": {
+    "UNLocode":"CNYTN",
+    "name":"Shenzhen",
+    "Country":"China",
+    "Cabotage_Region":"China",
+    "D_Region":"South China",
+    "Draft":13.5,
+    "CostPerFULL":"177.00",
+    "CostPerFULLTrnsf":"78.00",
+    "PortCallCostFixed":7220,
+    "PortCallCostPerFFE":4
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 139.55,35.45 ]
+    },
+    "properties": {
+    "UNLocode":"JPYOK",
+    "name":"Yokohama",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":13.5,
+    "CostPerFULL":"105.00",
+    "CostPerFULLTrnsf":"68.00",
+    "PortCallCostFixed":16900,
+    "PortCallCostPerFFE":1
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -59.035,-34.09 ]
+    },
+    "properties": {
+    "UNLocode":"ARZAE",
+    "name":"Zarate",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"329.00",
+    "CostPerFULLTrnsf":"251.00",
+    "PortCallCostFixed":8064,
+    "PortCallCostPerFFE":26
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 3.1875,51.3281 ]
+    },
+    "properties": {
+    "UNLocode":"BEZEE",
+    "name":"Zeebrugge",
+    "Country":"Belgium",
+    "Cabotage_Region":"Belgium",
+    "D_Region":"North Continent Europe",
+    "Draft":13.5,
+    "CostPerFULL":"235.00",
+    "CostPerFULLTrnsf":"126.00",
+    "PortCallCostFixed":12047,
+    "PortCallCostPerFFE":9
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 6.5,62.49 ]
+    },
+    "properties": {
+    "UNLocode":"NOAES",
+    "name":"Alesund",
+    "Country":"Norway",
+    "Cabotage_Region":"Norway",
+    "D_Region":"North Continent Europe",
+    "Draft":9.5,
+    "CostPerFULL":"684.00",
+    "CostPerFULLTrnsf":"107.00",
+    "PortCallCostFixed":24098,
+    "PortCallCostPerFFE":130
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 10.216666,56.15 ]
+    },
+    "properties": {
+    "UNLocode":"DKAAR",
+    "name":"Aarhus",
+    "Country":"Denmark",
+    "Cabotage_Region":"Denmark",
+    "D_Region":"North Continent Europe",
+    "Draft":12.5,
+    "CostPerFULL":"429.00",
+    "CostPerFULLTrnsf":"203.00",
+    "PortCallCostFixed":11861,
+    "PortCallCostPerFFE":7
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.5312,8.9531 ]
+    },
+    "properties": {
+    "UNLocode":"PAPCN",
+    "name":"Panama Canal",
+    "Country":"Panama",
+    "Cabotage_Region":"Panama",
+    "D_Region":"US West Coast",
+    "Draft":12.5,
+    "CostPerFULL":"509.00",
+    "CostPerFULLTrnsf":"115.00",
+    "PortCallCostFixed":-1153,
+    "PortCallCostPerFFE":253
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 55.533333,-20.883333 ]
+    },
+    "properties": {
+    "UNLocode":"REREU",
+    "name":"Port Reunion",
+    "Country":"Reunion",
+    "Cabotage_Region":"Reunion",
+    "D_Region":"South Africa",
+    "Draft":9.5,
+    "CostPerFULL":"126.00",
+    "CostPerFULLTrnsf":"9.00",
+    "PortCallCostFixed":11598,
+    "PortCallCostPerFFE":15
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.51,-99.52 ]
+    },
+    "properties": {
+    "UNLocode":"MXACA",
+    "name":"Acapulco",
+    "Country":"Mexico",
+    "Cabotage_Region":"Mexico",
+    "D_Region":"US West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"GHACC",
+    "name":"Accra",
+    "Country":"Ghana",
+    "Cabotage_Region":"Ghana",
+    "D_Region":"West Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUALH",
+    "name":"Albany",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ESALC",
+    "name":"Alicante",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":12.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.5,-2.27 ]
+    },
+    "properties": {
+    "UNLocode":"ESLEI",
+    "name":"Almeria",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"NLAMS",
+    "name":"Amsterdam",
+    "Country":"Netherlands",
+    "Cabotage_Region":"Netherlands",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITAOI",
+    "name":"Ancona",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -23.38,-70.23 ]
+    },
+    "properties": {
+    "UNLocode":"CLANF",
+    "name":"Antofagasta",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":13.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRAJU",
+    "name":"Aracaju",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 39.56,9.42 ]
+    },
+    "properties": {
+    "UNLocode":"ITATX",
+    "name":"Arbatax",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUARD",
+    "name":"Ardrossan",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 47.18,-54 ]
+    },
+    "properties": {
+    "UNLocode":"CANWP",
+    "name":"Argentia",
+    "Country":"Canada",
+    "Cabotage_Region":"Canada",
+    "D_Region":"Canada East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 13,42.44 ]
+    },
+    "properties": {
+    "UNLocode":"ERASA",
+    "name":"Assab",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -21.11,-159.46 ]
+    },
+    "properties": {
+    "UNLocode":"CKAVA",
+    "name":"Avarua",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.38,-8.39 ]
+    },
+    "properties": {
+    "UNLocode":"PTAVE",
+    "name":"Aveiro",
+    "Country":"Portugal",
+    "Cabotage_Region":"Portugal",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUBWB",
+    "name":"Barrow Island",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"IDBLW",
+    "name":"Belawan",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -1.27,-48.3 ]
+    },
+    "properties": {
+    "UNLocode":"BRBEL",
+    "name":"Belem",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"FRBOD",
+    "name":"Bordeaux",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BBBGI",
+    "name":"Bridgetown",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITBDS",
+    "name":"Brindisi",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRCDO",
+    "name":"Cabedelo",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ESCAD",
+    "name":"Cadiz",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITCAG",
+    "name":"Cagliari",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.31,-79.28 ]
+    },
+    "properties": {
+    "UNLocode":"CUCAI",
+    "name":"Caibarien",
+    "Country":"Cuba",
+    "Cabotage_Region":"Cuba",
+    "D_Region":"US Gulf Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUCLN",
+    "name":"Cape Leeuwin",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 19.45,-72.12 ]
+    },
+    "properties": {
+    "UNLocode":"HTCAP",
+    "name":"Cap-Haitien",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"VECUP",
+    "name":"Carupano",
+    "Country":"Venezuela",
+    "Cabotage_Region":"Venezuela",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PHCEB",
+    "name":"Cebu",
+    "Country":"Philippines",
+    "Cabotage_Region":"Philippines",
+    "D_Region":"Singapore",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ESCEU",
+    "name":"Ceuta",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"IRZBR",
+    "name":"Chah Bahar",
+    "Country":"Iran",
+    "Cabotage_Region":"Iran",
+    "D_Region":"Dubai",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"VICHA",
+    "name":"Charlotte Amalie",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 26.23,127.55 ]
+    },
+    "properties": {
+    "UNLocode":"JPCHW",
+    "name":"Chimu Wan",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITCVV",
+    "name":"Civitavecchia",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 9.55,-84.15 ]
+    },
+    "properties": {
+    "UNLocode":"CRCLN",
+    "name":"Colon",
+    "Country":"Costa Rica",
+    "Cabotage_Region":"Costa Rica",
+    "D_Region":"US West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.4,-63.34 ]
+    },
+    "properties": {
+    "UNLocode":"CADAR",
+    "name":"Dartmouth",
+    "Country":"Canada",
+    "Cabotage_Region":"Canada",
+    "D_Region":"Canada East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PHDVO",
+    "name":"Davao",
+    "Country":"Philippines",
+    "Cabotage_Region":"Philippines",
+    "D_Region":"Singapore",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"TRDRC",
+    "name":"Derince",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"GBDVR",
+    "name":"Dover",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 45,-64.1 ]
+    },
+    "properties": {
+    "UNLocode":"CAFAH",
+    "name":"Falmouth",
+    "Country":"Canada",
+    "Cabotage_Region":"Canada",
+    "D_Region":"Canada East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"TRFET",
+    "name":"Fethiye",
+    "Country":"Turkey",
+    "Cabotage_Region":"Turkey",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITFCO",
+    "name":"Fiumicino",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"USFLL",
+    "name":"Fort Lauderdale",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"TVFUN",
+    "name":"Funafuti",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PTFNC",
+    "name":"Funchal",
+    "Country":"Portugal",
+    "Cabotage_Region":"Portugal",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"USGLS",
+    "name":"Galveston",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITGEA",
+    "name":"Gela",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUGTT",
+    "name":"Georgetown",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.32,-5.4 ]
+    },
+    "properties": {
+    "UNLocode":"ESGIJ",
+    "name":"Gijon",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"LRGRE",
+    "name":"Greenville",
+    "Country":"Liberia",
+    "Cabotage_Region":"Liberia",
+    "D_Region":"West Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPHKD",
+    "name":"Hakodate",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -18.35,146.17 ]
+    },
+    "properties": {
+    "UNLocode":"AUHAL",
+    "name":"Halifax",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUHLT",
+    "name":"Hamilton",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -42.52,147.18 ]
+    },
+    "properties": {
+    "UNLocode":"AUHBA",
+    "name":"Hobart",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PEILQ",
+    "name":"Ilo",
+    "Country":"Peru",
+    "Cabotage_Region":"Peru",
+    "D_Region":"South America West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PHILO",
+    "name":"Iloilo",
+    "Country":"Philippines",
+    "Cabotage_Region":"Philippines",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 35.2,22.43 ]
+    },
+    "properties": {
+    "UNLocode":"GRNAI",
+    "name":"Iraklion",
+    "Country":"Greece",
+    "Cabotage_Region":"Greece",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"LKKNK",
+    "name":"Kankesanturai",
+    "Country":"Sri Lanka",
+    "Cabotage_Region":"Sri Lanka",
+    "D_Region":"Mumbai",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"SEKAA",
+    "name":"Karlskrona",
+    "Country":"Sweden",
+    "Cabotage_Region":"Sweden",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPKWS",
+    "name":"Kawasaki",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AUKIT",
+    "name":"Kingston",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"DKCPH",
+    "name":"Kobenhavn",
+    "Country":"Denmark",
+    "Cabotage_Region":"Denmark",
+    "D_Region":"North Continent Europe",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PGLAE",
+    "name":"Lae",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 36.48,-3.26 ]
+    },
+    "properties": {
+    "UNLocode":"ESZGM",
+    "name":"Lagos",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"CYLCA",
+    "name":"Larnaca",
+    "Country":"Cyprus",
+    "Cabotage_Region":"Cyprus",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"GBLOW",
+    "name":"Lowestoft",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"MYMKZ",
+    "name":"Malacca",
+    "Country":"Malaysia",
+    "Cabotage_Region":"Malaysia",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"MZMPM",
+    "name":"Maputo",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -38,-57.33 ]
+    },
+    "properties": {
+    "UNLocode":"ARMDQ",
+    "name":"Mar Del Plata",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43.47,7.3 ]
+    },
+    "properties": {
+    "UNLocode":"FRETN",
+    "name":"Menton",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITMSN",
+    "name":"Messina",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"SOMGQ",
+    "name":"Mogadishu",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITMNP",
+    "name":"Monopoli",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"MXMRE",
+    "name":"Morro Redondo",
+    "Country":"Mexico",
+    "Cabotage_Region":"Mexico",
+    "D_Region":"US West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPNGS",
+    "name":"Nagasaki",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"IDNAH",
+    "name":"Naha",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 40.5,14.15 ]
+    },
+    "properties": {
+    "UNLocode":"ITNAP",
+    "name":"Napoli",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":9.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 25.05,-77.21 ]
+    },
+    "properties": {
+    "UNLocode":"BSNAS",
+    "name":"Nassau",
+    "Country":"Bahamas",
+    "Cabotage_Region":"Bahamas",
+    "D_Region":"US Gulf Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRNAT",
+    "name":"Natal",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"AWORJ",
+    "name":"Oranjestad",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ASPPG",
+    "name":"Pago Pago",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITPMO",
+    "name":"Palermo",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"MZLMZ",
+    "name":"Palma",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"IDPNJ",
+    "name":"Panjang",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"SRPBM",
+    "name":"Paramaribo",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"SLPEP",
+    "name":"Pepel",
+    "Country":"Sierra Leone",
+    "Cabotage_Region":"Sierra Leone",
+    "D_Region":"West Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.24,-4.07 ]
+    },
+    "properties": {
+    "UNLocode":"GBPLY",
+    "name":"Plymouth",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PRPSE",
+    "name":"Ponce",
+    "Country":"Puerto Rico",
+    "Cabotage_Region":"Puerto Rico",
+    "D_Region":"US Gulf Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 37.44,-25.4 ]
+    },
+    "properties": {
+    "UNLocode":"PTPDL",
+    "name":"Ponta Delgada",
+    "Country":"Portugal",
+    "Cabotage_Region":"Portugal",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JMPOT",
+    "name":"Port Antonio",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 34.08,-119.11 ]
+    },
+    "properties": {
+    "UNLocode":"USNTD",
+    "name":"Port Hueneme",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 16.52,-25 ]
+    },
+    "properties": {
+    "UNLocode":"CVGRA",
+    "name":"Porto Grande",
+    "Country":"Cape Verde Island",
+    "Cabotage_Region":"Cape Verde Island",
+    "D_Region":"West Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"CAPRR",
+    "name":"Prince Rupert",
+    "Country":"Canada",
+    "Cabotage_Region":"Canada",
+    "D_Region":"Canada East Coast",
+    "Draft":13.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -53.08,-70.56 ]
+    },
+    "properties": {
+    "UNLocode":"CLPUQ",
+    "name":"Punta Arenas",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"VNUIH",
+    "name":"Qui Nhon",
+    "Country":"Vietnam",
+    "Cabotage_Region":"Vietnam",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PGRAB",
+    "name":"Rabaul",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITRAN",
+    "name":"Ravenna",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRREC",
+    "name":"Recife",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -33.5,151.05 ]
+    },
+    "properties": {
+    "UNLocode":"AURDS",
+    "name":"Rhodes",
+    "Country":"Australia",
+    "Cabotage_Region":"Australia",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ZARCB",
+    "name":"Richards Bay",
+    "Country":"South Africa",
+    "Cabotage_Region":"South Africa",
+    "D_Region":"South Africa",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRRIO",
+    "name":"Rio De Janeiro",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PESVY",
+    "name":"Salaverry",
+    "Country":"Peru",
+    "Cabotage_Region":"Peru",
+    "D_Region":"South America West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ZASDB",
+    "name":"Saldanha Bay",
+    "Country":"South Africa",
+    "Cabotage_Region":"South Africa",
+    "D_Region":"South Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRSSA",
+    "name":"Salvador",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":9.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ESSCI",
+    "name":"San Ciprian",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"USSAN",
+    "name":"San Diego",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ARSFE",
+    "name":"San Fernando",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -31.25,-62.04 ]
+    },
+    "properties": {
+    "UNLocode":"ARSFO",
+    "name":"San Francisco",
+    "Country":"Argentina",
+    "Cabotage_Region":"Argentina",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PESNX",
+    "name":"San Nicolas",
+    "Country":"Peru",
+    "Cabotage_Region":"Peru",
+    "D_Region":"South America West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ESEAS",
+    "name":"San Sebastian",
+    "Country":"Spain",
+    "Cabotage_Region":"Spain",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"CUSCU",
+    "name":"Santiago De Cuba",
+    "Country":"Cuba",
+    "Cabotage_Region":"Cuba",
+    "D_Region":"US Gulf Coast",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -33.38,-71.39 ]
+    },
+    "properties": {
+    "UNLocode":"CLSDO",
+    "name":"Santo Domingo",
+    "Country":"Chile",
+    "Cabotage_Region":"Chile",
+    "D_Region":"South America West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"DESAS",
+    "name":"Sassnitz",
+    "Country":"Germany",
+    "Cabotage_Region":"Germany",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"GBSFW",
+    "name":"Scapa Flow",
+    "Country":"United Kingdom",
+    "Cabotage_Region":"United Kingdom",
+    "D_Region":"UK",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"GHSEK",
+    "name":"Sekondi",
+    "Country":"Ghana",
+    "Cabotage_Region":"Ghana",
+    "D_Region":"West Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPSHS",
+    "name":"Shimonoseki",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"ITSIR",
+    "name":"Siracusa",
+    "Country":"Italy",
+    "Cabotage_Region":"Italy",
+    "D_Region":"West Med",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"SESLI",
+    "name":"Slite",
+    "Country":"Sweden",
+    "Cabotage_Region":"Sweden",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"IDSOQ",
+    "name":"Sorong",
+    "Country":"Indonesia",
+    "Cabotage_Region":"Indonesia",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 50.36,5.21 ]
+    },
+    "properties": {
+    "UNLocode":"BESGS",
+    "name":"St Georges",
+    "Country":"Belgium",
+    "Cabotage_Region":"Belgium",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 43,-84.33 ]
+    },
+    "properties": {
+    "UNLocode":"USSJ4",
+    "name":"St Johns",
+    "Country":"United States",
+    "Cabotage_Region":"United States",
+    "D_Region":"US East Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 44.12,4.36 ]
+    },
+    "properties": {
+    "UNLocode":"FRSNG",
+    "name":"St Nazaire",
+    "Country":"France",
+    "Cabotage_Region":"France",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"TWTXG",
+    "name":"Taichung",
+    "Country":"Taiwan",
+    "Cabotage_Region":"Taiwan",
+    "D_Region":"Singapore",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"PETYL",
+    "name":"Talara",
+    "Country":"Peru",
+    "Cabotage_Region":"Peru",
+    "D_Region":"South America West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 22.15,-97.52 ]
+    },
+    "properties": {
+    "UNLocode":"MXTAM",
+    "name":"Tampico",
+    "Country":"Mexico",
+    "Cabotage_Region":"Mexico",
+    "D_Region":"US West Coast",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"TZTGT",
+    "name":"Tanga",
+    "Country":"Tanzania",
+    "Cabotage_Region":"Tanzania",
+    "D_Region":"South Africa",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPTKY",
+    "name":"Tokuyama",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 62.1,-64.6 ]
+    },
+    "properties": {
+    "UNLocode":"FOTOR",
+    "name":"Torshavn",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -29.58,-50.08 ]
+    },
+    "properties": {
+    "UNLocode":"BRTRM",
+    "name":"Tramandai",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"LKTRR",
+    "name":"Trincomalee",
+    "Country":"Sri Lanka",
+    "Cabotage_Region":"Sri Lanka",
+    "D_Region":"Mumbai",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 8.47,78.08 ]
+    },
+    "properties": {
+    "UNLocode":"INTUT",
+    "name":"Tuticorin",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":9.5,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPUBJ",
+    "name":"Ube",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"BRVPO",
+    "name":"Valparaiso",
+    "Country":"Brazil",
+    "Cabotage_Region":"Brazil",
+    "D_Region":"Brazil",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"LVVNT",
+    "name":"Ventspils",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"INVVA",
+    "name":"Veraval",
+    "Country":"India",
+    "Cabotage_Region":"India",
+    "D_Region":"Mumbai",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPWTU",
+    "name":"Wakamatsu",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"JPWAK",
+    "name":"Wakayama",
+    "Country":"Japan",
+    "Cabotage_Region":"Japan",
+    "D_Region":"Japan",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"UMAWK",
+    "name":"Wake Island",
+    "Country":"",
+    "Cabotage_Region":"",
+    "D_Region":"",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"NZWAG",
+    "name":"Wanganui",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"NZWRE",
+    "name":"Whangarei",
+    "Country":"New Zealand",
+    "Cabotage_Region":"New Zealand",
+    "D_Region":"Australia",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 53.31,8.08 ]
+    },
+    "properties": {
+    "UNLocode":"DEWVN",
+    "name":"Wilhelmshaven",
+    "Country":"Germany",
+    "Cabotage_Region":"Germany",
+    "D_Region":"North Continent Europe",
+    "Draft":null,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  { }
+    },
+    "properties": {
+    "UNLocode":"TZZNZ",
+    "name":"Zanzibar",
+    "Country":"Tanzania",
+    "Cabotage_Region":"Tanzania",
+    "D_Region":"South Africa",
+    "Draft":8,
+    "CostPerFULL":"",
+    "CostPerFULLTrnsf":"",
+    "PortCallCostFixed":null,
+    "PortCallCostPerFFE":null
+    }
+  }
+]
+}

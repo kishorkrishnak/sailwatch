@@ -1,16 +1,21 @@
-import { cameraModeOffsets } from "../utils/data";
+import { cameraModeOffsets } from "../../utils/data";
 
-const CameraModes = ({
-  handleFocus,
+type CameraModesProps = {
+  handleFocus: () => void;
+  selectedCameraMode: string;
+  setSelectedCameraMode: (mode: string) => void;
+};
+
+function CameraModes({
   selectedCameraMode,
   setSelectedCameraMode,
-}) => {
+}: CameraModesProps) {
   return (
     <div className="flex mt-4 gap-3 flex-wrap text-sm">
       {Object.keys(cameraModeOffsets).map((mode) => (
         <div
-          onClick={() => {
-            handleFocus();
+          key={mode}
+          onClick={() => { 
             setSelectedCameraMode(mode);
           }}
           className={`cursor-pointer p-3 border border-black rounded-lg ${
@@ -22,6 +27,6 @@ const CameraModes = ({
       ))}
     </div>
   );
-};
+}
 
 export default CameraModes;

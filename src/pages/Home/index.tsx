@@ -1,59 +1,81 @@
-import { BoundingSphere, Cartesian3 } from "cesium";
-import { CameraFlyToBoundingSphere, Entity, Viewer } from "resium";
-import shipNavy from "../../assets/models/ship_navy.glb";
-import ShipInfo from "./ShipInfo";
+import {
+  Clock,
+  ClockRange,
+  createWorldTerrainAsync,
+  TerrainProvider,
+} from "cesium";
+import { useEffect, useState } from "react";
+import { Viewer } from "resium";
 import useAppContext from "../../contexts/AppContext/useAppContext";
-import { cameraModeOffsets, shipPositions } from "../../utils/data";
+import Ships from "./Layers/Ships";
+import ShipInfo from "./ShipInfo";
+import DangerZones from "./Layers/DangerZones";
+import Ports from "./Layers/Ports";
+
 const Home = () => {
   const {
+    viewerRef,
     selectedFeature,
-    setSelectedFeature,
+    startTime,
+    endTime,
     selectedCameraMode,
     setSelectedCameraMode,
-    shouldFly,
-    setShouldFly,
     handleFocus,
   } = useAppContext();
 
+  const [cesiumClock] = useState<Clock>(
+    new Clock({
+      startTime: startTime,
+      currentTime: startTime,
+      stopTime: endTime,
+      clockRange: ClockRange.LOOP_STOP,
+      clockStep: 1,
+      multiplier: 1,
+      shouldAnimate: true,
+    })
+  );
+
+  const [terrainProvider, setTerrainProvider] = useState<
+    TerrainProvider | Promise<TerrainProvider> | undefined
+  >(undefined);
+
+  useEffect(() => {
+    const loadTerrain = async () => {
+      const terrain = await createWorldTerrainAsync();
+      setTerrainProvider(terrain);
+    };
+    loadTerrain();
+  }, []);
+
+  const [viewerReady, setViewerReady] = useState(false);
+
+  useEffect(() => {
+    if (viewerReady && viewerRef.current) {
+      viewerRef.current.scene.globe.depthTestAgainstTerrain = true;
+    }
+  }, [viewerRef, viewerReady, startTime, endTime]);
+
   return (
     <>
-      <Viewer full timeline={false} infoBox={false} selectionIndicator={false}>
-        {shipPositions.features.map((feature, index) => {
-          if (feature.geometry.type === "Point") {
-            const [lon, lat] = feature.geometry.coordinates;
-            const position = Cartesian3.fromDegrees(lon, lat);
-            return (
-              <Entity
-                key={index}
-                onClick={() => setSelectedFeature(feature)}
-                name={feature.properties?.name || `Ship ${index + 1}`}
-                position={position}
-                model={{
-                  uri: shipNavy,
-                  scale: 20,
-                  minimumPixelSize: 100,
-                }}
-                description={feature.properties?.popupContent}
-              />
-            );
+      <Viewer
+        full
+        baseLayerPicker={false}
+        ref={(resiumViewer) => {
+          if (resiumViewer?.cesiumElement) {
+            viewerRef.current = resiumViewer.cesiumElement;
+            setViewerReady(true);
           }
-          return null;
-        })}
-
-        {shouldFly && selectedFeature && (
-          <CameraFlyToBoundingSphere
-            boundingSphere={BoundingSphere.fromPoints([
-              Cartesian3.fromDegrees(
-                selectedFeature.geometry.coordinates[0],
-                selectedFeature.geometry.coordinates[1],
-                cameraModeOffsets[selectedCameraMode].height || 0
-              ),
-            ])}
-            duration={1.5}
-            offset={cameraModeOffsets[selectedCameraMode]}
-            onComplete={() => setShouldFly(false)}
-          />
-        )}
+        }}
+        infoBox={false}
+        selectionIndicator={false}
+        clock={cesiumClock}
+        terrainProvider={terrainProvider}
+        shouldAnimate={true}
+        timeline={false}
+      >
+        <Ships />
+        <Ports/>
+        <DangerZones/>
       </Viewer>
 
       {selectedFeature && (

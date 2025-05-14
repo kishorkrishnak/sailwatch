@@ -5,7 +5,6 @@ import AppProvider from "./contexts/AppContext/AppProvider";
 import Home from "./pages/Home";
 
 function App() {
-
   return (
     <AppProvider>
       <BrowserRouter>
