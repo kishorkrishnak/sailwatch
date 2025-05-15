@@ -21,7 +21,7 @@ export const cameraModeOffsets: Record<string, HeadingPitchRange> = {
   },
 };
 
-export const shipPositions: FeatureCollection = {
+export const ships: FeatureCollection = {
   type: "FeatureCollection",
   features: [
     {

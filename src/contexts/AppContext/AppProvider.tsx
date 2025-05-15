@@ -8,7 +8,7 @@ import {
 } from "cesium";
 import type { Feature, GeoJsonObject } from "geojson";
 import { useRef, useState, type ReactNode } from "react";
-import { shipPositions } from "../../utils/data";
+import { ships } from "../../utils/data";
 import type { AppContextType } from "./AppContext";
 import AppContext from "./AppContext";
 
@@ -56,7 +56,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   );
 
   const [shipEntities] = useState(() => {
-    return shipPositions.features
+    return ships.features
       .map((feature, index) => {
         if (feature.geometry.type === "LineString") {
           const coordinates = feature.geometry.coordinates;

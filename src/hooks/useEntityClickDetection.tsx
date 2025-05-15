@@ -1,4 +1,9 @@
-import { Entity, GeoJsonDataSource, ScreenSpaceEventType } from "cesium";
+import {
+  Entity,
+  GeoJsonDataSource,
+  ScreenSpaceEventHandler,
+  ScreenSpaceEventType,
+} from "cesium";
 import { useEffect, useRef } from "react";
 import { useCesium } from "resium";
 
@@ -17,7 +22,7 @@ export const useEntityClickDetection = ({
   useEffect(() => {
     if (!viewer) return;
 
-    const clickHandler = (event) => {
+    const clickHandler = (event: ScreenSpaceEventHandler.PositionedEvent) => {
       const pickedObject = viewer.scene.pick(event.position);
 
       if (pickedObject && pickedObject.id) {
