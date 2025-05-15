@@ -14,12 +14,10 @@ function CameraModes({
 }: CameraModesProps) {
   const { selectedShip, shipEntities } = useAppContext();
   const { viewer } = useCesium();
+
   const handleFocus = () => {
     if (!viewer) return;
-    const entity = shipEntities.find(
-      (e) => e.feature === selectedShip
-    )?.cesiumEntity;
-
+    const entity = shipEntities.find((e) => e.feature === selectedShip)?.cesiumEntity;
     if (!entity) return;
 
     if (selectedCameraMode === "Ship") {
@@ -28,62 +26,42 @@ function CameraModes({
     }
 
     viewer.trackedEntity = undefined;
-
     const currentTime = viewer.clock.currentTime;
     const entityPosition = entity.position.getValue(currentTime);
     if (!entityPosition) return;
 
-    const scene = viewer.scene;
-    const camera = scene.camera;
-
-    const { heading, pitch, range } =
-      cameraModeOffsets[selectedCameraMode] || {};
-
-    const destination = Cartesian3.clone(entityPosition);
-    camera.setView({
-      destination: destination,
-      orientation: {
-        heading: heading,
-        pitch: pitch,
-        roll: 0,
-      },
+    const { heading, pitch, range } = cameraModeOffsets[selectedCameraMode] || {};
+    viewer.scene.camera.setView({
+      destination: entityPosition,
+      orientation: { heading, pitch, roll: 0 },
     });
 
     setTimeout(() => {
-      const cameraOffset = new HeadingPitchRange(heading, pitch, range);
-
-      viewer.zoomTo(entity, cameraOffset);
+      viewer.zoomTo(entity, new HeadingPitchRange(heading, pitch, range));
     }, 100);
   };
 
   return (
-    <div className="mt-3 flex flex-col items-start gap-1">
-      <label
-        htmlFor="cameraMode"
-        className="text-sm font-medium text-gray-700 block"
-      >
-        Camera Mode:
-      </label>
-      <div className="flex mt-4 gap-3 flex-wrap text-sm">
+    <div className="mt-3 space-y-2 text-sm">
+      <p className="font-medium text-gray-700">Camera Mode:</p>
+      <div className="flex gap-2 flex-wrap">
         {Object.keys(cameraModeOffsets).map((mode) => (
-          <div
+          <button
             key={mode}
-            onClick={() => {
-              setSelectedCameraMode(mode);
-            }}
-            className={`cursor-pointer p-3 border border-black rounded-lg ${
-              selectedCameraMode === mode ? "bg-blue-500 text-white" : ""
+            onClick={() => setSelectedCameraMode(mode)}
+            className={`px-3 py-1 rounded-md border text-xs ${
+              selectedCameraMode === mode ? "bg-blue-500 text-white" : "border-gray-400"
             }`}
           >
-            {mode.charAt(0).toUpperCase() + mode.slice(1)}
-          </div>
+            {mode}
+          </button>
         ))}
       </div>
       <button
         onClick={handleFocus}
-        className="w-full mt-4 bg-[#2c3e50] hover:bg-[#1a252f] text-white py-2 px-4 rounded-lg transition duration-200"
+        className="w-full bg-[#2c3e50] hover:bg-[#1a252f] text-white py-2 rounded-md"
       >
-        Refocus
+        Focus
       </button>
     </div>
   );

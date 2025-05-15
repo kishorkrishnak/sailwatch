@@ -21,6 +21,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     null
   );
   const [ports, setPorts] = useState<GeoJsonObject | null>(null);
+  const [dangerZones, setDangerZones] = useState<GeoJsonObject | null>(null);
 
   const loadPorts = async (): Promise<GeoJsonObject | undefined> => {
     if (ports) return ports;
@@ -29,6 +30,19 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       const res = await fetch("/data/ports.geojson");
       const data: GeoJsonObject = await res.json();
       setPorts(data);
+      return data;
+    } catch (err) {
+      return undefined;
+    }
+  };
+
+  const loadDangerZones = async (): Promise<GeoJsonObject | undefined> => {
+    if (dangerZones) return dangerZones;
+
+    try {
+      const res = await fetch("/data/danger_zones.geojson");
+      const data: GeoJsonObject = await res.json();
+      setDangerZones(data);
       return data;
     } catch (err) {
       return undefined;
@@ -105,6 +119,8 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     selectedShipEntity,
     ports,
     loadPorts,
+    dangerZones,
+    loadDangerZones,
   };
 
   return (

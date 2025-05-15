@@ -1,11 +1,13 @@
 import * as turf from "@turf/turf";
+import { JulianDate } from "cesium";
 import { useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useCesium } from "resium";
+import ship from "../../../../assets/images/ship.svg";
 import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
 import CameraModes from "./CameraModes";
-
+import DangerZoneStatus from "./DangerZoneStatus";
 const ShipInfo = () => {
   const {
     setSelectedShip,
@@ -15,11 +17,23 @@ const ShipInfo = () => {
     selectedCameraMode,
     setSelectedCameraMode,
     loadPorts,
+    loadDangerZones,
   } = useAppContext();
 
-  const [nearestShip, setNearestShip] = useState(null);
-  const [nearestPort, setNearestPort] = useState(null);
-  const [distanceTravelled, setDistanceTravelled] = useState(null);
+  const [nearestShip, setNearestShip] = useState<string | null>(null);
+  const [nearestPort, setNearestPort] = useState<number | null>(null);
+  const [distanceTravelled, setDistanceTravelled] = useState<number | null>(
+    null
+  );
+  const [dangerZoneStatus, setDangerZoneStatus] = useState<{
+    status: string;
+    zone: string | null;
+    distance: number | null;
+  }>({
+    status: "Clear",
+    zone: null,
+    distance: null,
+  });
 
   const rafRef = useRef(null);
   const { viewer } = useCesium();
@@ -64,9 +78,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
+          ...nearest,
+          distanceInKm: minDistance,
+        }
       : null;
   };
 
@@ -86,7 +100,7 @@ const ShipInfo = () => {
     const from = turf.point(startingCoordinates);
 
     const distance = turf.distance(from, to, { units: "kilometers" });
-    return distance.toFixed(2);
+    return Number(distance.toFixed(2));
   };
 
   const findNearestPort = async () => {
@@ -137,10 +151,71 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
+          ...nearest,
+          distanceInKm: minDistance,
+        }
       : null;
+  };
+
+  const findDangerZoneStatus = async () => {
+    if (!viewer) return null;
+
+    const currentTime = viewer.clock.currentTime;
+    const selectedCoords = getEntityPositionInDegrees(
+      selectedShipEntity.cesiumEntity,
+      currentTime
+    );
+
+    if (!selectedCoords) return null;
+
+    const shipPoint = turf.point([
+      selectedCoords.longitude,
+      selectedCoords.latitude,
+    ]);
+
+    const shipBuffer = turf.buffer(shipPoint, 10, { units: "kilometers" });
+    const dangerZones = await loadDangerZones();
+
+    let overallStatus = "Clear";
+    let criticalZone = null;
+    let minDistance = Infinity;
+
+    for (const dangerZone of dangerZones.features) {
+      if (!dangerZone.geometry) continue;
+
+      const zone = turf.feature(dangerZone.geometry);
+      const isInside = turf.booleanPointInPolygon(shipPoint, zone);
+      const isNear = turf.booleanIntersects(shipBuffer, zone);
+
+      if (isInside) {
+        overallStatus = "Inside Danger Zone";
+        criticalZone = {
+          name: dangerZone.properties.boundaryname || "Unknown Zone",
+          status: "inside",
+        };
+        break;
+      } else if (isNear) {
+        const centerOfDangerZone = turf.center(zone);
+        const distance = turf.distance(shipPoint, centerOfDangerZone, {
+          units: "kilometers",
+        });
+
+        if (distance < minDistance) {
+          minDistance = distance;
+          overallStatus = "Approaching Danger Zone";
+          criticalZone = {
+            name: dangerZone.properties.boundaryname || "Unknown Zone",
+            status: "approaching",
+            distance: distance.toFixed(2),
+          };
+        }
+      }
+    }
+
+    return {
+      status: overallStatus,
+      criticalZone: criticalZone,
+    };
   };
 
   useEffect(() => {
@@ -152,10 +227,11 @@ const ShipInfo = () => {
         const nearestShip = findNearestShip();
         const nearestPort = await findNearestPort();
         const distanceTravelled = findDistanceTravelled();
-
+        const dangerZoneStatus = await findDangerZoneStatus();
         setNearestShip(nearestShip);
         setNearestPort(nearestPort);
         setDistanceTravelled(distanceTravelled);
+        setDangerZoneStatus(dangerZoneStatus);
 
         lastUpdate = timestamp;
       }
@@ -167,12 +243,39 @@ const ShipInfo = () => {
     return () => cancelAnimationFrame(rafRef.current);
   }, [selectedShipEntity, shipEntities, viewer]);
 
+  const [etaHours, setEtaHours] = useState(12);
+
+  useEffect(() => {
+    if (!viewer) return;
+
+    const startTime = viewer.clock.startTime;
+    const totalEtaSeconds = 12 * 3600;
+
+    const updateEta = () => {
+      const currentTime = viewer.clock.currentTime;
+      const secondsPassed = JulianDate.secondsDifference(
+        currentTime,
+        startTime
+      );
+      const remainingSeconds = totalEtaSeconds - secondsPassed;
+      const remainingHours = Math.max(remainingSeconds / 3600, 0);
+      setEtaHours(remainingHours.toFixed(1));
+    };
+
+    updateEta();
+
+    const interval = setInterval(updateEta, 1000);
+
+    return () => clearInterval(interval);
+  }, [viewer]);
+
   return (
     <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
       <div className="mb-3">
-        <h2 className="text-xs font-semibold text-red-600 uppercase tracking-widest mb-1">
-          Vessel
-        </h2>
+        <li className="mb-1 flex items-center space-x-2">
+          <img src={ship} alt="Ship" className="w-4 h-4" />
+          <span>Ship</span>
+        </li>
         <h1 className="text-xl font-bold text-[#2c3e50] mb-2">
           {properties.name || "Unnamed Vessel"}
         </h1>
@@ -209,14 +312,22 @@ const ShipInfo = () => {
       />
 
       <div className="mt-4 space-y-2">
-        {nearestShip && (
-          <div className="p-3 border rounded-lg bg-gray-50">
-            <p className="text-sm text-gray-600 mb-1 font-medium">
-              Distance Travelled (Live):
+        <div className="p-3 border rounded-lg bg-gray-50 flex justify-between items-center">
+          <div>
+            <p className="text-sm text-gray-600 font-medium mb-1">
+              ETA to port in
             </p>
-            <p className="text-sm">{distanceTravelled} km</p>
+            <p className="text-lg font-semibold">{etaHours} hrs</p>
           </div>
-        )}
+          {nearestShip && (
+            <div>
+              <p className="text-sm text-gray-600 font-medium mb-1">
+                Distance Travelled
+              </p>
+              <p className="text-lg font-semibold">{distanceTravelled} km</p>
+            </div>
+          )}
+        </div>
 
         {nearestShip && (
           <div className="p-3 border rounded-lg bg-gray-50">
@@ -245,6 +356,8 @@ const ShipInfo = () => {
             </p>
           </div>
         )}
+
+        <DangerZoneStatus dangerZoneStatus={dangerZoneStatus} />
       </div>
     </div>
   );
