@@ -13,7 +13,11 @@ import Ships from "./Layers/Ships/Ships";
 import Legend from "./Legend";
 
 const Home = () => {
-  const { viewerRef, startTime, endTime } = useAppContext();
+  const { startTime, endTime } = useAppContext();
+
+  const [terrainProvider, setTerrainProvider] = useState<
+    TerrainProvider | Promise<TerrainProvider> | undefined
+  >(undefined);
 
   const [cesiumClock] = useState<Clock>(
     new Clock({
@@ -27,10 +31,6 @@ const Home = () => {
     })
   );
 
-  const [terrainProvider, setTerrainProvider] = useState<
-    TerrainProvider | Promise<TerrainProvider> | undefined
-  >(undefined);
-
   useEffect(() => {
     const loadTerrain = async () => {
       const terrain = await createWorldTerrainAsync();
@@ -39,25 +39,11 @@ const Home = () => {
     loadTerrain();
   }, []);
 
-  const [viewerReady, setViewerReady] = useState(false);
-
-  useEffect(() => {
-    if (viewerReady && viewerRef.current) {
-      viewerRef.current.scene.globe.depthTestAgainstTerrain = true;
-    }
-  }, [viewerRef, viewerReady, startTime, endTime]);
-
   return (
     <Viewer
       full
       fullscreenButton={false}
       baseLayerPicker={false}
-      ref={(resiumViewer) => {
-        if (resiumViewer?.cesiumElement) {
-          viewerRef.current = resiumViewer.cesiumElement;
-          setViewerReady(true);
-        }
-      }}
       infoBox={false}
       selectionIndicator={false}
       clock={cesiumClock}

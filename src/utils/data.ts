@@ -2,6 +2,7 @@ import { Math as CesiumMath, HeadingPitchRange } from "cesium";
 import type { FeatureCollection } from "geojson";
 import generalCargo from "../assets/models/cargo.glb";
 import warship from "../assets/models/warship.glb";
+import type { ShipType } from "./types";
 
 export const cameraModeOffsets: Record<string, HeadingPitchRange> = {
   TopDown: {
@@ -125,7 +126,7 @@ export const ships: FeatureCollection = {
   ],
 };
 
-export const shipModels = {
+export const shipModels: Record<ShipType, string> = {
   "Container Ship": generalCargo,
   "General Cargo Ship": generalCargo,
   Destroyer: warship,

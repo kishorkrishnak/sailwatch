@@ -6,16 +6,15 @@ import { useCesium } from "resium";
 import ship from "../../../../assets/images/ship.svg";
 import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
-import CameraModes from "./CameraModes";
-import DangerZoneStatus from "./DangerZoneStatus";
+import type { DangerZoneStatus } from "../../../../utils/types";
+import DangerZoneDetails from "./DangerZoneDetails";
+
 const ShipInfo = () => {
   const {
     setSelectedShip,
     selectedShip,
     shipEntities,
     selectedShipEntity,
-    selectedCameraMode,
-    setSelectedCameraMode,
     loadPorts,
     loadDangerZones,
   } = useAppContext();
@@ -25,17 +24,16 @@ const ShipInfo = () => {
   const [distanceTravelled, setDistanceTravelled] = useState<number | null>(
     null
   );
-  const [dangerZoneStatus, setDangerZoneStatus] = useState<{
-    status: string;
-    zone: string | null;
-    distance: number | null;
-  }>({
-    status: "Clear",
-    zone: null,
-    distance: null,
-  });
+  const [dangerZoneStatus, setDangerZoneStatus] =
+    useState<DangerZoneStatus | null>({
+      status: "Clear",
+      criticalZone: {
+        name: "",
+        distance: null,
+      },
+    });
 
-  const rafRef = useRef(null);
+  const rafRef = useRef<number | null>(null);
   const { viewer } = useCesium();
 
   const properties = selectedShip.properties || {};
@@ -78,9 +76,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-          ...nearest,
-          distanceInKm: minDistance,
-        }
+        ...nearest,
+        distanceInKm: minDistance,
+      }
       : null;
   };
 
@@ -151,13 +149,13 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-          ...nearest,
-          distanceInKm: minDistance,
-        }
+        ...nearest,
+        distanceInKm: minDistance,
+      }
       : null;
   };
 
-  const findDangerZoneStatus = async () => {
+  const findDangerZoneStatus = async (): Promise<DangerZoneStatus | null> => {
     if (!viewer) return null;
 
     const currentTime = viewer.clock.currentTime;
@@ -240,7 +238,11 @@ const ShipInfo = () => {
 
     rafRef.current = requestAnimationFrame(update);
 
-    return () => cancelAnimationFrame(rafRef.current);
+    return () => {
+      if (rafRef.current !== null) {
+        cancelAnimationFrame(rafRef.current);
+      }
+    };
   }, [selectedShipEntity, shipEntities, viewer]);
 
   const [etaHours, setEtaHours] = useState(12);
@@ -259,7 +261,7 @@ const ShipInfo = () => {
       );
       const remainingSeconds = totalEtaSeconds - secondsPassed;
       const remainingHours = Math.max(remainingSeconds / 3600, 0);
-      setEtaHours(remainingHours.toFixed(1));
+      setEtaHours(Number(remainingHours.toFixed(1)));
     };
 
     updateEta();
@@ -281,7 +283,10 @@ const ShipInfo = () => {
         </h1>
       </div>
       <button
-        onClick={() => setSelectedShip(null)}
+        onClick={() => {
+          viewer.trackedEntity = undefined
+          setSelectedShip(null)
+        }}
         className="cursor-pointer absolute top-3 right-3"
       >
         <IoClose size={20} />
@@ -306,10 +311,6 @@ const ShipInfo = () => {
         </p>
       </div>
 
-      <CameraModes
-        selectedCameraMode={selectedCameraMode}
-        setSelectedCameraMode={setSelectedCameraMode}
-      />
 
       <div className="mt-4 space-y-2">
         <div className="p-3 border rounded-lg bg-gray-50 flex justify-between items-center">
@@ -317,14 +318,14 @@ const ShipInfo = () => {
             <p className="text-sm text-gray-600 font-medium mb-1">
               ETA to port in
             </p>
-            <p className="text-lg font-semibold">{etaHours} hrs</p>
+            <p className="font-semibold">{etaHours} hrs</p>
           </div>
           {nearestShip && (
             <div>
               <p className="text-sm text-gray-600 font-medium mb-1">
                 Distance Travelled
               </p>
-              <p className="text-lg font-semibold">{distanceTravelled} km</p>
+              <p className="font-semibold">{distanceTravelled} km</p>
             </div>
           )}
         </div>
@@ -357,7 +358,7 @@ const ShipInfo = () => {
           </div>
         )}
 
-        <DangerZoneStatus dangerZoneStatus={dangerZoneStatus} />
+        <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />
       </div>
     </div>
   );

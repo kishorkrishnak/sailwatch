@@ -1,18 +1,17 @@
-import { HeadingPitchRange } from "cesium";
+import { HeadingPitchRange, ScreenSpaceEventType } from "cesium";
+import { useEffect } from "react";
 import { useCesium } from "resium";
 import { useAppContext } from "../../../../contexts/AppContext";
 import { cameraModeOffsets } from "../../../../utils/data";
 
-type CameraModesProps = {
-  selectedCameraMode: string;
-  setSelectedCameraMode: (mode: string) => void;
-};
+const CameraModes = () => {
+  const {
+    selectedShip,
+    shipEntities,
+    selectedCameraMode,
+    setSelectedCameraMode,
+  } = useAppContext();
 
-function CameraModes({
-  selectedCameraMode,
-  setSelectedCameraMode,
-}: CameraModesProps) {
-  const { selectedShip, shipEntities } = useAppContext();
   const { viewer } = useCesium();
 
   const handleFocus = () => {
@@ -44,9 +43,18 @@ function CameraModes({
     }, 100);
   };
 
+  useEffect(() => {
+    if (!viewer) return;
+
+    //prevent the default entity focus and tracking on doubleclick
+    viewer.screenSpaceEventHandler.removeInputAction(
+      ScreenSpaceEventType.LEFT_DOUBLE_CLICK
+    );
+  }, [viewer]);
+
   return (
-    <div className="mt-3 space-y-2 text-sm">
-      <p className="font-medium text-gray-700">Camera Mode:</p>
+    <div className="p-3 bg-white/90 rounded-2xl w-fit  h-fit absolute top-5 left-5 space-y-2 text-sm">
+      <p className="font-medium text-gray-700">Ship Camera Mode:</p>
       <div className="flex gap-2 flex-wrap">
         {Object.keys(cameraModeOffsets).map((mode) => (
           <button
@@ -70,6 +78,6 @@ function CameraModes({
       </button>
     </div>
   );
-}
+};
 
 export default CameraModes;

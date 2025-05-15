@@ -1,13 +1,12 @@
 import {
   Cartesian3,
-  Viewer as CesiumViewer,
   JulianDate,
   LagrangePolynomialApproximation,
   SampledPositionProperty,
-  VelocityOrientationProperty,
+  VelocityOrientationProperty
 } from "cesium";
 import type { Feature, GeoJsonObject } from "geojson";
-import { useRef, useState, type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import { ships } from "../../utils/data";
 import type { AppContextType } from "./AppContext";
 import AppContext from "./AppContext";
@@ -49,7 +48,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     }
   };
 
-  const viewerRef = useRef<CesiumViewer | null>(null);
   const [startTime] = useState(JulianDate.now());
   const [endTime] = useState(
     JulianDate.addHours(startTime, 12, new JulianDate())
@@ -95,10 +93,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       .filter(Boolean);
   });
 
-  const flyHome = () => {
-    viewerRef.current?.camera.flyHome(1);
-  };
-
   const selectedShipEntity = shipEntities.find(
     (e) => e.feature === selectedShip
   );
@@ -107,11 +101,9 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     setSelectedShip,
     selectedCameraMode,
     setSelectedCameraMode,
-    viewerRef,
     shipEntities,
     startTime,
     endTime,
-    flyHome,
     selectedPort,
     setSelectedPort,
     selectedDangerZone,

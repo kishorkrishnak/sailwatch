@@ -1,6 +1,6 @@
-import { Viewer as CesiumViewer, JulianDate } from "cesium";
+import { JulianDate } from "cesium";
 import type { Feature, GeoJsonObject } from "geojson";
-import { createContext, type RefObject } from "react";
+import { createContext } from "react";
 
 export type AppContextType = {
   selectedShip: Feature;
@@ -12,11 +12,9 @@ export type AppContextType = {
   selectedCameraMode: string;
   setSelectedCameraMode: (value: string) => void;
   handleFocus: () => void;
-  flyHome: () => void;
   startTime: JulianDate;
   shipEntities: any[];
   endTime: JulianDate;
-  viewerRef: RefObject<CesiumViewer | null>;
   ports: GeoJsonObject | null;
   loadPorts: () => Promise<GeoJsonObject | void>;
 };

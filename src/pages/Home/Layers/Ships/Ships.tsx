@@ -5,10 +5,12 @@ import {
   TimeInterval,
   TimeIntervalCollection,
 } from "cesium";
+import React from "react";
 import { uid } from "react-uid";
 import { Entity } from "resium";
 import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import { shipModels } from "../../../../utils/data";
+import CameraModes from "./CameraModes";
 import ShipInfo from "./ShipInfo";
 
 const Ships = () => {
@@ -21,23 +23,24 @@ const Ships = () => {
     setSelectedDangerZone,
     setSelectedPort,
   } = useAppContext();
+
   return (
     <>
       {shipEntities.map((shipEntity, index) => (
-        <>
+        <React.Fragment key={uid(shipEntity)}>
           <Entity
-            key={uid(shipEntity)}
             ref={(ref) => {
               if (ref?.cesiumElement) {
                 shipEntities[index].cesiumEntity = ref.cesiumElement;
               }
             }}
+            onDoubleClick={(event) => {
+              event.preventDefault(); // if you want to stop Cesium’s default double-click zoom
+              // your custom logic here
+            }}
             availability={
               new TimeIntervalCollection([
-                new TimeInterval({
-                  start: startTime,
-                  stop: endTime,
-                }),
+                new TimeInterval({ start: startTime, stop: endTime }),
               ])
             }
             onClick={() => {
@@ -69,10 +72,15 @@ const Ships = () => {
               }}
             />
           )}
-        </>
+        </React.Fragment>
       ))}
 
-      {selectedShip && <ShipInfo />}
+      {selectedShip && (
+        <>
+          <ShipInfo />
+          <CameraModes />
+        </>
+      )}
     </>
   );
 };

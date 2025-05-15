@@ -1,7 +1,10 @@
-import React from "react";
+import type { DangerZoneStatus } from "../../../../utils/types";
 
-const DangerZoneStatus = ({dangerZoneStatus}) => {
-    
+const DangerZoneDetails = ({
+  dangerZoneStatus,
+}: {
+  dangerZoneStatus: DangerZoneStatus | null;
+}) => {
   return (
     <div className="mt-4 p-3 border rounded-lg bg-gray-50">
       <p className="text-sm text-gray-600 mb-1 font-medium">
@@ -48,4 +51,4 @@ const DangerZoneStatus = ({dangerZoneStatus}) => {
   );
 };
 
-export default DangerZoneStatus;
+export default DangerZoneDetails;
