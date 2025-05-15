@@ -1,7 +1,7 @@
 import { HeightReference, TimeInterval, TimeIntervalCollection } from "cesium";
 import { Entity } from "resium";
-import shipNavy from "../../../../assets/models/ship_navy.glb";
 import useAppContext from "../../../../contexts/AppContext/useAppContext";
+import { shipModels } from "../../../../utils/data";
 import ShipInfo from "./ShipInfo";
 
 const Ships = () => {
@@ -40,10 +40,10 @@ const Ships = () => {
           name={shipEntity.name}
           position={shipEntity.position}
           model={{
-            uri: shipNavy,
+            uri: shipModels[shipEntity.feature.properties.type],
             scale: 30,
             minimumPixelSize: 128,
-            heightReference: HeightReference.CLAMP_TO_TERRAIN,
+            heightReference: HeightReference.CLAMP_TO_GROUND,
           }}
           orientation={shipEntity.orientation}
         />

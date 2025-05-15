@@ -1,5 +1,5 @@
 import { Viewer as CesiumViewer, JulianDate } from "cesium";
-import type { Feature } from "geojson";
+import type { Feature, GeoJsonObject } from "geojson";
 import { createContext, type RefObject } from "react";
 
 export type AppContextType = {
@@ -17,6 +17,8 @@ export type AppContextType = {
   shipEntities: any[];
   endTime: JulianDate;
   viewerRef: RefObject<CesiumViewer | null>;
+  ports: GeoJsonObject | null;
+  loadPorts: () => Promise<GeoJsonObject | void>;
 };
 
 const AppContext = createContext<AppContextType | null>(null);

@@ -10,6 +10,7 @@ import useAppContext from "../../contexts/AppContext/useAppContext";
 import DangerZones from "./Layers/DangerZones/DangerZones";
 import Ports from "./Layers/Ports/Ports";
 import Ships from "./Layers/Ships/Ships";
+import Legend from "./Legend";
 
 const Home = () => {
   const { viewerRef, startTime, endTime } = useAppContext();
@@ -49,6 +50,7 @@ const Home = () => {
   return (
     <Viewer
       full
+      fullscreenButton={false}
       baseLayerPicker={false}
       ref={(resiumViewer) => {
         if (resiumViewer?.cesiumElement) {
@@ -66,6 +68,7 @@ const Home = () => {
       <Ships />
       <DangerZones />
       <Ports />
+      <Legend />
     </Viewer>
   );
 };

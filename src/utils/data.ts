@@ -1,7 +1,9 @@
-import { Math as CesiumMath } from "cesium";
-import type { CameraOffset, ShipFeatureCollection } from "./types";
+import { Math as CesiumMath, HeadingPitchRange } from "cesium";
+import type { FeatureCollection } from "geojson";
+import generalCargo from "../assets/models/cargo.glb";
+import warship from "../assets/models/warship.glb";
 
-export const cameraModeOffsets: Record<string, CameraOffset> = {
+export const cameraModeOffsets: Record<string, HeadingPitchRange> = {
   TopDown: {
     heading: CesiumMath.toRadians(0),
     pitch: CesiumMath.toRadians(-90),
@@ -19,28 +21,7 @@ export const cameraModeOffsets: Record<string, CameraOffset> = {
   },
 };
 
-export interface ShipFeatureCollection {
-  type: "FeatureCollection";
-  features: ShipFeature[];
-}
-
-export interface ShipFeature {
-  type: "Feature";
-  properties: {
-    MMSI: number;
-    name: string;
-    type: string;
-    flag: string;
-    age: number;
-    grossTonnage: number;
-  };
-  geometry: {
-    type: "LineString";
-    coordinates: [number, number][];
-  };
-}
-
-export const shipPositions: ShipFeatureCollection = {
+export const shipPositions: FeatureCollection = {
   type: "FeatureCollection",
   features: [
     {
@@ -144,61 +125,40 @@ export const shipPositions: ShipFeatureCollection = {
     {
       type: "Feature",
       properties: {
-        MMSI: 538008957,
-        name: "STELLAR BANNER",
-        type: "Bulk Carrier",
-        flag: "Marshall Islands",
-        age: 9,
-        grossTonnage: 149849,
+        MMSI: 369970000,
+        name: "USS VIGILANT",
+        type: "Destroyer",
+        flag: "United States",
+        age: 5,
+        grossTonnage: 9200,
       },
       geometry: {
         type: "LineString",
         coordinates: [
-          // Brazil to China route (around Cape of Good Hope)
-          [-44.3823, -23.0047], // Port of Itaguaí, Brazil
-          [-43.1689, -23.8523],
-          [-41.0889, -24.7681],
-          [-38.6572, -25.9209],
-          [-35.8594, -27.2183],
-          [-32.6953, -28.6315],
-          [-28.6133, -30.1455],
-          [-23.5547, -31.8029],
-          [-18.3691, -33.2804],
-          [-13.0957, -34.4566],
-          [-7.7344, -35.1739],
-          [-2.2852, -35.4606],
-          [3.0762, -35.3173],
-          [8.3496, -34.7416],
-          [13.4473, -33.865],
-          [18.3691, -32.6945],
-          [23.0273, -31.2536],
-          [27.5098, -29.6133],
-          [31.8164, -27.7149],
-          [36.0352, -25.5991],
-          [40.1367, -23.3211],
-          [44.2383, -20.8973],
-          [48.4277, -18.2813],
-          [52.7344, -15.461],
-          [57.1289, -12.466],
-          [61.6992, -9.3195],
-          [66.3574, -6.0138],
-          [71.1035, -2.6357],
-          [75.9375, 0.7031],
-          [80.8594, 3.952],
-          [85.8691, 6.9679],
-          [90.9668, 9.5372],
-          [95.625, 11.7814],
-          [100.1953, 13.4106],
-          [104.7656, 14.4458],
-          [109.3359, 15.2841],
-          [113.9941, 16.0462],
-          [118.6523, 17.1429],
-          [122.039, 20.6328],
-          [121.4942, 25.033], // Keelung, Taiwan
-          [120.2197, 30.0444], // Approaching Shanghai
-          [121.4737, 31.2304], // Shanghai
+          // Norfolk, VA to Persian Gulf (fictional patrol route)
+          [-76.3303, 36.9465], // Norfolk Naval Base
+          [-70.0, 35.0],
+          [-60.0, 33.0],
+          [-50.0, 30.0],
+          [-40.0, 25.0],
+          [-30.0, 20.0],
+          [-20.0, 17.0],
+          [-10.0, 15.0],
+          [0.0, 13.0],
+          [10.0, 15.0],
+          [20.0, 20.0],
+          [30.0, 25.0],
+          [40.0, 27.0],
+          [50.0, 25.0],
+          [56.25, 24.3], // Persian Gulf
         ],
       },
     },
   ],
+};
+
+export const shipModels = {
+  "Container Ship": generalCargo,
+  "General Cargo Ship": generalCargo,
+  Destroyer: warship,
 };

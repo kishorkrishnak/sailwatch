@@ -6,7 +6,7 @@ import {
   SampledPositionProperty,
   VelocityOrientationProperty,
 } from "cesium";
-import type { Feature } from "geojson";
+import type { Feature, GeoJsonObject } from "geojson";
 import { useRef, useState, type ReactNode } from "react";
 import { shipPositions } from "../../utils/data";
 import type { AppContextType } from "./AppContext";
@@ -20,11 +20,25 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [selectedDangerZone, setSelectedDangerZone] = useState<Feature | null>(
     null
   );
+  const [ports, setPorts] = useState<GeoJsonObject | null>(null);
+
+  const loadPorts = async (): Promise<GeoJsonObject | undefined> => {
+    if (ports) return ports;
+
+    try {
+      const res = await fetch("/data/ports.geojson");
+      const data: GeoJsonObject = await res.json();
+      setPorts(data);
+      return data;
+    } catch (err) {
+      return undefined;
+    }
+  };
 
   const viewerRef = useRef<CesiumViewer | null>(null);
   const [startTime] = useState(JulianDate.now());
   const [endTime] = useState(
-    JulianDate.addDays(startTime, 2, new JulianDate())
+    JulianDate.addHours(startTime, 12, new JulianDate())
   );
 
   const [shipEntities] = useState(() => {
@@ -89,6 +103,8 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     selectedDangerZone,
     setSelectedDangerZone,
     selectedShipEntity,
+    ports,
+    loadPorts,
   };
 
   return (

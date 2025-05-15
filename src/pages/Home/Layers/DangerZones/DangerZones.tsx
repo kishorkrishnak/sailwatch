@@ -33,7 +33,7 @@ const DangerZones = () => {
         onLoad={(dataSource) => {
           dataSourceRef.current = dataSource;
         }}
-        data={`/data/Danger_Zones_and_Restricted_Areas.geojson`}
+        data={`/data/danger_zones.geojson`}
         fill={Color.RED.withAlpha(0.4)}
         show
       />

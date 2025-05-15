@@ -5,7 +5,7 @@ const DangerZoneInfo = () => {
   const { selectedDangerZone, setSelectedDangerZone } = useAppContext();
 
   return (
-    <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[1000] backdrop-blur-md border border-gray-200">
+    <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
       <div className="mb-3">
         <h2 className="text-xs font-semibold text-red-600 uppercase tracking-widest mb-1">
           Danger Zone
