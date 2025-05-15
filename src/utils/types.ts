@@ -5,7 +5,6 @@ export interface CameraOffset extends HeadingPitchRange {
 }
 
 export interface ShipFeatureProperties {
-  image: string;
   MMSI: number;
   name: string;
   type: string;

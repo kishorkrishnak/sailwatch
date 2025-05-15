@@ -1,5 +1,6 @@
 import {
   DistanceDisplayCondition,
+  Entity,
   HeightReference,
   VerticalOrigin,
 } from "cesium";
@@ -9,12 +10,18 @@ import { useAppContext } from "../../../../contexts/AppContext";
 import { useEntityClickDetection } from "../../../../hooks";
 import PortInfo from "./PortInfo";
 const Ports = () => {
-  const { selectedPort, setSelectedPort } = useAppContext();
+  const {
+    selectedPort,
+    setSelectedPort,
+    setSelectedDangerZone,
+    setSelectedShip,
+  } = useAppContext();
 
-  const handlePortClick = (entity) => {
-    console.log("Port clicked", entity);
+  const handlePortClick = (entity: Entity) => {
     if (entity.properties) {
       const properties = entity.properties.getValue(new Date());
+      setSelectedDangerZone(null);
+      setSelectedShip(null);
       setSelectedPort(properties);
     }
   };

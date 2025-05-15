@@ -6,12 +6,18 @@ const DangerZoneInfo = () => {
 
   return (
     <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[1000] backdrop-blur-md border border-gray-200">
-      <h1 className="text-xl font-bold text-[#2c3e50] mb-2">
-        {selectedDangerZone.boundaryname || "Unnamed DangerZone"}
-      </h1>
+      <div className="mb-3">
+        <h2 className="text-xs font-semibold text-red-600 uppercase tracking-widest mb-1">
+          Danger Zone
+        </h2>
+        <h1 className="text-xl font-bold text-[#2c3e50]">
+          {selectedDangerZone.boundaryname || "Unnamed DangerZone"}
+        </h1>
+      </div>
+
       <button
         onClick={() => setSelectedDangerZone(null)}
-        className="cursor-pointer absolute top-2 right-3"
+        className="cursor-pointer absolute top-3 right-3"
       >
         <IoClose size={20} />
       </button>
@@ -34,11 +40,6 @@ const DangerZoneInfo = () => {
         </p>
       </div>
 
-      {selectedDangerZone.popupContent && (
-        <p className="mt-3 text-sm italic text-gray-500">
-          {selectedDangerZone.popupContent}
-        </p>
-      )}
     </div>
   );
 };

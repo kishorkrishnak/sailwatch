@@ -5,11 +5,18 @@ import { useEntityClickDetection } from "../../../../hooks";
 import DangerZoneInfo from "./DangerZoneInfo";
 
 const DangerZones = () => {
-  const { selectedDangerZone, setSelectedDangerZone } = useAppContext();
+  const {
+    selectedDangerZone,
+    setSelectedDangerZone,
+    setSelectedPort,
+    setSelectedShip,
+  } = useAppContext();
 
   const handleZoneClick = (entity: Entity) => {
     if (entity.properties) {
       const properties = entity.properties.getValue(new Date());
+      setSelectedPort(null);
+      setSelectedShip(null);
       setSelectedDangerZone(properties);
     }
   };

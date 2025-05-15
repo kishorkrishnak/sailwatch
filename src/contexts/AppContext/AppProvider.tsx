@@ -59,7 +59,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
             position: sampledPosition,
             orientation: new VelocityOrientationProperty(sampledPosition),
             name: feature.properties?.name || `Ship ${index + 1}`,
-            description: feature.properties?.popupContent,
           };
         }
 

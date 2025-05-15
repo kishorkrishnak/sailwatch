@@ -1,13 +1,14 @@
 import { Viewer as CesiumViewer, JulianDate } from "cesium";
+import type { Feature } from "geojson";
 import { createContext, type RefObject } from "react";
 
 export type AppContextType = {
-  selectedShip: any;
-  setSelectedShip: (value: any) => void;
-  selectedDangerZone: any;
-  setSelectedDangerZone: (value: any) => void;
-  selectedPort: any;
-  setSelectedPort: (value: any) => void;
+  selectedShip: Feature;
+  setSelectedShip: (value: Feature) => void;
+  selectedDangerZone: Feature;
+  setSelectedDangerZone: (value: Feature) => void;
+  selectedPort: Feature;
+  setSelectedPort: (value: Feature) => void;
   selectedCameraMode: string;
   setSelectedCameraMode: (value: string) => void;
   handleFocus: () => void;

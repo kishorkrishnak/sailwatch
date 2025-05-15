@@ -46,8 +46,6 @@ export const shipPositions: ShipFeatureCollection = {
     {
       type: "Feature",
       properties: {
-        image: "",
-
         MMSI: 314216000,
         name: "WILSON CADIZ",
         type: "General Cargo Ship",
@@ -79,7 +77,6 @@ export const shipPositions: ShipFeatureCollection = {
     {
       type: "Feature",
       properties: {
-        image: "",
         MMSI: 219023700,
         name: "MAERSK NEWCASTLE",
         type: "Container Ship",
@@ -115,8 +112,6 @@ export const shipPositions: ShipFeatureCollection = {
     {
       type: "Feature",
       properties: {
-        image: "",
-
         MMSI: 636012660,
         name: "EVER GIVEN",
         type: "Container Ship",
@@ -149,8 +144,6 @@ export const shipPositions: ShipFeatureCollection = {
     {
       type: "Feature",
       properties: {
-        image: "",
-
         MMSI: 538008957,
         name: "STELLAR BANNER",
         type: "Bulk Carrier",

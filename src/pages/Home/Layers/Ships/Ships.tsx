@@ -1,12 +1,19 @@
 import { HeightReference, TimeInterval, TimeIntervalCollection } from "cesium";
 import { Entity } from "resium";
-import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import shipNavy from "../../../../assets/models/ship_navy.glb";
+import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import ShipInfo from "./ShipInfo";
 
 const Ships = () => {
-  const { selectedShip, shipEntities, startTime, endTime, setSelectedShip } =
-    useAppContext();
+  const {
+    selectedShip,
+    shipEntities,
+    startTime,
+    endTime,
+    setSelectedShip,
+    setSelectedDangerZone,
+    setSelectedPort,
+  } = useAppContext();
   return (
     <>
       {shipEntities.map((shipEntity, index) => (
@@ -26,6 +33,8 @@ const Ships = () => {
             ])
           }
           onClick={() => {
+            setSelectedDangerZone(null);
+            setSelectedPort(null);
             setSelectedShip(shipEntity.feature);
           }}
           name={shipEntity.name}
@@ -37,7 +46,6 @@ const Ships = () => {
             heightReference: HeightReference.CLAMP_TO_TERRAIN,
           }}
           orientation={shipEntity.orientation}
-          description={shipEntity.description}
         />
       ))}
 
