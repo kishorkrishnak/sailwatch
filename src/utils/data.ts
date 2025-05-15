@@ -28,98 +28,91 @@ export const ships: FeatureCollection = {
     {
       type: "Feature",
       properties: {
-        MMSI: 314216000,
-        name: "WILSON CADIZ",
-        type: "General Cargo Ship",
-        flag: "Barbados",
-        age: 25,
-        grossTonnage: 2999,
-      },
-      geometry: {
-        type: "LineString",
-        coordinates: [
-          // Gibraltar Strait to Suez Canal route
-          [-5.3536, 35.9894], // Gibraltar Strait
-          [-2.934, 35.7633],
-          [0.7422, 36.8945],
-          [3.8965, 37.2341],
-          [7.2656, 37.6123],
-          [10.498, 37.8945],
-          [13.7461, 37.5723],
-          [16.6113, 36.8945],
-          [19.8633, 35.6037],
-          [22.5, 34.7465],
-          [25.1367, 33.9988],
-          [28.3887, 32.99],
-          [31.2539, 31.9522], // Approaching Suez Canal
-          [32.3242, 30.9783], // Suez Canal Entry
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
-        MMSI: 219023700,
-        name: "MAERSK NEWCASTLE",
+        MMSI: 636018792,
+        name: "MSC ASTRID",
         type: "Container Ship",
-        flag: "Denmark",
+        flag: "Liberia",
         age: 12,
-        grossTonnage: 94724,
+        grossTonnage: 94780,
+        speed: 40,
+        origin: "Colombo",
+        destination: "Mombasa",
       },
+
       geometry: {
         type: "LineString",
         coordinates: [
-          // Transatlantic route from Rotterdam to New York
-          [4.4033, 51.9036], // Port of Rotterdam
-          [3.7207, 51.5142],
-          [2.1094, 50.9566],
-          [0.0878, 50.4297],
-          [-2.0215, 49.895],
-          [-4.0429, 49.153],
-          [-6.6797, 48.6909],
-          [-9.8438, 48.2246],
-          [-12.9199, 47.4545],
-          [-19.5117, 46.1954],
-          [-26.3672, 44.9389],
-          [-33.0469, 43.4529],
-          [-41.3086, 41.6453],
-          [-50.625, 40.3972],
-          [-60.2051, 40.1299],
-          [-68.8184, 40.3136],
-          [-73.7695, 40.6462], // Approaching New York Harbor
-          [-74.043, 40.7128], // New York
+          [79.85, 6.87],
+          [71, -1.0],
+          [39.74, -4.06],
+        ],
+      },
+    },
+
+    {
+      type: "Feature",
+      properties: {
+        MMSI: 419001234,
+        name: "SSL GUJARAT",
+        type: "Container Ship",
+        flag: "India",
+        age: 15,
+        speed: 45,
+        grossTonnage: 9500,
+        origin: "Kochi",
+        destination: "Colombo",
+      },
+
+      geometry: {
+        type: "LineString",
+        coordinates: [
+          [76.21, 9.98],
+          [76.51, 7.07],
+          [78.27, 6.26],
+          [79.82, 6.92],
         ],
       },
     },
     {
       type: "Feature",
       properties: {
-        MMSI: 369970000,
-        name: "USS VIGILANT",
+        MMSI: 431999567,
+        name: "JS Izumo",
         type: "Destroyer",
-        flag: "United States",
+        flag: "Japan",
+        age: 10,
+        speed: 100,
+        grossTonnage: 27000,
+        origin: "Hakata",
+        destination: "Busan",
+      },
+
+      geometry: {
+        type: "LineString",
+        coordinates: [[130.38, 33.62],[130.24, 33.62],[130.26, 33.66], [130.35, 33.63], [130.33, 33.64], [130.30, 33.65], [130.26, 33.65], [130.26, 33.71], [130.20, 33.79], [130.04, 33.76], [129.87, 34.37], [129.71, 34.98], [129.42, 35.13], [129.12, 35.07]
+        ],
+      },
+    },
+    {
+      type: "Feature",
+      properties: {
+        MMSI: 235092400,
+        name: "JACKSONVILLE EXPRESS",
+        type: "Container Ship",
+        flag: "Puerto Rico",
         age: 5,
-        grossTonnage: 9200,
+        speed: 45,
+        grossTonnage: 114000,
+        origin: "Savannah",
+        destination: "San Juan",
       },
       geometry: {
         type: "LineString",
         coordinates: [
-          // Norfolk, VA to Persian Gulf (fictional patrol route)
-          [-76.3303, 36.9465], // Norfolk Naval Base
-          [-70.0, 35.0],
-          [-60.0, 33.0],
-          [-50.0, 30.0],
-          [-40.0, 25.0],
-          [-30.0, 20.0],
-          [-20.0, 17.0],
-          [-10.0, 15.0],
-          [0.0, 13.0],
-          [10.0, 15.0],
-          [20.0, 20.0],
-          [30.0, 25.0],
-          [40.0, 27.0],
-          [50.0, 25.0],
-          [56.25, 24.3], // Persian Gulf
+          [-80.91, 31.88],
+          [-71.96, 29.35],
+          [-67.67, 23.42],
+          [-66.07, 18.47],
         ],
       },
     },

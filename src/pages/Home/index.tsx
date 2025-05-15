@@ -2,7 +2,7 @@ import {
   Clock,
   ClockRange,
   createWorldTerrainAsync,
-  TerrainProvider,
+  TerrainProvider
 } from "cesium";
 import { useEffect, useState } from "react";
 import { Viewer } from "resium";
@@ -13,7 +13,7 @@ import Ships from "./Layers/Ships/Ships";
 import Legend from "./Legend";
 
 const Home = () => {
-  const { startTime, endTime } = useAppContext();
+  const { startTime } = useAppContext();
 
   const [terrainProvider, setTerrainProvider] = useState<
     TerrainProvider | Promise<TerrainProvider> | undefined
@@ -23,8 +23,7 @@ const Home = () => {
     new Clock({
       startTime: startTime,
       currentTime: startTime,
-      stopTime: endTime,
-      clockRange: ClockRange.LOOP_STOP,
+      clockRange: ClockRange.UNBOUNDED,
       clockStep: 1,
       multiplier: 1,
       shouldAnimate: true,
@@ -43,7 +42,7 @@ const Home = () => {
     <Viewer
       full
       fullscreenButton={false}
-      baseLayerPicker={false}
+      // baseLayerPicker={false}
       infoBox={false}
       selectionIndicator={false}
       clock={cesiumClock}

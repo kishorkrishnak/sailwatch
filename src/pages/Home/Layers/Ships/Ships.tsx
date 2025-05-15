@@ -1,9 +1,8 @@
 import {
-  Cartesian3,
   Color,
   HeightReference,
   TimeInterval,
-  TimeIntervalCollection,
+  TimeIntervalCollection
 } from "cesium";
 import React from "react";
 import { uid } from "react-uid";
@@ -12,13 +11,11 @@ import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import { shipModels } from "../../../../utils/data";
 import CameraModes from "./CameraModes";
 import ShipInfo from "./ShipInfo";
-
 const Ships = () => {
   const {
     selectedShip,
     shipEntities,
     startTime,
-    endTime,
     setSelectedShip,
     setSelectedDangerZone,
     setSelectedPort,
@@ -34,14 +31,19 @@ const Ships = () => {
                 shipEntities[index].cesiumEntity = ref.cesiumElement;
               }
             }}
-            onDoubleClick={(event) => {
-              event.preventDefault(); // if you want to stop Cesium’s default double-click zoom
-              // your custom logic here
-            }}
             availability={
               new TimeIntervalCollection([
-                new TimeInterval({ start: startTime, stop: endTime }),
+                new TimeInterval({ start: startTime, stop: shipEntity.endTime }),
               ])
+            }
+            path={
+              selectedShip?.properties.MMSI ===
+              shipEntity.feature.properties.MMSI
+                ? {
+                    width: 2,
+                    material: Color.YELLOW,
+                  }
+                : undefined
             }
             onClick={() => {
               setSelectedDangerZone(null);
@@ -53,25 +55,12 @@ const Ships = () => {
             model={{
               uri: shipModels[shipEntity.feature.properties.type],
               scale: 30,
+
               minimumPixelSize: 128,
               heightReference: HeightReference.CLAMP_TO_GROUND,
             }}
             orientation={shipEntity.orientation}
           />
-
-          {selectedShip?.properties.MMSI ===
-            shipEntity.feature.properties.MMSI && (
-            <Entity
-              polyline={{
-                positions: Cartesian3.fromDegreesArray(
-                  shipEntity.feature.geometry.coordinates.flat()
-                ),
-                material: Color.YELLOW,
-                width: 2,
-                clampToGround: true,
-              }}
-            />
-          )}
         </React.Fragment>
       ))}
 

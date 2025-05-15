@@ -1,16 +1,17 @@
+import * as turf from "@turf/turf";
 import {
   Cartesian3,
   JulianDate,
   LagrangePolynomialApproximation,
   SampledPositionProperty,
-  VelocityOrientationProperty
+  VelocityOrientationProperty,
 } from "cesium";
 import type { Feature, GeoJsonObject } from "geojson";
 import { useState, type ReactNode } from "react";
 import { ships } from "../../utils/data";
+import lerp from "../../utils/lerp";
 import type { AppContextType } from "./AppContext";
 import AppContext from "./AppContext";
-
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [selectedShip, setSelectedShip] = useState<Feature | null>(null);
   const [selectedCameraMode, setSelectedCameraMode] =
@@ -49,31 +50,80 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const [startTime] = useState(JulianDate.now());
-  const [endTime] = useState(
-    JulianDate.addHours(startTime, 12, new JulianDate())
-  );
+
+  function interpolateByDistance(
+    distances: number[],
+    coordinates: [number, number][],
+    t: number
+  ): [number, number] {
+    const totalDistance = distances[distances.length - 1];
+    const targetDistance = t * totalDistance;
+
+    let segmentIndex = distances.findIndex((d) => d > targetDistance);
+    if (segmentIndex === -1) {
+      return coordinates[coordinates.length - 1];
+    }
+    if (segmentIndex === 0) segmentIndex = 1;
+
+    const distBefore = distances[segmentIndex - 1];
+    const distAfter = distances[segmentIndex];
+
+    const segmentT = (targetDistance - distBefore) / (distAfter - distBefore);
+
+    const [lon1, lat1] = coordinates[segmentIndex - 1];
+    const [lon2, lat2] = coordinates[segmentIndex];
+
+    const lon = lerp(lon1, lon2, segmentT);
+    const lat = lerp(lat1, lat2, segmentT);
+
+    return [lon, lat];
+  }
 
   const [shipEntities] = useState(() => {
     return ships.features
       .map((feature, index) => {
         if (feature.geometry.type === "LineString") {
           const coordinates = feature.geometry.coordinates;
+          const line = turf.lineString(coordinates);
+          const distance = turf.length(line, { units: "kilometers" });
+
+          const speed = feature.properties?.speed || 40; // fallback to 40 if speed is missing
+          const hoursNeeded = distance / speed;
+
+          const endTime = JulianDate.addHours(
+            startTime,
+            hoursNeeded,
+            new JulianDate()
+          );
+
+          const distances = [0];
+          for (let i = 1; i < coordinates.length; i++) {
+            const prev = turf.point(coordinates[i - 1]);
+            const curr = turf.point(coordinates[i]);
+            const segmentDist = turf.distance(prev, curr, {
+              units: "kilometers",
+            });
+            distances.push(distances[i - 1] + segmentDist);
+          }
 
           const sampledPosition = new SampledPositionProperty();
 
-          const totalPoints = coordinates.length;
-          coordinates.forEach(([lon, lat], i) => {
-            const t = i / (totalPoints - 1);
+          // Sample positions based on normalized t [0..1], interpolated by distance
+          for (let i = 0; i < coordinates.length; i++) {
+            const t = i / (coordinates.length - 1);
+            const [lon, lat] = interpolateByDistance(distances, coordinates, t);
+
             const time = JulianDate.addSeconds(
               startTime,
               t * JulianDate.secondsDifference(endTime, startTime),
               new JulianDate()
             );
+
             sampledPosition.addSample(
               time,
               Cartesian3.fromDegrees(lon, lat, 0)
             );
-          });
+          }
 
           sampledPosition.setInterpolationOptions({
             interpolationDegree: 2,
@@ -85,6 +135,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
             position: sampledPosition,
             orientation: new VelocityOrientationProperty(sampledPosition),
             name: feature.properties?.name || `Ship ${index + 1}`,
+            endTime,
           };
         }
 
@@ -103,7 +154,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     setSelectedCameraMode,
     shipEntities,
     startTime,
-    endTime,
     selectedPort,
     setSelectedPort,
     selectedDangerZone,

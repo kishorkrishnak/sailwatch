@@ -19,11 +19,11 @@ const ShipInfo = () => {
     loadDangerZones,
   } = useAppContext();
 
-  const [nearestShip, setNearestShip] = useState<string | null>(null);
   const [nearestPort, setNearestPort] = useState<number | null>(null);
   const [distanceTravelled, setDistanceTravelled] = useState<number | null>(
     null
   );
+  const [nearestShip, setNearestShip] = useState<string | null>(null);
   const [dangerZoneStatus, setDangerZoneStatus] =
     useState<DangerZoneStatus | null>({
       status: "Clear",
@@ -37,50 +37,6 @@ const ShipInfo = () => {
   const { viewer } = useCesium();
 
   const properties = selectedShip.properties || {};
-
-  const findNearestShip = () => {
-    if (!viewer) return;
-    const currentTime = viewer.clock.currentTime;
-    const selectedCoords = getEntityPositionInDegrees(
-      selectedShipEntity.cesiumEntity,
-      currentTime
-    );
-    if (!selectedCoords) return null;
-
-    const from = turf.point([
-      selectedCoords.longitude,
-      selectedCoords.latitude,
-    ]);
-
-    let nearest = null;
-    let minDistance = Infinity;
-
-    for (const ship of shipEntities) {
-      if (
-        ship.feature.properties.MMSI ===
-        selectedShipEntity.feature.properties.MMSI
-      )
-        continue;
-
-      const coords = getEntityPositionInDegrees(ship.cesiumEntity, currentTime);
-      if (!coords) continue;
-
-      const to = turf.point([coords.longitude, coords.latitude]);
-      const distance = turf.distance(from, to, { units: "kilometers" });
-
-      if (distance < minDistance) {
-        minDistance = distance;
-        nearest = ship;
-      }
-    }
-
-    return nearest
-      ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
-      : null;
-  };
 
   const findDistanceTravelled = (): number => {
     if (!viewer) return 0;
@@ -155,6 +111,49 @@ const ShipInfo = () => {
       : null;
   };
 
+  const findNearestShip = () => {
+    if (!viewer) return;
+    const currentTime = viewer.clock.currentTime;
+    const selectedCoords = getEntityPositionInDegrees(
+      selectedShipEntity.cesiumEntity,
+      currentTime
+    );
+    if (!selectedCoords) return null;
+
+    const from = turf.point([
+      selectedCoords.longitude,
+      selectedCoords.latitude,
+    ]);
+
+    let nearest = null;
+    let minDistance = Infinity;
+
+    for (const ship of shipEntities) {
+      if (
+        ship.feature.properties.MMSI ===
+        selectedShipEntity.feature.properties.MMSI
+      )
+        continue;
+
+      const coords = getEntityPositionInDegrees(ship.cesiumEntity, currentTime);
+      if (!coords) continue;
+
+      const to = turf.point([coords.longitude, coords.latitude]);
+      const distance = turf.distance(from, to, { units: "kilometers" });
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        nearest = ship;
+      }
+    }
+
+    return nearest
+      ? {
+        ...nearest,
+        distanceInKm: minDistance,
+      }
+      : null;
+  };
   const findDangerZoneStatus = async (): Promise<DangerZoneStatus | null> => {
     if (!viewer) return null;
 
@@ -179,7 +178,9 @@ const ShipInfo = () => {
     let minDistance = Infinity;
 
     for (const dangerZone of dangerZones.features) {
-      if (!dangerZone.geometry) continue;
+      if (!dangerZone.geometry) {
+        continue;
+      }
 
       const zone = turf.feature(dangerZone.geometry);
       const isInside = turf.booleanPointInPolygon(shipPoint, zone);
@@ -222,15 +223,14 @@ const ShipInfo = () => {
 
     const update = async (timestamp: number) => {
       if (timestamp - lastUpdate >= intervalMs) {
-        const nearestShip = findNearestShip();
         const nearestPort = await findNearestPort();
         const distanceTravelled = findDistanceTravelled();
         const dangerZoneStatus = await findDangerZoneStatus();
-        setNearestShip(nearestShip);
+        const nearestShip = findNearestShip();
         setNearestPort(nearestPort);
         setDistanceTravelled(distanceTravelled);
         setDangerZoneStatus(dangerZoneStatus);
-
+        setNearestShip(nearestShip);
         lastUpdate = timestamp;
       }
       rafRef.current = requestAnimationFrame(update);
@@ -245,21 +245,16 @@ const ShipInfo = () => {
     };
   }, [selectedShipEntity, shipEntities, viewer]);
 
-  const [etaHours, setEtaHours] = useState(12);
+  const [etaHours, setEtaHours] = useState(0);
 
   useEffect(() => {
-    if (!viewer) return;
+    if (!viewer || !selectedShip) return;
 
-    const startTime = viewer.clock.startTime;
-    const totalEtaSeconds = 12 * 3600;
+    const { endTime } = selectedShipEntity;
 
     const updateEta = () => {
-      const currentTime = viewer.clock.currentTime;
-      const secondsPassed = JulianDate.secondsDifference(
-        currentTime,
-        startTime
-      );
-      const remainingSeconds = totalEtaSeconds - secondsPassed;
+      const now = viewer.clock.currentTime;
+      const remainingSeconds = JulianDate.secondsDifference(endTime, now);
       const remainingHours = Math.max(remainingSeconds / 3600, 0);
       setEtaHours(Number(remainingHours.toFixed(1)));
     };
@@ -267,12 +262,11 @@ const ShipInfo = () => {
     updateEta();
 
     const interval = setInterval(updateEta, 1000);
-
     return () => clearInterval(interval);
-  }, [viewer]);
+  }, [viewer, selectedShip, shipEntities]);
 
   return (
-    <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
+    <div className="custom-scrollbar absolute max-h-[95vh] overflow-auto bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
       <div className="mb-3">
         <li className="mb-1 flex items-center space-x-2">
           <img src={ship} alt="Ship" className="w-4 h-4" />
@@ -284,8 +278,8 @@ const ShipInfo = () => {
       </div>
       <button
         onClick={() => {
-          viewer.trackedEntity = undefined
-          setSelectedShip(null)
+          viewer.trackedEntity = undefined;
+          setSelectedShip(null);
         }}
         className="cursor-pointer absolute top-3 right-3"
       >
@@ -305,21 +299,51 @@ const ShipInfo = () => {
         <p>
           <span className="font-medium">Age:</span> {properties.age} years
         </p>
-        <p>
-          <span className="font-medium">Gross Tonnage:</span>{" "}
-          {properties.grossTonnage} GT
+  <p>
+          <span className="font-medium">Speed:</span> {properties.speed} km/h
         </p>
       </div>
+      <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center space-x-4 select-none text-gray-800 font-semibold text-sm">
+        <div className="flex flex-col items-center max-w-[140px] truncate">
+          <span className="text-xs text-gray-500 mb-1">Origin</span>
+          <div title={properties?.origin || ""}>
+            {properties?.origin || "Unknown Port"}
+          </div>
+        </div>
 
+        <svg
+          className="w-6 h-6 text-gray-500 flex-shrink-0"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+
+        <div className="flex flex-col items-center max-w-[140px] truncate">
+          <span className="text-xs text-gray-500 mb-1">Destination</span>
+          <div title={properties?.destination || ""}>
+            {properties?.destination || "Unknown Port"}
+          </div>
+        </div>
+      </div>
 
       <div className="mt-4 space-y-2">
+
         <div className="p-3 border rounded-lg bg-gray-50 flex justify-between items-center">
-          <div>
+          {etaHours > 0 ? <div>
             <p className="text-sm text-gray-600 font-medium mb-1">
               ETA to port in
             </p>
             <p className="font-semibold">{etaHours} hrs</p>
-          </div>
+          </div> : <div>
+            <p className="text-sm text-gray-600 font-medium mb-1">
+              Arrived
+            </p>
+
+          </div>}
           {nearestShip && (
             <div>
               <p className="text-sm text-gray-600 font-medium mb-1">
@@ -344,6 +368,7 @@ const ShipInfo = () => {
           </div>
         )}
 
+
         {nearestPort && (
           <div className="p-3 border rounded-lg bg-gray-50">
             <p className="text-sm text-gray-600 mb-1 font-medium">
@@ -358,7 +383,7 @@ const ShipInfo = () => {
           </div>
         )}
 
-        <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />
+        {etaHours > 0 && <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />}
       </div>
     </div>
   );

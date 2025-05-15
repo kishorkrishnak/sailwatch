@@ -14,7 +14,6 @@ export type AppContextType = {
   handleFocus: () => void;
   startTime: JulianDate;
   shipEntities: any[];
-  endTime: JulianDate;
   ports: GeoJsonObject | null;
   loadPorts: () => Promise<GeoJsonObject | void>;
 };

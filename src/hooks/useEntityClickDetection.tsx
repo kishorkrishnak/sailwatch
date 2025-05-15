@@ -1,4 +1,6 @@
 import {
+  Cartographic,
+  Math as CesiumMath,
   Entity,
   GeoJsonDataSource,
   ScreenSpaceEventHandler,
@@ -24,7 +26,14 @@ export const useEntityClickDetection = ({
 
     const clickHandler = (event: ScreenSpaceEventHandler.PositionedEvent) => {
       const pickedObject = viewer.scene.pick(event.position);
+      const pickedPosition = viewer.scene.pickPosition(event.position);
 
+      const cartographic = Cartographic.fromCartesian(pickedPosition);
+
+      const longitude = CesiumMath.toDegrees(cartographic.longitude);
+      const latitude = CesiumMath.toDegrees(cartographic.latitude);
+
+      console.log(`[${longitude.toFixed(2)}, ${latitude.toFixed(2)}]`);
       if (pickedObject && pickedObject.id) {
         const entity = pickedObject.id;
         const dataSource = dataSourceRef.current;
