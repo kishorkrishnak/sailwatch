@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import anchor from '../../assets/images/anchor.svg';
-import ship from '../../assets/images/ship.svg';
+import { useState } from "react";
+import anchor from "../../assets/images/anchor.svg";
+import ship from "../../assets/images/ship.svg";
 
 const Legend = () => {
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState<boolean>(true);
 
   if (!visible) {
     return (
@@ -28,17 +28,15 @@ const Legend = () => {
         </button>
       </div>
       <ul className="space-y-2 text-sm text-gray-600">
-     
-       
         <li className="flex items-center space-x-2">
           <img src={ship} alt="Ship" className="w-4 h-4" />
           <span>Ship</span>
         </li>
-         <li className="flex items-center space-x-2">
+        <li className="flex items-center space-x-2">
           <img src={anchor} alt="Port" className="w-4 h-4" />
           <span>Port</span>
         </li>
-           <li className="flex items-center space-x-2">
+        <li className="flex items-center space-x-2">
           <div className="w-4 h-4 bg-red-600 rounded-sm" />
           <span>Danger Zone</span>
         </li>

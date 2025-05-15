@@ -1,4 +1,4 @@
-import { Cartesian3, HeadingPitchRange } from "cesium";
+import { HeadingPitchRange } from "cesium";
 import { useCesium } from "resium";
 import { useAppContext } from "../../../../contexts/AppContext";
 import { cameraModeOffsets } from "../../../../utils/data";
@@ -17,7 +17,9 @@ function CameraModes({
 
   const handleFocus = () => {
     if (!viewer) return;
-    const entity = shipEntities.find((e) => e.feature === selectedShip)?.cesiumEntity;
+    const entity = shipEntities.find(
+      (e) => e.feature === selectedShip
+    )?.cesiumEntity;
     if (!entity) return;
 
     if (selectedCameraMode === "Ship") {
@@ -30,7 +32,8 @@ function CameraModes({
     const entityPosition = entity.position.getValue(currentTime);
     if (!entityPosition) return;
 
-    const { heading, pitch, range } = cameraModeOffsets[selectedCameraMode] || {};
+    const { heading, pitch, range } =
+      cameraModeOffsets[selectedCameraMode] || {};
     viewer.scene.camera.setView({
       destination: entityPosition,
       orientation: { heading, pitch, roll: 0 },
@@ -50,7 +53,9 @@ function CameraModes({
             key={mode}
             onClick={() => setSelectedCameraMode(mode)}
             className={`px-3 py-1 rounded-md border text-xs ${
-              selectedCameraMode === mode ? "bg-blue-500 text-white" : "border-gray-400"
+              selectedCameraMode === mode
+                ? "bg-blue-500 text-white"
+                : "border-gray-400"
             }`}
           >
             {mode}
