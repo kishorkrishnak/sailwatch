@@ -5,6 +5,7 @@ import {
   TimeInterval,
   TimeIntervalCollection,
 } from "cesium";
+import { uid } from "react-uid";
 import { Entity } from "resium";
 import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import { shipModels } from "../../../../utils/data";
@@ -25,7 +26,7 @@ const Ships = () => {
       {shipEntities.map((shipEntity, index) => (
         <>
           <Entity
-            key={index}
+            key={uid(shipEntity)}
             ref={(ref) => {
               if (ref?.cesiumElement) {
                 shipEntities[index].cesiumEntity = ref.cesiumElement;

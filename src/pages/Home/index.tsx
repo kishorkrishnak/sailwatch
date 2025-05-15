@@ -51,7 +51,7 @@ const Home = () => {
     <Viewer
       full
       fullscreenButton={false}
-      baseLayerPicker={false}
+      // baseLayerPicker={false}
       ref={(resiumViewer) => {
         if (resiumViewer?.cesiumElement) {
           viewerRef.current = resiumViewer.cesiumElement;

@@ -4,10 +4,11 @@ import {
   HeightReference,
   VerticalOrigin,
 } from "cesium";
-import { GeoJsonDataSource } from "resium";
+import { GeoJsonDataSource, useCesium } from "resium";
 import anchor from "../../../../assets/images/anchor.svg";
 import { useAppContext } from "../../../../contexts/AppContext";
 import { useEntityClickDetection } from "../../../../hooks";
+import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
 import PortInfo from "./PortInfo";
 const Ports = () => {
   const {
@@ -17,12 +18,22 @@ const Ports = () => {
     setSelectedShip,
   } = useAppContext();
 
+  const { viewer } = useCesium();
+
   const handlePortClick = (entity: Entity) => {
-    if (entity.properties) {
-      const properties = entity.properties.getValue(new Date());
+    if (!viewer) return;
+    if (entity.properties && entity.position) {
+      const currentTime = viewer.clock.currentTime;
+      const properties = entity.properties.getValue(currentTime);
+
+      const coords = getEntityPositionInDegrees(entity, currentTime);
       setSelectedDangerZone(null);
       setSelectedShip(null);
-      setSelectedPort(properties);
+
+      setSelectedPort({
+        ...properties,
+        geometry: coords,
+      });
     }
   };
 

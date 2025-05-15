@@ -93,38 +93,6 @@ export const shipPositions: FeatureCollection = {
     {
       type: "Feature",
       properties: {
-        MMSI: 636012660,
-        name: "EVER GIVEN",
-        type: "Container Ship",
-        flag: "Panama",
-        age: 5,
-        grossTonnage: 220940,
-      },
-      geometry: {
-        type: "LineString",
-        coordinates: [
-          // Singapore to Hong Kong route
-          [103.8198, 1.3521], // Port of Singapore
-          [104.458, 1.8633],
-          [105.293, 2.4316],
-          [106.5234, 3.249],
-          [107.7539, 4.3898],
-          [108.8965, 5.9701],
-          [109.9512, 7.7106],
-          [110.918, 9.449],
-          [111.7969, 11.2583],
-          [112.5879, 13.2399],
-          [113.291, 15.3416],
-          [113.9062, 17.4686],
-          [114.1699, 19.6133],
-          [114.1113, 21.5872], // Approaching Hong Kong
-          [114.1694, 22.3193], // Hong Kong
-        ],
-      },
-    },
-    {
-      type: "Feature",
-      properties: {
         MMSI: 369970000,
         name: "USS VIGILANT",
         type: "Destroyer",
