@@ -7,11 +7,10 @@ import {
   VelocityOrientationProperty,
 } from "cesium";
 import type { Feature, GeoJsonObject } from "geojson";
-import { useState, type ReactNode } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { ships } from "../../utils/data";
-import lerp from "../../utils/lerp";
-import type { AppContextType } from "./AppContext";
-import AppContext from "./AppContext";
+import { interpolateByDistance } from "../../utils/interpolateByDistance";
+import AppContext, { type AppContextType } from "./AppContext";
 export const AppProvider = ({ children }: { children: ReactNode }) => {
   const [selectedShip, setSelectedShip] = useState<Feature | null>(null);
   const [selectedCameraMode, setSelectedCameraMode] =
@@ -52,34 +51,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
 
   const [startTime] = useState(JulianDate.now());
 
-  const interpolateByDistance = (
-    distances: number[],
-    coordinates: [number, number][],
-    t: number
-  ): [number, number] => {
-    const totalDistance = distances[distances.length - 1];
-    const targetDistance = t * totalDistance;
-
-    let segmentIndex = distances.findIndex((d) => d > targetDistance);
-    if (segmentIndex === -1) {
-      return coordinates[coordinates.length - 1];
-    }
-    if (segmentIndex === 0) segmentIndex = 1;
-
-    const distBefore = distances[segmentIndex - 1];
-    const distAfter = distances[segmentIndex];
-
-    const segmentT = (targetDistance - distBefore) / (distAfter - distBefore);
-
-    const [lon1, lat1] = coordinates[segmentIndex - 1];
-    const [lon2, lat2] = coordinates[segmentIndex];
-
-    const lon = lerp(lon1, lon2, segmentT);
-    const lat = lerp(lat1, lat2, segmentT);
-
-    return [lon, lat];
-  };
-
   const [shipEntities] = useState(() => {
     return ships.features
       .map((feature, index) => {
@@ -88,7 +59,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
           const line = turf.lineString(coordinates);
           const distance = turf.length(line, { units: "kilometers" });
 
-          const speed = feature.properties?.speed || 40; // fallback to 40 if speed is missing
+          const speed = feature.properties?.speed ?? 40; // fallback to 40 if speed is missing
           const hoursNeeded = distance / speed;
 
           const endTime = JulianDate.addHours(
@@ -145,22 +116,34 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       .filter(Boolean);
   });
 
-  const contextValue: AppContextType = {
-    selectedShip,
-    setSelectedShip,
-    selectedCameraMode,
-    setSelectedCameraMode,
-    shipEntities,
-    startTime,
-    selectedPort,
-    setSelectedPort,
-    selectedDangerZone,
-    setSelectedDangerZone,
-    ports,
-    loadPorts,
-    dangerZones,
-    loadDangerZones,
-  };
+  const contextValue: AppContextType = useMemo(
+    () => ({
+      selectedShip,
+      setSelectedShip,
+      selectedCameraMode,
+      setSelectedCameraMode,
+      shipEntities,
+      startTime,
+      selectedPort,
+      setSelectedPort,
+      selectedDangerZone,
+      setSelectedDangerZone,
+      ports,
+      loadPorts,
+      dangerZones,
+      loadDangerZones,
+    }),
+    [
+      selectedShip,
+      selectedCameraMode,
+      selectedPort,
+      selectedDangerZone,
+      ports,
+      dangerZones,
+      shipEntities,
+      startTime,
+    ]
+  );
 
   return (
     <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>

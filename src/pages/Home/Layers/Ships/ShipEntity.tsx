@@ -1,10 +1,10 @@
 import {
-    Color,
-    DistanceDisplayCondition,
-    HeightReference,
-    JulianDate,
-    TimeInterval,
-    TimeIntervalCollection,
+  Color,
+  DistanceDisplayCondition,
+  HeightReference,
+  JulianDate,
+  TimeInterval,
+  TimeIntervalCollection,
 } from "cesium";
 import React, { useMemo } from "react";
 import { Entity } from "resium";
