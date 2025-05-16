@@ -1,7 +1,10 @@
 import {
+  Cartesian2,
+  Color,
   DistanceDisplayCondition,
   Entity,
   HeightReference,
+  LabelStyle,
   VerticalOrigin,
 } from "cesium";
 import { GeoJsonDataSource, useCesium } from "resium";
@@ -60,6 +63,22 @@ const Ports = () => {
                   5000000
                 ),
                 verticalOrigin: VerticalOrigin.BOTTOM,
+                heightReference: HeightReference.CLAMP_TO_GROUND,
+              };
+
+              entity.label = {
+                text: entity.name || "Port",
+                font: "10pt Arial",
+                fillColor: Color.WHITE,
+                outlineColor: Color.BLACK,
+                outlineWidth: 2,
+                style: LabelStyle.FILL_AND_OUTLINE,
+                verticalOrigin: VerticalOrigin.TOP,
+                pixelOffset: new Cartesian2(10, -48),
+                distanceDisplayCondition: new DistanceDisplayCondition(
+                  0,
+                  5000000
+                ),
                 heightReference: HeightReference.CLAMP_TO_GROUND,
               };
             }

@@ -9,7 +9,7 @@ import {
 import type { Feature, GeoJsonObject } from "geojson";
 import { useMemo, useState, type ReactNode } from "react";
 import { ships } from "../../utils/data";
-import { interpolateByDistance } from "../../utils/interpolateByDistance";
+import interpolateByDistance from "../../utils/interpolateByDistance";
 import AppContext, { type AppContextType } from "./AppContext";
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {

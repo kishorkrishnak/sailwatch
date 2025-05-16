@@ -150,7 +150,7 @@ export const ships: FeatureCollection = {
 };
 
 export const shipModels: Record<ShipType, string> = {
-  "Container Ship": '/models/cargo.glb',
-  "General Cargo Ship": '/models/cargo.glb',
-  Destroyer: '/models/warship.glb',
+  "Container Ship": "/models/cargo.glb",
+  "General Cargo Ship": "/models/cargo.glb",
+  Destroyer: "/models/warship.glb",
 };

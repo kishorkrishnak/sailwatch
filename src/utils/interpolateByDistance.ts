@@ -3,7 +3,7 @@ import lerp from "./lerp";
 /**
  * Interpolates a position along a path based on distance traveled
  */
-export const interpolateByDistance = (
+const interpolateByDistance = (
   distances: number[],
   coordinates: [number, number][],
   t: number
@@ -30,3 +30,5 @@ export const interpolateByDistance = (
 
   return [lon, lat];
 };
+
+export default interpolateByDistance;

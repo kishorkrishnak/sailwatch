@@ -140,9 +140,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-          ...nearest,
-          distanceInKm: minDistance,
-        }
+        ...nearest,
+        distanceInKm: minDistance,
+      }
       : null;
   };
 
@@ -181,9 +181,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-          ...nearest,
-          distanceInKm: minDistance,
-        }
+        ...nearest,
+        distanceInKm: minDistance,
+      }
       : null;
   };
 
@@ -231,8 +231,6 @@ const ShipInfo = () => {
       maxX: bufferBbox[2],
       maxY: bufferBbox[3],
     });
-
-    console.log(nearbyZones);
 
     let overallStatus = "Clear";
     let criticalZone = null;
@@ -350,14 +348,16 @@ const ShipInfo = () => {
       </button>
 
       <ShipDetails />
-      <OriginDestination />
+      <OriginDestination etaHours={etaHours} />
 
-      <div className="mt-4 space-y-2">
-        <ETA distanceTravelled={distanceTravelled} etaHours={etaHours} />
-        <NearestShip nearestShip={nearestShip} />
-        <NearestPort nearestPort={nearestPort} />
-        <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />
-      </div>
+      {etaHours > 0 && (
+        <div className="mt-4 space-y-2">
+          <ETA distanceTravelled={distanceTravelled} etaHours={etaHours} />
+          <NearestShip nearestShip={nearestShip} />
+          <NearestPort nearestPort={nearestPort} />
+          <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />
+        </div>
+      )}
     </div>
   );
 };

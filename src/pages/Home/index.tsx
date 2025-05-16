@@ -2,7 +2,7 @@ import {
   Clock,
   ClockRange,
   createWorldTerrainAsync,
-  TerrainProvider
+  TerrainProvider,
 } from "cesium";
 import { useEffect, useState } from "react";
 import { Viewer } from "resium";
@@ -23,7 +23,7 @@ const Home = () => {
     new Clock({
       startTime: startTime,
       currentTime: startTime,
-      clockRange: ClockRange.UNBOUNDED,
+      clockRange: ClockRange.LOOP_STOP,
       clockStep: 1,
       multiplier: 1,
       shouldAnimate: true,
