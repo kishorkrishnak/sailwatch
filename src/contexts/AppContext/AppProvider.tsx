@@ -13,7 +13,6 @@ import interpolateByDistance from "../../utils/interpolateByDistance";
 import AppContext, { type AppContextType } from "./AppContext";
 
 export const AppProvider = ({ children }: { children: ReactNode }) => {
-
   const [selectedShip, setSelectedShip] = useState<Feature | null>(null);
   const [selectedCameraMode, setSelectedCameraMode] =
     useState<string>("TopDown");
@@ -23,6 +22,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
   );
   const [ports, setPorts] = useState<GeoJsonObject | null>(null);
   const [dangerZones, setDangerZones] = useState<GeoJsonObject | null>(null);
+  const [startTime] = useState(JulianDate.now());
 
   const loadPorts = async (): Promise<GeoJsonObject | undefined> => {
     if (ports) return ports;
@@ -33,7 +33,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       setPorts(data);
       return data;
     } catch (err) {
-      console.error(err)
+      console.error(err);
       return undefined;
     }
   };
@@ -51,8 +51,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       return undefined;
     }
   };
-
-  const [startTime] = useState(JulianDate.now());
 
   const [shipEntities] = useState(() => {
     return ships.features

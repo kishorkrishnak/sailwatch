@@ -328,7 +328,7 @@ const ShipInfo = () => {
   };
 
   return (
-    <div className="custom-scrollbar absolute max-h-[95vh] overflow-auto bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
+    <div className="custom-scrollbar custom-scrollbar-thin absolute max-h-[95vh] overflow-auto bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
       <div className="mb-3">
         <li className="mb-1 flex items-center space-x-2">
           <img src={ship} alt="Ship" className="w-4 h-4" />
