@@ -5,7 +5,6 @@ const DangerZoneDetails = ({
 }: {
   dangerZoneStatus: DangerZoneStatus | null;
 }) => {
-
   return (
     <div className="mt-4 p-3 border rounded-lg bg-gray-50">
       <p className="text-sm text-gray-600 mb-1 font-medium">

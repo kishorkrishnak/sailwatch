@@ -5,18 +5,13 @@ import { useAppContext } from "../../../../contexts/AppContext";
 import { cameraModeOffsets } from "../../../../utils/data";
 
 const CameraModes = () => {
-  const {
-    selectedShip,
-    selectedCameraMode,
-    setSelectedCameraMode,
-  } = useAppContext();
+  const { selectedShip, selectedCameraMode, setSelectedCameraMode } =
+    useAppContext();
 
-  const { viewer, } = useCesium();
+  const { viewer } = useCesium();
 
   const handleFocus = () => {
-    if (!viewer) return;
-
-    if (!selectedShip?.cesiumEntity) return;
+    if (!viewer || !selectedShip?.cesiumEntity) return;
 
     if (selectedCameraMode === "Ship") {
       viewer.trackedEntity = selectedShip.cesiumEntity;
@@ -25,18 +20,23 @@ const CameraModes = () => {
 
     viewer.trackedEntity = undefined;
     const currentTime = viewer.clock.currentTime;
-    const entityPosition = selectedShip.cesiumEntity.position.getValue(currentTime);
+    const entityPosition =
+      selectedShip.cesiumEntity.position.getValue(currentTime);
     if (!entityPosition) return;
 
     const { heading, pitch, range } =
       cameraModeOffsets[selectedCameraMode] || {};
+
     viewer.scene.camera.setView({
       destination: entityPosition,
       orientation: { heading, pitch, roll: 0 },
     });
 
     setTimeout(() => {
-      viewer.zoomTo(selectedShip.cesiumEntity, new HeadingPitchRange(heading, pitch, range));
+      viewer.zoomTo(
+        selectedShip.cesiumEntity,
+        new HeadingPitchRange(heading, pitch, range)
+      );
     }, 100);
   };
 
