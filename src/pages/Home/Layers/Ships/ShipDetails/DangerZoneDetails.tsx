@@ -11,7 +11,7 @@ const DangerZoneDetails = ({
         Danger Zone Status:
       </p>
 
-      {!dangerZoneStatus?.status && <p>Indexing...</p>}
+      {!dangerZoneStatus?.status && <p className="text-sm">Indexing...</p>}
 
       {dangerZoneStatus?.status === "Clear" && (
         <p className="text-green-600 font-semibold flex items-center space-x-2">
