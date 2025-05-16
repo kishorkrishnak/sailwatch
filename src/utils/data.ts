@@ -47,7 +47,6 @@ export const ships: FeatureCollection = {
         ],
       },
     },
-
     {
       type: "Feature",
       properties: {

@@ -6,7 +6,6 @@ import {
   TimeIntervalCollection,
 } from "cesium";
 import React from "react";
-import { uid } from "react-uid";
 import { Entity } from "resium";
 import useAppContext from "../../../../contexts/AppContext/useAppContext";
 import { shipModels } from "../../../../utils/data";
@@ -25,7 +24,7 @@ const Ships = () => {
   return (
     <>
       {shipEntities.map((shipEntity, index) => (
-        <React.Fragment key={uid(shipEntity)}>
+        <React.Fragment key={shipEntity.feature.properties.MMSI}>
           <Entity
             ref={(ref) => {
               if (ref?.cesiumElement) {
@@ -41,18 +40,18 @@ const Ships = () => {
               ])
             }
             path={
-              {
-                width: 2,
-                resolution: 1,
-                material: Color.YELLOW,
-                distanceDisplayCondition: new DistanceDisplayCondition(
-                  100000.0,
-                  Number.MAX_VALUE
-                ),
-                show: selectedShip?.feature.properties.MMSI ===
-                  shipEntity.feature.properties.MMSI
-              }
-
+              selectedShip?.feature.properties.MMSI ===
+              shipEntity.feature.properties.MMSI
+                ? {
+                    width: 2,
+                    material: Color.YELLOW,
+                    distanceDisplayCondition: new DistanceDisplayCondition(
+                      100000.0,
+                      Number.MAX_VALUE
+                    ),
+                    show: true,
+                  }
+                : undefined
             }
             onClick={() => {
               setSelectedDangerZone(null);
@@ -76,7 +75,6 @@ const Ships = () => {
         <>
           <ShipInfo />
           <CameraModes />
-          {/* <DynamicScale/> */}
         </>
       )}
     </>
