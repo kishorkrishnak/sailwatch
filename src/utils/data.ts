@@ -1,7 +1,5 @@
 import { Math as CesiumMath, HeadingPitchRange } from "cesium";
 import type { FeatureCollection } from "geojson";
-import generalCargo from "../assets/models/cargo.glb";
-import warship from "../assets/models/warship.glb";
 import type { ShipType } from "./types";
 
 export const cameraModeOffsets: Record<string, HeadingPitchRange> = {
@@ -37,7 +35,6 @@ export const ships: FeatureCollection = {
         origin: "Colombo",
         destination: "Mombasa",
       },
-
       geometry: {
         type: "LineString",
         coordinates: [
@@ -153,7 +150,7 @@ export const ships: FeatureCollection = {
 };
 
 export const shipModels: Record<ShipType, string> = {
-  "Container Ship": generalCargo,
-  "General Cargo Ship": generalCargo,
-  Destroyer: warship,
+  "Container Ship": '/models/cargo.glb',
+  "General Cargo Ship": '/models/cargo.glb',
+  Destroyer: '/models/warship.glb',
 };

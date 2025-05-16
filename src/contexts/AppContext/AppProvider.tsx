@@ -11,7 +11,9 @@ import { useMemo, useState, type ReactNode } from "react";
 import { ships } from "../../utils/data";
 import { interpolateByDistance } from "../../utils/interpolateByDistance";
 import AppContext, { type AppContextType } from "./AppContext";
+
 export const AppProvider = ({ children }: { children: ReactNode }) => {
+
   const [selectedShip, setSelectedShip] = useState<Feature | null>(null);
   const [selectedCameraMode, setSelectedCameraMode] =
     useState<string>("TopDown");
@@ -31,6 +33,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       setPorts(data);
       return data;
     } catch (err) {
+      console.error(err)
       return undefined;
     }
   };

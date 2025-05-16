@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppProvider from "./contexts/AppContext/AppProvider";
 import Home from "./pages/Home";
 
-function App() {
+const App = () => {
   return (
     <AppProvider>
       <BrowserRouter>
@@ -13,6 +13,6 @@ function App() {
       </BrowserRouter>
     </AppProvider>
   );
-}
+};
 
 export default App;
