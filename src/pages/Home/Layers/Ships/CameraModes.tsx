@@ -7,28 +7,25 @@ import { cameraModeOffsets } from "../../../../utils/data";
 const CameraModes = () => {
   const {
     selectedShip,
-    shipEntities,
     selectedCameraMode,
     setSelectedCameraMode,
   } = useAppContext();
 
-  const { viewer } = useCesium();
+  const { viewer, } = useCesium();
 
   const handleFocus = () => {
     if (!viewer) return;
-    const entity = shipEntities.find(
-      (e) => e.feature === selectedShip
-    )?.cesiumEntity;
-    if (!entity) return;
+
+    if (!selectedShip?.cesiumEntity) return;
 
     if (selectedCameraMode === "Ship") {
-      viewer.trackedEntity = entity;
+      viewer.trackedEntity = selectedShip.cesiumEntity;
       return;
     }
 
     viewer.trackedEntity = undefined;
     const currentTime = viewer.clock.currentTime;
-    const entityPosition = entity.position.getValue(currentTime);
+    const entityPosition = selectedShip.cesiumEntity.position.getValue(currentTime);
     if (!entityPosition) return;
 
     const { heading, pitch, range } =
@@ -39,7 +36,7 @@ const CameraModes = () => {
     });
 
     setTimeout(() => {
-      viewer.zoomTo(entity, new HeadingPitchRange(heading, pitch, range));
+      viewer.zoomTo(selectedShip.cesiumEntity, new HeadingPitchRange(heading, pitch, range));
     }, 100);
   };
 
@@ -60,11 +57,10 @@ const CameraModes = () => {
           <button
             key={mode}
             onClick={() => setSelectedCameraMode(mode)}
-            className={`px-3 py-1 rounded-md border text-xs ${
-              selectedCameraMode === mode
+            className={`px-3 py-1 rounded-md border text-xs ${selectedCameraMode === mode
                 ? "bg-blue-500 text-white"
                 : "border-gray-400"
-            }`}
+              }`}
           >
             {mode}
           </button>

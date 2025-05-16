@@ -14,7 +14,6 @@ const ShipInfo = () => {
     setSelectedShip,
     selectedShip,
     shipEntities,
-    selectedShipEntity,
     loadPorts,
     loadDangerZones,
   } = useAppContext();
@@ -36,21 +35,21 @@ const ShipInfo = () => {
   const rafRef = useRef<number | null>(null);
   const { viewer } = useCesium();
 
-  const properties = selectedShip.properties || {};
+  const properties = selectedShip.feature.properties || {};
 
   const findDistanceTravelled = (): number => {
     if (!viewer) return 0;
 
     const currentTime = viewer.clock.currentTime;
     const currentCoords = getEntityPositionInDegrees(
-      selectedShipEntity.cesiumEntity,
+      selectedShip.cesiumEntity,
       currentTime
     );
     if (!currentCoords) return 0;
 
     const to = turf.point([currentCoords.longitude, currentCoords.latitude]);
     const startingCoordinates =
-      selectedShipEntity.feature.geometry.coordinates[0];
+      selectedShip.feature.geometry.coordinates[0];
     const from = turf.point(startingCoordinates);
 
     const distance = turf.distance(from, to, { units: "kilometers" });
@@ -61,7 +60,7 @@ const ShipInfo = () => {
     if (!viewer) return null;
     const currentTime = viewer.clock.currentTime;
     const selectedCoords = getEntityPositionInDegrees(
-      selectedShipEntity.cesiumEntity,
+      selectedShip.cesiumEntity,
       currentTime
     );
     if (!selectedCoords) return null;
@@ -115,7 +114,7 @@ const ShipInfo = () => {
     if (!viewer) return;
     const currentTime = viewer.clock.currentTime;
     const selectedCoords = getEntityPositionInDegrees(
-      selectedShipEntity.cesiumEntity,
+      selectedShip.cesiumEntity,
       currentTime
     );
     if (!selectedCoords) return null;
@@ -131,7 +130,7 @@ const ShipInfo = () => {
     for (const ship of shipEntities) {
       if (
         ship.feature.properties.MMSI ===
-        selectedShipEntity.feature.properties.MMSI
+        selectedShip.feature.properties.MMSI
       )
         continue;
 
@@ -159,7 +158,7 @@ const ShipInfo = () => {
 
     const currentTime = viewer.clock.currentTime;
     const selectedCoords = getEntityPositionInDegrees(
-      selectedShipEntity.cesiumEntity,
+      selectedShip.cesiumEntity,
       currentTime
     );
 
@@ -243,14 +242,14 @@ const ShipInfo = () => {
         cancelAnimationFrame(rafRef.current);
       }
     };
-  }, [selectedShipEntity, shipEntities, viewer]);
+  }, [selectedShip, shipEntities, viewer]);
 
   const [etaHours, setEtaHours] = useState(0);
 
   useEffect(() => {
     if (!viewer || !selectedShip) return;
 
-    const { endTime } = selectedShipEntity;
+    const { endTime } = selectedShip;
 
     const updateEta = () => {
       const now = viewer.clock.currentTime;
@@ -299,7 +298,7 @@ const ShipInfo = () => {
         <p>
           <span className="font-medium">Age:</span> {properties.age} years
         </p>
-  <p>
+        <p>
           <span className="font-medium">Speed:</span> {properties.speed} km/h
         </p>
       </div>

@@ -1,8 +1,9 @@
 import {
   Color,
+  DistanceDisplayCondition,
   HeightReference,
   TimeInterval,
-  TimeIntervalCollection
+  TimeIntervalCollection,
 } from "cesium";
 import React from "react";
 import { uid } from "react-uid";
@@ -33,30 +34,37 @@ const Ships = () => {
             }}
             availability={
               new TimeIntervalCollection([
-                new TimeInterval({ start: startTime, stop: shipEntity.endTime }),
+                new TimeInterval({
+                  start: startTime,
+                  stop: shipEntity.endTime,
+                }),
               ])
             }
             path={
-              selectedShip?.properties.MMSI ===
-              shipEntity.feature.properties.MMSI
-                ? {
-                    width: 2,
-                    material: Color.YELLOW,
-                  }
-                : undefined
+              {
+                width: 2,
+                resolution: 1,
+                material: Color.YELLOW,
+                distanceDisplayCondition: new DistanceDisplayCondition(
+                  100000.0,
+                  Number.MAX_VALUE
+                ),
+                show: selectedShip?.feature.properties.MMSI ===
+                  shipEntity.feature.properties.MMSI
+              }
+
             }
             onClick={() => {
               setSelectedDangerZone(null);
               setSelectedPort(null);
-              setSelectedShip(shipEntity.feature);
+              setSelectedShip(shipEntity);
             }}
             name={shipEntity.name}
             position={shipEntity.position}
             model={{
               uri: shipModels[shipEntity.feature.properties.type],
+              minimumPixelSize: 60,
               scale: 30,
-
-              minimumPixelSize: 128,
               heightReference: HeightReference.CLAMP_TO_GROUND,
             }}
             orientation={shipEntity.orientation}
@@ -68,6 +76,7 @@ const Ships = () => {
         <>
           <ShipInfo />
           <CameraModes />
+          {/* <DynamicScale/> */}
         </>
       )}
     </>

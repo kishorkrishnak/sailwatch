@@ -45,17 +45,18 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       setDangerZones(data);
       return data;
     } catch (err) {
+      console.error(err);
       return undefined;
     }
   };
 
   const [startTime] = useState(JulianDate.now());
 
-  function interpolateByDistance(
+  const interpolateByDistance = (
     distances: number[],
     coordinates: [number, number][],
     t: number
-  ): [number, number] {
+  ): [number, number] => {
     const totalDistance = distances[distances.length - 1];
     const targetDistance = t * totalDistance;
 
@@ -77,7 +78,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     const lat = lerp(lat1, lat2, segmentT);
 
     return [lon, lat];
-  }
+  };
 
   const [shipEntities] = useState(() => {
     return ships.features
@@ -144,9 +145,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
       .filter(Boolean);
   });
 
-  const selectedShipEntity = shipEntities.find(
-    (e) => e.feature === selectedShip
-  );
   const contextValue: AppContextType = {
     selectedShip,
     setSelectedShip,
@@ -158,7 +156,6 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
     setSelectedPort,
     selectedDangerZone,
     setSelectedDangerZone,
-    selectedShipEntity,
     ports,
     loadPorts,
     dangerZones,

@@ -9,9 +9,9 @@ import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDeg
 const PortInfo = () => {
   const { selectedPort, setSelectedPort, shipEntities } = useAppContext();
   const { viewer } = useCesium();
-  const [searchRadius, setSearchRadius] = useState(10);
+  const [searchRadius, setSearchRadius] = useState<number | string>(10);
   const [nearbyShips, setNearbyShips] = useState([]);
-  const [calculated, setCalculated] = useState(false);
+  const [calculated, setCalculated] = useState<boolean>(false);
 
   const findNearestShips = ({ distance = 5 }: { distance: number }) => {
     if (!viewer || !selectedPort?.geometry) return [];
@@ -87,15 +87,27 @@ const PortInfo = () => {
             <input
               id="radiusInput"
               type="number"
-              min={1}
+              min={0}
               max={1000}
               value={searchRadius}
               onChange={(e) => {
-                const val = Number(e.target.value);
-                if (val >= 1 && val <= 1000) setSearchRadius(val);
+                const val = e.target.value;
+
+                if (val === "") {
+                  setSearchRadius("");
+                  return;
+                }
+
+                if (/^\d*\.?\d*$/.test(val)) {
+                  const num = Number(val);
+                  if (num >= 0 && num <= 1000) {
+                    setSearchRadius(num);
+                  }
+                }
               }}
               className="w-20 px-2 py-1 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
+
             <button
               onClick={() => {
                 const ships = findNearestShips({ distance: searchRadius });

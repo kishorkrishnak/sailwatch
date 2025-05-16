@@ -42,7 +42,7 @@ const Home = () => {
     <Viewer
       full
       fullscreenButton={false}
-      // baseLayerPicker={false}
+      baseLayerPicker={false}
       infoBox={false}
       selectionIndicator={false}
       clock={cesiumClock}

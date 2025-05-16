@@ -100,7 +100,7 @@ export const ships: FeatureCollection = {
           [129.87, 34.37],
           [129.71, 34.98],
           [129.42, 35.13],
-          [129.12, 35.07],
+          [129.09, 35.07],
         ],
       },
     },
@@ -129,22 +129,22 @@ export const ships: FeatureCollection = {
 
     {
       type: "Feature",
-     properties: {
-  MMSI: 777092406,
-  name: "CMA CGM Marco Polo",
-  type: "Container Ship",
-  flag: "Portugal",
-  age: 3,
-  speed: 40,
-  origin: "Lisbon",
-  destination: "Angola",
-},
+      properties: {
+        MMSI: 777092406,
+        name: "CMA CGM Marco Polo",
+        type: "Container Ship",
+        flag: "Portugal",
+        age: 3,
+        speed: 40,
+        origin: "Lisbon",
+        destination: "Angola",
+      },
 
       geometry: {
         type: "LineString",
         coordinates: [
           [-9.28, 38.64],
-        [-33.09, 25.13],
+          [-33.09, 25.13],
           [-34.26, 12.6],
           [12.08, -15.17],
         ],
