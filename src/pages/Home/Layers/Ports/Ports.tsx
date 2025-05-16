@@ -43,7 +43,7 @@ const Ports = () => {
 
   const { dataSourceRef } = useEntityClickDetection({
     onClick: handlePortClick,
-  });
+  }); 
 
   return (
     <>

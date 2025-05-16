@@ -2,12 +2,12 @@ import {
   Entity,
   GeoJsonDataSource,
   ScreenSpaceEventHandler,
-  ScreenSpaceEventType
+  ScreenSpaceEventType,
 } from "cesium";
 import { useEffect, useRef } from "react";
 import { useCesium } from "resium";
 
-export const useEntityClickDetection = ({
+const useEntityClickDetection = ({
   onClick,
 }: {
   onClick: (entity: Entity) => void;
@@ -72,3 +72,5 @@ export const useEntityClickDetection = ({
 
   return { dataSourceRef };
 };
+
+export default useEntityClickDetection;

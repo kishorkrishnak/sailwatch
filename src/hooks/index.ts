@@ -1,3 +1,3 @@
-import { useEntityClickDetection } from "./useEntityClickDetection";
+import useEntityClickDetection from "./useEntityClickDetection";
 
 export { useEntityClickDetection };
