@@ -6,6 +6,9 @@ import {
   JulianDate,
 } from "cesium";
 
+/**
+ * Returns current latitude and longitude of an entity
+ */
 export default function getEntityPositionInDegrees(
   entity: Entity,
   currentTime: JulianDate

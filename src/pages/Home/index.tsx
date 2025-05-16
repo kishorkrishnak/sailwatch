@@ -1,10 +1,11 @@
 import {
-  Clock,
+  Viewer as CesiumViewer,
   ClockRange,
+  ClockStep,
   createWorldTerrainAsync,
   TerrainProvider,
 } from "cesium";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Viewer } from "resium";
 import useAppContext from "../../contexts/AppContext/useAppContext";
 import DangerZones from "./Layers/DangerZones/DangerZones";
@@ -15,20 +16,21 @@ import Legend from "./Legend";
 const Home = () => {
   const { startTime } = useAppContext();
 
+  const viewerRef = useRef<CesiumViewer | null>(null);
+  const hasSetClockRef = useRef<boolean>(false);
+
   const [terrainProvider, setTerrainProvider] = useState<
     TerrainProvider | Promise<TerrainProvider> | undefined
   >(undefined);
 
-  const [cesiumClock] = useState<Clock>(
-    new Clock({
-      startTime: startTime,
-      currentTime: startTime,
-      clockRange: ClockRange.LOOP_STOP,
-      clockStep: 1,
-      multiplier: 1,
-      shouldAnimate: true,
-    })
-  );
+  const clockSettings = {
+    startTime: startTime,
+    currentTime: startTime,
+    clockRange: ClockRange.LOOP_STOP,
+    clockStep: ClockStep.SYSTEM_CLOCK_MULTIPLIER,
+    multiplier: 10,
+    shouldAnimate: true,
+  };
 
   useEffect(() => {
     const loadTerrain = async () => {
@@ -41,11 +43,21 @@ const Home = () => {
   return (
     <Viewer
       full
+      ref={(ref) => {
+        if (ref?.cesiumElement) {
+          if (!hasSetClockRef.current) {
+            viewerRef.current = ref.cesiumElement;
+            for (const [key, value] of Object.entries(clockSettings)) {
+              viewerRef.current.clock[key] = value;
+            }
+            hasSetClockRef.current = true;
+          }
+        }
+      }}
       fullscreenButton={false}
       baseLayerPicker={false}
       infoBox={false}
       selectionIndicator={false}
-      clock={cesiumClock}
       terrainProvider={terrainProvider}
       shouldAnimate={true}
       timeline={false}

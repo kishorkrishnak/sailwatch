@@ -13,6 +13,7 @@ import { useAppContext } from "../../../../contexts/AppContext";
 import { useEntityClickDetection } from "../../../../hooks";
 import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
 import PortInfo from "./PortInfo";
+
 const Ports = () => {
   const {
     selectedPort,
@@ -74,7 +75,7 @@ const Ports = () => {
                 outlineWidth: 2,
                 style: LabelStyle.FILL_AND_OUTLINE,
                 verticalOrigin: VerticalOrigin.TOP,
-                pixelOffset: new Cartesian2(10, -48),
+                pixelOffset: new Cartesian2(0, -48),
                 distanceDisplayCondition: new DistanceDisplayCondition(
                   0,
                   5000000

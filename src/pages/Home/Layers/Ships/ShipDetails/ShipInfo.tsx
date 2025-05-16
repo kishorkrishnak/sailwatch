@@ -26,7 +26,6 @@ const ShipInfo = () => {
     shipEntities,
     ports,
     loadPorts,
-    dangerZones,
     loadDangerZones,
   } = useAppContext();
 
@@ -37,6 +36,7 @@ const ShipInfo = () => {
   const [nearestPort, setNearestPort] = useState<number | null>(null);
   const [distanceTravelled, setDistanceTravelled] = useState<number>(0);
   const [nearestShip, setNearestShip] = useState<string | null>(null);
+  const [etaHours, setEtaHours] = useState(0);
 
   const [dangerZoneStatus, setDangerZoneStatus] =
     useState<DangerZoneStatus | null>({
@@ -140,9 +140,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
+          ...nearest,
+          distanceInKm: minDistance,
+        }
       : null;
   };
 
@@ -181,9 +181,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
+          ...nearest,
+          distanceInKm: minDistance,
+        }
       : null;
   };
 
@@ -303,8 +303,6 @@ const ShipInfo = () => {
       }
     };
   }, [selectedShip, shipEntities, viewer]);
-
-  const [etaHours, setEtaHours] = useState(0);
 
   useEffect(() => {
     if (!viewer || !selectedShip) return;
