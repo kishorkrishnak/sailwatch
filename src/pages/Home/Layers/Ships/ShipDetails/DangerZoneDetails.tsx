@@ -1,4 +1,4 @@
-import type { DangerZoneStatus } from "../../../../utils/types";
+import type { DangerZoneStatus } from "../../../../../utils/types";
 
 const DangerZoneDetails = ({
   dangerZoneStatus,
@@ -10,6 +10,8 @@ const DangerZoneDetails = ({
       <p className="text-sm text-gray-600 mb-1 font-medium">
         Danger Zone Status:
       </p>
+
+      {!dangerZoneStatus?.status && <p>Indexing...</p>}
 
       {dangerZoneStatus?.status === "Clear" && (
         <p className="text-green-600 font-semibold flex items-center space-x-2">

@@ -43,7 +43,6 @@ const ShipEntity = React.memo(
                 100000.0,
                 Number.MAX_VALUE
               ),
-              show: true,
             }
           : undefined,
       [isSelected]

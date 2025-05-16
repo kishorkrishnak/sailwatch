@@ -37,7 +37,7 @@ const Legend = () => {
           <span>Port</span>
         </li>
         <li className="flex items-center space-x-2">
-          <div className="w-4 h-4 bg-red-600 rounded-sm" />
+          <div className="w-4 h-4 bg-[#FF000066] rounded-sm" />
           <span>Danger Zone</span>
         </li>
       </ul>

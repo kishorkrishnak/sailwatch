@@ -1,28 +1,43 @@
 import * as turf from "@turf/turf";
 import { JulianDate } from "cesium";
+import RBush from "rbush";
 import { useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useCesium } from "resium";
-import ship from "../../../../assets/images/ship.svg";
-import useAppContext from "../../../../contexts/AppContext/useAppContext";
-import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
-import type { DangerZoneStatus } from "../../../../utils/types";
+import ship from "../../../../../assets/images/ship.svg";
+import useAppContext from "../../../../../contexts/AppContext/useAppContext";
+import featureToRbushItem from "../../../../../utils/featureToRbushItem";
+import getEntityPositionInDegrees from "../../../../../utils/getEntityPositionInDegrees";
+import type {
+  DangerZoneStatus,
+  RbushFeatureItem,
+} from "../../../../../utils/types";
 import DangerZoneDetails from "./DangerZoneDetails";
+import ETA from "./ETA";
+import NearestPort from "./NearestPort";
+import NearestShip from "./NearestShip";
+import OriginDestination from "./OriginDestination";
+import ShipDetails from "./ShipDetails";
 
 const ShipInfo = () => {
   const {
     setSelectedShip,
     selectedShip,
     shipEntities,
+    ports,
     loadPorts,
+    dangerZones,
     loadDangerZones,
   } = useAppContext();
 
+  const { viewer } = useCesium();
+
+  const rafRef = useRef<number | null>(null);
+
   const [nearestPort, setNearestPort] = useState<number | null>(null);
-  const [distanceTravelled, setDistanceTravelled] = useState<number | null>(
-    null
-  );
+  const [distanceTravelled, setDistanceTravelled] = useState<number>(0);
   const [nearestShip, setNearestShip] = useState<string | null>(null);
+
   const [dangerZoneStatus, setDangerZoneStatus] =
     useState<DangerZoneStatus | null>({
       status: "Clear",
@@ -32,8 +47,22 @@ const ShipInfo = () => {
       },
     });
 
-  const rafRef = useRef<number | null>(null);
-  const { viewer } = useCesium();
+  const portsIndexRef = useRef<RBush<RbushFeatureItem> | null>(null);
+
+  useEffect(() => {
+    const buildPortsIndex = async () => {
+      const ports = await loadPorts();
+
+      const tree = new RBush<RbushFeatureItem>();
+
+      const items = ports.features.map(featureToRbushItem);
+
+      tree.load(items);
+      portsIndexRef.current = tree;
+    };
+
+    buildPortsIndex();
+  }, [loadPorts]);
 
   const properties = selectedShip.feature.properties || {};
 
@@ -48,8 +77,7 @@ const ShipInfo = () => {
     if (!currentCoords) return 0;
 
     const to = turf.point([currentCoords.longitude, currentCoords.latitude]);
-    const startingCoordinates =
-      selectedShip.feature.geometry.coordinates[0];
+    const startingCoordinates = selectedShip.feature.geometry.coordinates[0];
     const from = turf.point(startingCoordinates);
 
     const distance = turf.distance(from, to, { units: "kilometers" });
@@ -57,45 +85,53 @@ const ShipInfo = () => {
   };
 
   const findNearestPort = async () => {
-    if (!viewer) return null;
+    if (!viewer || !portsIndexRef.current) return null;
+
     const currentTime = viewer.clock.currentTime;
+
     const selectedCoords = getEntityPositionInDegrees(
       selectedShip.cesiumEntity,
       currentTime
     );
     if (!selectedCoords) return null;
 
-    const from = turf.point([
-      selectedCoords.longitude,
-      selectedCoords.latitude,
-    ]);
+    const { longitude: lon, latitude: lat } = selectedCoords;
+
+    const tree = portsIndexRef.current;
+
+    let padding = 1;
+    let candidates = [];
+
+    while (candidates.length === 0 && padding <= 20) {
+      candidates = tree.search({
+        minX: lon - padding,
+        minY: lat - padding,
+        maxX: lon + padding,
+        maxY: lat + padding,
+      });
+      padding *= 2;
+    }
+
+    if (candidates.length === 0) {
+      candidates = ports.map((port: any) => ({
+        minX: port.geometry.coordinates[0],
+        minY: port.geometry.coordinates[1],
+        maxX: port.geometry.coordinates[0],
+        maxY: port.geometry.coordinates[1],
+        port,
+      }));
+    }
 
     let nearest = null;
     let minDistance = Infinity;
 
-    const ports = await loadPorts();
+    const from = turf.point([lon, lat]);
 
-    const BBOX_PADDING_KM = 100;
-    const bbox = turf.bbox(
-      turf.buffer(from, BBOX_PADDING_KM, { units: "kilometers" })
-    );
-
-    const candidates = ports.features.filter((port: any) => {
-      const [lon, lat] = port.geometry.coordinates;
-      return (
-        lon >= bbox[0] && lon <= bbox[2] && lat >= bbox[1] && lat <= bbox[3]
-      );
-    });
-
-    const portsToCheck = candidates.length > 0 ? candidates : ports.features;
-
-    for (const port of portsToCheck) {
-      const coords = port.geometry.coordinates;
-      if (!coords) continue;
-
-      const to = turf.point(coords);
+    for (const item of candidates) {
+      const port = item.feature;
+      if (!port.geometry) continue;
+      const to = turf.point(port.geometry.coordinates);
       const distance = turf.distance(from, to, { units: "kilometers" });
-
       if (distance < minDistance) {
         minDistance = distance;
         nearest = port;
@@ -104,9 +140,9 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
+          ...nearest,
+          distanceInKm: minDistance,
+        }
       : null;
   };
 
@@ -128,10 +164,7 @@ const ShipInfo = () => {
     let minDistance = Infinity;
 
     for (const ship of shipEntities) {
-      if (
-        ship.feature.properties.MMSI ===
-        selectedShip.feature.properties.MMSI
-      )
+      if (ship.feature.properties.MMSI === selectedShip.feature.properties.MMSI)
         continue;
 
       const coords = getEntityPositionInDegrees(ship.cesiumEntity, currentTime);
@@ -148,11 +181,27 @@ const ShipInfo = () => {
 
     return nearest
       ? {
-        ...nearest,
-        distanceInKm: minDistance,
-      }
+          ...nearest,
+          distanceInKm: minDistance,
+        }
       : null;
   };
+
+  const dangerZonesIndexRef = useRef<RBush<RbushFeatureItem> | null>(null);
+
+  useEffect(() => {
+    const buildDangerZonesIndex = async () => {
+      const zones = await loadDangerZones();
+      const tree = new RBush<RbushFeatureItem>();
+
+      const items = zones.features.map(featureToRbushItem);
+      tree.load(items);
+      dangerZonesIndexRef.current = tree;
+    };
+
+    buildDangerZonesIndex();
+  }, [loadDangerZones]);
+
   const findDangerZoneStatus = async (): Promise<DangerZoneStatus | null> => {
     if (!viewer) return null;
 
@@ -170,13 +219,26 @@ const ShipInfo = () => {
     ]);
 
     const shipBuffer = turf.buffer(shipPoint, 10, { units: "kilometers" });
-    const dangerZones = await loadDangerZones();
+
+    const tree = dangerZonesIndexRef.current;
+    if (!tree) return null;
+
+    const bufferBbox = turf.bbox(shipBuffer);
+
+    const nearbyZones = tree.search({
+      minX: bufferBbox[0],
+      minY: bufferBbox[1],
+      maxX: bufferBbox[2],
+      maxY: bufferBbox[3],
+    });
+
+    console.log(nearbyZones);
 
     let overallStatus = "Clear";
     let criticalZone = null;
     let minDistance = Infinity;
 
-    for (const dangerZone of dangerZones.features) {
+    for (const { feature: dangerZone } of nearbyZones) {
       if (!dangerZone.geometry) {
         continue;
       }
@@ -264,6 +326,11 @@ const ShipInfo = () => {
     return () => clearInterval(interval);
   }, [viewer, selectedShip, shipEntities]);
 
+  const handleClose = () => {
+    if (viewer) viewer.trackedEntity = undefined;
+    setSelectedShip(null);
+  };
+
   return (
     <div className="custom-scrollbar absolute max-h-[95vh] overflow-auto bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
       <div className="mb-3">
@@ -276,113 +343,20 @@ const ShipInfo = () => {
         </h1>
       </div>
       <button
-        onClick={() => {
-          viewer.trackedEntity = undefined;
-          setSelectedShip(null);
-        }}
+        onClick={handleClose}
         className="cursor-pointer absolute top-3 right-3"
       >
         <IoClose size={20} />
       </button>
 
-      <div className="text-sm text-gray-700 space-y-1">
-        <p>
-          <span className="font-medium">MMSI:</span> {properties.MMSI}
-        </p>
-        <p>
-          <span className="font-medium">Type:</span> {properties.type}
-        </p>
-        <p>
-          <span className="font-medium">Flag:</span> {properties.flag}
-        </p>
-        <p>
-          <span className="font-medium">Age:</span> {properties.age} years
-        </p>
-        <p>
-          <span className="font-medium">Speed:</span> {properties.speed} km/h
-        </p>
-      </div>
-      <div className="mt-6 p-4 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center space-x-4 select-none text-gray-800 font-semibold text-sm">
-        <div className="flex flex-col items-center max-w-[140px] truncate">
-          <span className="text-xs text-gray-500 mb-1">Origin</span>
-          <div title={properties?.origin || ""}>
-            {properties?.origin || "Unknown Port"}
-          </div>
-        </div>
-
-        <svg
-          className="w-6 h-6 text-gray-500 flex-shrink-0"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-        </svg>
-
-        <div className="flex flex-col items-center max-w-[140px] truncate">
-          <span className="text-xs text-gray-500 mb-1">Destination</span>
-          <div title={properties?.destination || ""}>
-            {properties?.destination || "Unknown Port"}
-          </div>
-        </div>
-      </div>
+      <ShipDetails />
+      <OriginDestination />
 
       <div className="mt-4 space-y-2">
-
-        <div className="p-3 border rounded-lg bg-gray-50 flex justify-between items-center">
-          {etaHours > 0 ? <div>
-            <p className="text-sm text-gray-600 font-medium mb-1">
-              ETA to port in
-            </p>
-            <p className="font-semibold">{etaHours} hrs</p>
-          </div> : <div>
-            <p className="text-sm text-gray-600 font-medium mb-1">
-              Arrived
-            </p>
-
-          </div>}
-          {nearestShip && (
-            <div>
-              <p className="text-sm text-gray-600 font-medium mb-1">
-                Distance Travelled
-              </p>
-              <p className="font-semibold">{distanceTravelled} km</p>
-            </div>
-          )}
-        </div>
-
-        {nearestShip && (
-          <div className="p-3 border rounded-lg bg-gray-50">
-            <p className="text-sm text-gray-600 mb-1 font-medium">
-              Nearest Ship (Live):
-            </p>
-            <p className="text-sm">
-              <span className="font-semibold">
-                {nearestShip.feature.properties?.name || "Unnamed Vessel"}
-              </span>{" "}
-              — {nearestShip.distanceInKm.toFixed(2)} km away
-            </p>
-          </div>
-        )}
-
-
-        {nearestPort && (
-          <div className="p-3 border rounded-lg bg-gray-50">
-            <p className="text-sm text-gray-600 mb-1 font-medium">
-              Nearest Port (Live):
-            </p>
-            <p className="text-sm">
-              <span className="font-semibold">
-                {nearestPort.properties?.name || "Unnamed Port"}
-              </span>{" "}
-              — {nearestPort.distanceInKm.toFixed(2)} km away
-            </p>
-          </div>
-        )}
-
-        {etaHours > 0 && <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />}
+        <ETA distanceTravelled={distanceTravelled} etaHours={etaHours} />
+        <NearestShip nearestShip={nearestShip} />
+        <NearestPort nearestPort={nearestPort} />
+        <DangerZoneDetails dangerZoneStatus={dangerZoneStatus} />
       </div>
     </div>
   );

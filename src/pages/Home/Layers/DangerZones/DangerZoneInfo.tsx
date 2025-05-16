@@ -8,7 +8,7 @@ const DangerZoneInfo = () => {
     <div className="absolute bottom-5 right-5 bg-white/90 p-5 rounded-2xl w-[320px] shadow-2xl z-[10000] backdrop-blur-md border border-gray-200">
       <div className="mb-3">
         <li className="mb-1 flex items-center space-x-2">
-          <div className="w-4 h-4 bg-red-600 rounded-sm" />
+          <div className="w-4 h-4 bg-[#FF000066] rounded-sm" />
           <span>Danger Zone</span>
         </li>
         <h1 className="text-xl font-bold text-[#2c3e50]">
