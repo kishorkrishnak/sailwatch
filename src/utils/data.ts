@@ -133,7 +133,7 @@ export const ships: FeatureCollection = {
         age: 3,
         speed: 40,
         origin: "Lisbon",
-        destination: "Angola",
+        destination: "Namibe",
       },
 
       geometry: {
