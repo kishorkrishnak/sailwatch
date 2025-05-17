@@ -1,7 +1,9 @@
 import { Color, Entity } from "cesium";
 import { GeoJsonDataSource } from "resium";
-import { useAppContext } from "../../../../contexts/AppContext";
-import { useEntityClickDetection } from "../../../../hooks";
+
+import { useAppContext } from "@/contexts/AppContext";
+import { useEntityClickDetection } from "@/hooks";
+
 import DangerZoneInfo from "./DangerZoneInfo";
 
 const DangerZones = () => {

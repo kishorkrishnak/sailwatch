@@ -7,7 +7,9 @@ import {
 } from "cesium";
 import { useEffect, useRef, useState } from "react";
 import { Viewer } from "resium";
-import useAppContext from "../../contexts/AppContext/useAppContext";
+
+import useAppContext from "@/contexts/AppContext/useAppContext";
+
 import DangerZones from "./Layers/DangerZones/DangerZones";
 import Ports from "./Layers/Ports/Ports";
 import Ships from "./Layers/Ships/Ships";

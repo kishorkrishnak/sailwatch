@@ -2,9 +2,10 @@ import * as turf from "@turf/turf";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useCesium } from "resium";
-import anchor from "../../../../assets/images/anchor.svg";
-import { useAppContext } from "../../../../contexts/AppContext";
-import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
+
+import anchor from "@/assets/images/anchor.svg";
+import { useAppContext } from "@/contexts/AppContext";
+import getEntityPositionInDegrees from "@/utils/getEntityPositionInDegrees";
 
 const PortInfo = () => {
   const { selectedPort, setSelectedPort, shipEntities } = useAppContext();

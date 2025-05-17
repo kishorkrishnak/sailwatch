@@ -1,8 +1,9 @@
 import { HeadingPitchRange, ScreenSpaceEventType } from "cesium";
 import { useEffect } from "react";
 import { useCesium } from "resium";
-import { useAppContext } from "../../../../contexts/AppContext";
-import { cameraModeOffsets } from "../../../../utils/data";
+
+import { useAppContext } from "@/contexts/AppContext";
+import { cameraModeOffsets } from "@/utils/data";
 
 const CameraModes = () => {
   const { selectedShip, selectedCameraMode, setSelectedCameraMode } =
@@ -57,10 +58,11 @@ const CameraModes = () => {
           <button
             key={mode}
             onClick={() => setSelectedCameraMode(mode)}
-            className={`px-3 py-1 rounded-md border text-xs ${selectedCameraMode === mode
+            className={`px-3 py-1 rounded-md border text-xs ${
+              selectedCameraMode === mode
                 ? "bg-blue-500 text-white"
                 : "border-gray-400"
-              }`}
+            }`}
           >
             {mode}
           </button>

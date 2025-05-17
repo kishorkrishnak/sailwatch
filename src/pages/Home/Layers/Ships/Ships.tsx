@@ -1,5 +1,7 @@
 import { useMemo } from "react";
-import useAppContext from "../../../../contexts/AppContext/useAppContext";
+
+import useAppContext from "@/contexts/AppContext/useAppContext";
+
 import CameraModes from "./CameraModes";
 import ShipInfo from "./ShipDetails/ShipInfo";
 import ShipEntity from "./ShipEntity";

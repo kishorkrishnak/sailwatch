@@ -1,6 +1,7 @@
 import { useState } from "react";
-import anchor from "../../assets/images/anchor.svg";
-import ship from "../../assets/images/ship.svg";
+
+import anchor from "@/assets/images/anchor.svg";
+import ship from "@/assets/images/ship.svg";
 
 const Legend = () => {
   const [visible, setVisible] = useState<boolean>(true);

@@ -8,10 +8,12 @@ import {
   VerticalOrigin,
 } from "cesium";
 import { GeoJsonDataSource, useCesium } from "resium";
-import anchor from "../../../../assets/images/anchor.svg";
-import { useAppContext } from "../../../../contexts/AppContext";
-import { useEntityClickDetection } from "../../../../hooks";
-import getEntityPositionInDegrees from "../../../../utils/getEntityPositionInDegrees";
+
+import anchor from "@/assets/images/anchor.svg";
+import { useAppContext } from "@/contexts/AppContext";
+import { useEntityClickDetection } from "@/hooks";
+import getEntityPositionInDegrees from "@/utils/getEntityPositionInDegrees";
+
 import PortInfo from "./PortInfo";
 
 const Ports = () => {
@@ -43,7 +45,7 @@ const Ports = () => {
 
   const { dataSourceRef } = useEntityClickDetection({
     onClick: handlePortClick,
-  }); 
+  });
 
   return (
     <>

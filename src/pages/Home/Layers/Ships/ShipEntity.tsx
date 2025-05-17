@@ -8,7 +8,8 @@ import {
 } from "cesium";
 import React, { useMemo } from "react";
 import { Entity } from "resium";
-import { shipModels } from "../../../../utils/data";
+
+import { shipModels } from "@/utils/data";
 
 const ShipEntity = React.memo(
   ({

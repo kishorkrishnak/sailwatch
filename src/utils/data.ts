@@ -1,5 +1,6 @@
 import { Math as CesiumMath, HeadingPitchRange } from "cesium";
 import type { FeatureCollection } from "geojson";
+
 import type { ShipType } from "./types";
 
 export const cameraModeOffsets: Record<string, HeadingPitchRange> = {

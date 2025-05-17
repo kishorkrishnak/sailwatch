@@ -4,14 +4,13 @@ import RBush from "rbush";
 import { useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { useCesium } from "resium";
-import ship from "../../../../../assets/images/ship.svg";
-import useAppContext from "../../../../../contexts/AppContext/useAppContext";
-import featureToRbushItem from "../../../../../utils/featureToRbushItem";
-import getEntityPositionInDegrees from "../../../../../utils/getEntityPositionInDegrees";
-import type {
-  DangerZoneStatus,
-  RbushFeatureItem,
-} from "../../../../../utils/types";
+
+import ship from "@/assets/images/ship.svg";
+import useAppContext from "@/contexts/AppContext/useAppContext";
+import featureToRbushItem from "@/utils/featureToRbushItem";
+import getEntityPositionInDegrees from "@/utils/getEntityPositionInDegrees";
+import type { DangerZoneStatus, RbushFeatureItem } from "@/utils/types";
+
 import DangerZoneDetails from "./DangerZoneDetails";
 import ETA from "./ETA";
 import NearestPort from "./NearestPort";

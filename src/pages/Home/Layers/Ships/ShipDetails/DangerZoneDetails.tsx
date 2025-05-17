@@ -1,4 +1,4 @@
-import type { DangerZoneStatus } from "../../../../../utils/types";
+import type { DangerZoneStatus } from "@/utils/types";
 
 const DangerZoneDetails = ({
   dangerZoneStatus,

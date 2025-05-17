@@ -1,4 +1,4 @@
-import { useAppContext } from "../../../../../contexts/AppContext";
+import { useAppContext } from "@/contexts/AppContext";
 
 const OriginDestination = ({ etaHours }: { etaHours: number }) => {
   const { selectedShip } = useAppContext();
